@@ -7,3 +7,148 @@ font-family: 'Pretendard';
 
 layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 */
+
+/*** header 시작 ***/
+header{
+    position:relative;
+    padding-top:20px;
+    padding-bottom:60px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.header-logo-box{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+}
+.header-logo-box a img{
+    width:250px;
+}
+.header-top-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header-search-area{
+    width: 420px;
+    border-bottom: 1px solid #fff;
+}
+#header-search{
+    padding: 0 10px;
+    line-height: 30px;
+    display: inline-block;
+    background-color: transparent;
+}
+#header-search:focus{
+
+}
+#btn-header-search{
+    overflow: hidden;
+    display: inline-block;
+    width: 55px;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    border: 0;
+    background: url('../images/ico/ico-search-white.png') no-repeat center;
+    cursor: pointer;
+}
+.header-bottom-nav{
+    position:relative;
+}
+.header-hide{
+    position: absolute;
+    top:62px;
+    width:100%;
+    height:44px;
+}
+.header-hide.on{
+    background-color: rgba(68, 68, 68, 0.2);
+}
+.header-gnb{
+    position: relative;
+    width:1100px;
+    margin:0 auto;
+}
+.header-gnb>li>a{
+    position: absolute;
+    top:-30px;
+    display: block;
+    height:30px;
+    font-size:18px;
+}
+.header-gnb>li>a.on{
+    border-bottom:3px solid #e8e8e8;
+}
+.nav-movie{
+    left:166px;
+}
+.nav-reserve{
+    left:256px;
+}
+.nav-theater{
+    left:345px;
+}
+a.nav-event{
+    right:344px;
+    width:48px;
+}
+a.nav-store{
+    right:237px;
+    width:48px;
+}
+.nav-benefit{
+    right:149px;
+}
+.header-lnb{
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+.header-lnb.on{
+    display: flex;
+}
+.header-lnb>li:not(:first-child){
+    margin-left:19px;
+}
+.header-lnb>li>a{
+    line-height: 44px;
+}
+.header-lnb>li>a:hover{
+    text-decoration: underline;
+}
+/*** header 끝 ***/
+
+/*** hero 시작 ***/
+.ts-hero{
+    background-color: #000;
+    height:600px;
+}
+.ts-hero .container{
+    background-color: #fff;
+    height:100%;
+}
+.ts-slide-frame{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    position:relative;
+}
+.ts-slide-box{
+    width:4400px;
+    position:absolute;
+    left:0;
+}
+.ts-slide-box a{
+    width:1100px;
+    float:left;
+}
+.ts-slide-box img{
+    width:100%;
+}
+
+/*** hero 끝 ***/
+
+/*** footer 시작 ***/
+
+
+/*** footer 끝 ***/
