@@ -15,16 +15,25 @@ $(function(){
     })
 
     // hero 슬라이드
-    setInterval(mySlide,3000);
+    let heroInterval = setInterval(mySlide,3000);
     function mySlide(){
         $('.ts-slide-box').animate({
             'left': "-1100px"
         },500, function(){
-            $('.ts-slide-box a:first-child')
+            $('.ts-slide-box .slide:first-child')
             .clone()
             .appendTo('.ts-slide-box');
-            $('.ts-slide-box a:first-child').remove();
+            $('.ts-slide-box .slide:first-child').remove();
             $('.ts-slide-box').css('left',0);
         });
     }
+    $('.ts-slide-frame').mouseover(function(){
+        clearInterval(heroInterval);
+    }).mouseleave(function(){
+        heroInterval = setInterval(mySlide, 3000);
+    });
+
+    $('.office-moviebox').hover(function(){
+        $(this).find('.office-review').stop().fadeToggle(200);
+    })
 })

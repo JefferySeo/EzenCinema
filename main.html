@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezen Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- 헤더 -->
     <header>
         <div class="container">
             <div class="header-logo-box">
-                <a href="main.html"><img src="images/logo/logo_orange-black.png" alt="logo"></a>
+                <a href="main.html"><img src="images/logo/logo_orange-white.png" alt="logo"></a>
             </div>
             <div class="header-top-nav">
                 <div class="top-left-nav">
@@ -27,7 +29,7 @@
                     <ul class="d-flex">
                         <li class="px-2"><a href="#">로그인</a></li>
                         <li class="px-2"><a href="#">회원가입</a></li>
-                        <li class="px-2"><a href="#">고객센터</a></li>
+                        <li class="px-2"><a href="javascript:void(0)">고객센터</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +42,7 @@
                             </a>
                             <ul class="header-lnb" style="padding-left: 120px;">
                                 <li><a href="javascript:void(0)">전체영화</a></li>
-                                <li><a href="javascript:void(0)">무비포스트</a></li>
+                                <li><a href="javascript:void(0)">상영중인 영화</a></li>
                             </ul>
                         </li>
                         <li>
@@ -90,29 +92,177 @@
             </div>
         </div>
     </header>
+    <!-- /헤더 -->
+
+    <!-- 메인 슬라이드 -->
     <div class="ts-hero">
         <div class="container">
             <div class="ts-slide-frame">
                 <div class="ts-slide-box">
-                    <a href="#">
+                    <div class="slide">
                         <img src="images/slide/guardian.jpg" alt="#">
-                    </a>
-                    <a href="#">
+                        <img src="images/slide/slide-back.png" alt="#">
+                        <div class="util">
+                            <a href="#" class="slide-detailview">상세보기<i class="fa-solid fa-angle-right ml-2"></i></a>
+                            <a href="#" class="slide-quickreserve">바로예매</a>
+                        </div>
+                    </div>
+                    <div class="slide">
                         <img src="images/slide/john.jpg" alt="#">
-                    </a>
-                    <a href="#">
+                        <img src="images/slide/slide-back.png" alt="#">
+                        <div class="util">
+                            <a href="#" class="slide-detailview">상세보기<i class="fa-solid fa-angle-right ml-2"></i></a>
+                            <a href="#" class="slide-quickreserve">바로예매</a>
+                        </div>
+                    </div>
+                    <div class="slide">
                         <img src="images/slide/long.jpg" alt="#">
-                    </a>
-                    <a href="#">
+                        <img src="images/slide/slide-back.png" alt="#">
+                        <div class="util back-color">
+                            <a href="#" class="slide-detailview">상세보기<i class="fa-solid fa-angle-right ml-2"></i></a>
+                            <a href="#" class="slide-quickreserve">바로예매</a>
+                        </div>
+                    </div>
+                    <div class="slide">
                         <img src="images/slide/slam.jpg" alt="#">
-                    </a>
+                        <img src="images/slide/slide-back.png" alt="#">
+                        <div class="util">
+                            <a href="#" class="slide-detailview">상세보기<i class="fa-solid fa-angle-right ml-2"></i></a>
+                            <a href="#" class="slide-quickreserve">바로예매</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
+    <!-- /메인 슬라이드 -->
 
+    <!-- 베스트무비 -->
+    <div class="box-office">
+        <div class="container">
+            <div class="rankbox">
+                <a href="javascript:void(0)" class="office-moviebox">
+                    <img src="images/poster/John Wick4.jpg" alt="#">
+                    <img src="images/back/bg-main-movie-rank.png" alt="#">
+                    <div class="ranktext">1</div>
+                    <div class="office-review">
+                        <div class="office-summary">
+                            죽을 위기에서 살아난 ‘존 윅’은 <br>
+                            ‘최고 회의’를 쓰러트릴 방법을 찾아낸다.<br><br>
+                            비로소 완전한 자유의 희망을 보지만,<br>
+                            NEW 빌런 ‘그라몽 후작’과 전 세계의 최강 연합은 <br>
+                            ‘존 윅’의 오랜 친구까지 적으로 만들어 버리고,<br>
+                            새로운 위기에 놓인 ‘존 윅’은 <br>
+                            최후의 반격을 준비하는데,,<br>
+                            레전드 액션 블록버스터 &lt;존 윅&gt;의 <br>
+                            새로운 챕터가 열린다!<br>
+                        </div>
+                        <div class="office-like">
+                            <p>관람평 </p>
+                            <p class="like">9.2</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" class="office-moviebox">
+                    <img src="images/poster/suzume.jpg" alt="#">
+                    <img src="images/back/bg-main-movie-rank.png" alt="#">
+                    <div class="ranktext">2</div>
+                    <div class="office-review">
+                        <div class="office-summary">
+                            “이 근처에 폐허 없니? 문을 찾고 있어”<br>
+                            규슈의 한적한 마을에 살고 있는 소녀 ‘스즈메’는<br>
+                            문을 찾아 여행 중인 청년 ‘소타’를 만난다.<br>
+                            <br>
+                            그의 뒤를 쫓아 산속 폐허에서 발견한 낡은 문.<br>
+                            ‘스즈메’가 무언가에 이끌리듯 문을 열자 마을에 재난의 위기가 닥쳐오고<br>
+                            가문 대대로 문 너머의 재난을 봉인하는 ‘소타’를 도와 간신히 문을 닫는다.<br>
+                            <br>
+                            “닫아야만 하잖아요, 여기를!”<br>
+                            재난을 막았다는 안도감도 잠시,<br>
+                            수수께끼의 고양이 ‘다이진’이 나타나 ‘소타’를 의자로 바꿔 버리고<br>
+                            일본 각지의 폐허에 재난을 부르는 문이 열리기 시작하자<br>
+                            ‘스즈메’는 의자가 된 ‘소타’와 함께 재난을 막기 위한 여정에 나선다.<br>
+                            <br>
+                            “꿈이 아니었어”<br>
+                            규슈, 시코쿠, 고베, 도쿄<br>
+                            재난을 막기 위해 일본 전역을 돌며 필사적으로 문을 닫아가던 중<br>
+                            어릴 적 고향에 닿은 ‘스즈메’는 잊고 있던 진실과 마주하게 되는데…
+                        </div>
+                        <div class="office-like">
+                            <p>관람평 </p>
+                            <p class="like">9.0</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" class="office-moviebox">
+                    <img src="images/poster/The First Slam Dunk.jpg" alt="#">
+                    <img src="images/back/bg-main-movie-rank.png" alt="#">
+                    <div class="ranktext">3</div>
+                    <div class="office-review">
+                        <div class="office-summary">
+                            전국 제패를 꿈꾸는 북산고 농구부 5인방의 꿈과 열정, 멈추지 않는 도전을 그린 영화
+                        </div>
+                        <div class="office-like">
+                            <p>관람평 </p>
+                            <p class="like">9.5</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:void(0)" class="office-moviebox">
+                    <img src="images/poster/Guardians of the Galaxy Volume 3.jpg" alt="#">
+                    <img src="images/back/bg-main-movie-rank.png" alt="#">
+                    <div class="ranktext">4</div>
+                    <div class="office-review">
+                        <div class="office-summary">
+                            ‘가모라’를 잃고 슬픔에 빠져 있던 ‘피터 퀼’이 위기에 처한 은하계와 동료를 지키기 위해 다시 한번 가디언즈 팀과 힘을 모으고, 성공하지 못할 경우 그들의 마지막이 될지도 모르는 미션에 나서는 이야기
+                        </div>
+                        <div class="office-like">
+                            <p>관람평 </p>
+                            <p class="like">9.2</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /베스트무비 -->
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logobox">
+                    <a href="main.html"><img src="images/logo/logo_orange-black.png" alt="footer-logo"></a>
+                </div>
+                <ul class="f-text d-flex">
+                    <li><a href="javascript:void(0)">회사소개</a></li>
+                    <li><a href="javascript:void(0)">인재채용</a></li>
+                    <li><a href="javascript:void(0)">사회공헌</a></li>
+                    <li><a href="javascript:void(0)">제휴/광고문의</a></li>
+                    <li><a href="javascript:void(0)">이용약관</a></li>
+                    <li><a href="javascript:void(0)">위치기반서비스 이용약관</a></li>
+                    <li><a href="javascript:void(0)"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="javascript:void(0)">윤리경영</a></li>
+                    <li><a href="javascript:void(0)">지속가능경영</a></li>
+                    <li><a href="javascript:void(0)">법적고지</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <address>
+                    경기 김포시 김포한강4로 125 월드타워 8층, 10층
+                </address>
+                <span class="bar">고객센터 0000-0000</span>
+                <br>
+                <span>대표자 : 누가할래?</span>
+                <span class="bar">사업자 등록번호 000-00-00000</span>
+                <span class="bar">통신판매업신고번호 제0000호</span>
+                <span class="bar">개인정보보호 책임자 : 이건 누가할래?</span>
+                <br>
+                <span>COPYRIGHT&copy; EZEN CINEMA ALL RIGHT RESERVED.</span>
+            </div>
+        </div>
     </footer>
+    <!-- /푸터 -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/script.js"></script>
 </body>

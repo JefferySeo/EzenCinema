@@ -14,6 +14,12 @@ header{
     padding-top:20px;
     padding-bottom:60px;
     border-bottom: 1px solid #e8e8e8;
+    z-index: 99;
+    background-color: #000;
+    color:#fff;
+}
+header a,header a:link, header a:hover{
+    color:#c9c9c9;
 }
 .header-logo-box{
     position: absolute;
@@ -29,7 +35,6 @@ header{
     justify-content: space-between;
 }
 .header-search-area{
-    width: 420px;
     border-bottom: 1px solid #fff;
 }
 #header-search{
@@ -44,7 +49,7 @@ header{
 #btn-header-search{
     overflow: hidden;
     display: inline-block;
-    width: 55px;
+    width: 25px;
     margin: 0;
     padding: 0;
     text-indent: -9999px;
@@ -57,12 +62,12 @@ header{
 }
 .header-hide{
     position: absolute;
-    top:62px;
+    top:61px;
     width:100%;
     height:44px;
 }
 .header-hide.on{
-    background-color: rgba(68, 68, 68, 0.2);
+    background-color: rgba(0,0,0, 0.8);
 }
 .header-gnb{
     position: relative;
@@ -77,7 +82,7 @@ header{
     font-size:18px;
 }
 .header-gnb>li>a.on{
-    border-bottom:3px solid #e8e8e8;
+    border-bottom:3px solid #fff;
 }
 .nav-movie{
     left:166px;
@@ -112,6 +117,7 @@ a.nav-store{
 }
 .header-lnb>li>a{
     line-height: 44px;
+    color:#fff;
 }
 .header-lnb>li>a:hover{
     text-decoration: underline;
@@ -135,20 +141,221 @@ a.nav-store{
 }
 .ts-slide-box{
     width:4400px;
+    height:100%;
     position:absolute;
     left:0;
 }
-.ts-slide-box a{
+.ts-slide-box .slide{
     width:1100px;
+    height:100%;
     float:left;
+    position:relative;
 }
-.ts-slide-box img{
+.ts-slide-box .slide img{
     width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 1;
 }
-
+.ts-slide-box .slide .util{
+    position:absolute;
+    top:400px;
+    left:70px;
+    padding:10px;
+    z-index: 2;
+}
+.ts-slide-box .slide .util .slide-detailview{
+    display: inline-block;
+    color:#fff;
+    padding:5px 10px 5px 10px;
+    border:1px solid #fff;
+    border-radius:15px;
+    transition: 300ms;
+}
+.ts-slide-box .slide .util .slide-detailview:hover{
+    color:#000;
+    background-color: #fff;
+    font-weight: 600;
+}
+.ts-slide-box .slide .util .slide-quickreserve{
+    display: block;
+    width:120px;
+    color:#fff;
+    padding:5px 10px;
+    margin-top:5px;
+    background: url(../images/ico/ico-schedule-white.png) no-repeat 65px;
+    background-size: 20%;
+}
+.back-color{
+    background: rgba(0,0,0,0.2);
+}
 /*** hero 끝 ***/
 
+/*** best-movie 시작 ***/
+
+.box-office{
+    height:400px;
+    background-color: #000;
+}
+.box-office>.container{
+    /* padding-top: 5px; */
+    position:relative;
+}
+.rankbox{
+    display: flex;
+}
+.office-moviebox:not(:last-child){
+    margin-right: 40px;
+}
+.office-moviebox{
+    display: block;
+    width:245px;
+    height:352px;
+    position: relative;
+    border:2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.office-moviebox>img{
+    position: absolute;
+    left:0;
+    top:0;
+    border-radius: 5px;
+}
+.office-moviebox>img:first-child{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 245px;
+    height: 352px;
+}
+.ranktext{
+    position: absolute;
+    top:4px;
+    left:14px;
+    font-style: italic;
+    color:#fff;
+    font-size:30px;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    transform:skewX(-5.5deg)
+}
+.rank-imgbox{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+.rank-imgbox>p{
+    display: inline-block;
+    background-color: rgba(0,0,0,0.6);
+    padding:8px 8px 0px 8px;
+    border-radius: 3px;
+    margin:0;
+    margin-left: 4px;
+}
+.office-review{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 352px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.8);
+    padding:25px;
+    display: none;
+}
+.office-summary{
+    height:152px;
+    overflow: hidden;
+    color:#fff;
+}
+.office-like{
+    border-top: 1px solid #3c3c3c;
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    text-align: center;
+    padding-top: 10px;
+}
+.office-like>p{
+    display: inline-block;
+    color:#fff;
+    font-size:14px;
+    margin: 0;
+    line-height: 36px;
+    vertical-align: middle;
+}
+.office-like>p:last-child{
+    font-size:25px;
+    color:#59bec9;
+    margin-left:20px;
+}
+/*** best-movie 끝 ***/
+
 /*** footer 시작 ***/
-
-
+footer{
+    margin-top:30px;
+    background-color: #ededed;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.footer-top{
+    padding-bottom:10px;
+    border-bottom: 1px solid #929292;
+    font-size:12px;
+}
+.footer-logobox{
+    width:150px;
+}
+.footer-logobox img{
+    width:100%;
+    filter:grayscale();
+}
+.f-text li{
+    margin-right:16px;
+    position:relative;
+}
+.f-text li:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:-8px;
+    top:4px;
+    width:1px;
+    height:10px;
+    background-color: #929292;
+}
+.f-text li a{
+    display: block;
+    padding-bottom:1px;
+}
+.f-text li a:hover{
+    padding-bottom:0px;
+    border-bottom:1px solid #929292;
+}
+.footer-bottom{
+    padding-top:20px;
+    font-size:14px;
+}
+.footer-bottom address{
+    display: inline-block;
+    font-style: normal;
+    margin-right: 10px;
+}
+.footer-bottom span{
+    margin-right: 10px;
+}
+.footer-bottom span.bar{
+    padding-left:10px;
+    position: relative;
+}
+.footer-bottom span.bar::before{
+    content:"";
+    position:absolute;
+    left:0; 
+    top:2px;
+    height:12px;
+    border-left: 1px solid #929292;
+}
 /*** footer 끝 ***/
