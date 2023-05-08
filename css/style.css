@@ -96,7 +96,7 @@ body{
     display: none;
 }
 .c-signup-agree{
-    
+    /* display: none; */
 }
 /* ********* signup ********** */
 body.c-signup{

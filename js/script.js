@@ -6,40 +6,50 @@ function cloginClose(){
     document.getElementsByClassName("c-login")[0].style.display = 'none';
     document.getElementsByClassName("c-shadow")[0].style.display = 'none';
 }
-function cIs_Checked(){
-    if(document.getElementById("c-necc-all").checked == true){
-        document.getElementById("c-necc-1").checked = true;
-        document.getElementById("c-necc-2").checked = true;
-    }else{
-        document.getElementById("c-necc-1").checked = false;
-        document.getElementById("c-necc-2").checked = false;
+
+function checkAll(){
+    const cneccall = document.getElementById("c-necc-all");
+    const cnecc1 = document.getElementById("c-necc-1");
+    const cnecc2 = document.getElementById("c-necc-2");
+    if(cnecc1.checked == true && cnecc2.checked == true){
+        cneccall.checked =true;
     }
 }
-function cmonthClick(){
+function cIs_Checked(){
+    const cneccall = document.getElementById("c-necc-all");
+    const cnecc1 = document.getElementById("c-necc-1");
+    const cnecc2 = document.getElementById("c-necc-2");
+    if(cneccall.checked == true){
+        cnecc1.checked = true;
+        cnecc2.checked = true;
+    }else{
+        cnecc1.checked = false;
+        cnecc2.checked = false;
+    }
+}
+function cgetDate(){
+    const cyear = $("#c-year").val();
+    const cmonth = $("#c-month").val();
+    let cday = new Date(cyear, cmonth, 0).getDate();
+
     let strDay = "";
     strDay += `<select name="c-day" id="c-day">`;
     strDay += `<option value="">선택</option>`;
-    if(document.getElementById("c-month").value % 2 == 1){
-        for(i = 1; i < 31; i++){
-            strDay +=  `<option value="${i}">${i}</option>`;
-        }
-        strDay += `</select>
-                    <label for="c-day">일</label>`;
-        document.getElementsByClassName("c-day")[0].innerHTML = strDay;
-    }else{
-        for(i = 1; i < 32; i++){
-            strDay +=  `<option value="${i}">${i}</option>`;
-        }
-        strDay += `</select>
-                    <label for="c-day">일</label>`;
-        document.getElementsByClassName("c-day")[0].innerHTML = strDay;
+    
+    for(i = 1; i <= cday; i++){
+        strDay +=  `<option value="${i}">${i}</option>`;
     }
+    strDay += `</select>
+                <label for="c-day">일</label>`;
+    document.getElementsByClassName("c-day")[0].innerHTML = strDay;
+
 }
+
 $(function(){
     let strYear = "";
     strYear += `<select name="c-year" id="c-year">`;
     strYear += `<option value="">선택</option>`;
-    for(i = 2002; i > 1900; i--){
+    for(i = 2002; i > 1910; i--){
         strYear +=  `<option value="${i}">${i}</option>`;
     }
     strYear += `</select>
@@ -47,10 +57,10 @@ $(function(){
     document.getElementsByClassName("c-year")[0].innerHTML = strYear;
 
     let strMonth = "";
-    strMonth += `<select name="c-month" id="c-month" onclick="cmonthClick();">`;
+    strMonth += `<select name="c-month" id="c-month" class="c-month" onchange="cgetDate();">`;
     strMonth += `<option value="">선택</option>`;
     for(i = 1; i < 13; i++){
-        strMonth +=  `<option value="${i}">${i}</option>`;
+        strMonth +=  `<option value="${i}" class="c-month-val">${i}</option>`;
     }
     strMonth += `</select>
                 <label for="c-month">월</label>`;
@@ -59,14 +69,20 @@ $(function(){
 })
 
 $(".c-signup-agree-btn").click(function(){
-    document.getElementsByClassName("c-signup-agree")[0].style.display = "none";
-    document.getElementsByClassName("c-signup-info")[0].style.display = "block";
-    $(".c-signupnav li:first-child").css({
-        "border-bottom" : "none"
-    });
-    $(".c-signupnav li:nth-child(2)").css({
-        "border-bottom" : "2px solid"
-    });
+    if(document.getElementById("c-necc-1").checked != true || document.getElementById("c-necc-2").checked != true){
+        alert("필수 약관에 동의해주세요.");
+
+    }else{
+        document.getElementsByClassName("c-signup-agree")[0].style.display = "none";
+        document.getElementsByClassName("c-signup-info")[0].style.display = "block";
+        $(".c-signupnav li:first-child").css({
+            "border-bottom" : "none"
+        });
+        $(".c-signupnav li:nth-child(2)").css({
+            "border-bottom" : "2px solid"
+        });
+    }
+    
 })
 $(".c-signup-info-btn").click(function(){
     document.getElementsByClassName("c-signup-info")[0].style.display = "none";
