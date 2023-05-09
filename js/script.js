@@ -60,7 +60,7 @@ $(function(){
     strMonth += `<select name="c-month" id="c-month" class="c-month" onchange="cgetDate();">`;
     strMonth += `<option value="">선택</option>`;
     for(i = 1; i < 13; i++){
-        strMonth +=  `<option value="${i}" class="c-month-val">${i}</option>`;
+        strMonth +=  `<option value="${i}">${i}</option>`;
     }
     strMonth += `</select>
                 <label for="c-month">월</label>`;
