@@ -43,7 +43,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 .c-loginBox input{
     padding: 10px;
     border: 1px solid #ccc;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 .c-loginBox button{
     padding: 10px;
@@ -96,14 +96,14 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 /* ********* signup ********** */
 body.c-signup{
     background-color: #ededee;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .c-signContainer{
     margin-left: auto;
     margin-right: auto;
     width: 800px;
     background-color: #fff;
-    height: 2000px;
+    
     padding: 30px 100px;
 }
 .c-signContainer img{
@@ -204,4 +204,12 @@ span.en{
     text-align: center;
     padding: 10px;
     
+}
+.c-warning{
+    font-size: 12px;
+    color: red;
+    margin: 0;
+    padding: 0;
+    height: 14px;
+    margin-bottom: 5px;
 }

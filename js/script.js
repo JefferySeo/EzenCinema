@@ -45,7 +45,7 @@ function cgetDate(){
 
 }
 
-$(function(){
+$(".c-signup-agree-btn").click(function(){
     let strYear = "";
     strYear += `<select name="c-year" id="c-year">`;
     strYear += `<option value="">선택</option>`;
@@ -94,3 +94,18 @@ $(".c-signup-info-btn").click(function(){
         "border-bottom" : "2px solid"
     });
 })
+
+function cloginSubmit(){
+    const loginform = document.getElementById("c-loginform");
+    const warning = document.getElementsByClassName("c-warning");
+    if(loginform.userid.value == ""){
+        warning[0].innerHTML = "아이디를 입력해주세요.";
+        
+    }
+    else if(loginform.userpass.value == ""){
+        warning[1].innerHTML = "비밀번호를 입력해주세요.";
+    }else{
+        loginform.submit();
+    }
+    
+}

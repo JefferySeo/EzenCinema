@@ -21,10 +21,12 @@
         </div>
         <div class="c-loginBox">
             <form class="c-loginform" id="c-loginform" name="c-loginform">
-                <input type="text" id="c-userid" placeholder="아이디">
-                <input type="password" id="c-userpass" placeholder="비밀번호">
+                <input type="text" id="c-userid" name="userid" placeholder="아이디">
+                <p class="c-warning"></p>
+                <input type="password" id="c-userpass" name="userpass" placeholder="비밀번호">
+                <p class="c-warning"></p>
                 <label for="c-useridSave"><input type="checkbox" id="c-useridSave">아이디 저장</label>
-                <button>로그인</button>
+                <button type="Button" class="loginSubmit" onclick="cloginSubmit();">로그인</button>
             </form>
             <div class="c-loginBottom">
                 <a href="#">ID/PW 찾기</a>
