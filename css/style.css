@@ -3,7 +3,7 @@
 font-family: 'Open Sans', sans-serif;
 
 한글 폰트
-font-family: 'Pretendard';
+font-family: 'Noto Sans KR', sans-serif;
 
 layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 */
@@ -13,13 +13,11 @@ header{
     position:relative;
     padding-top:20px;
     padding-bottom:60px;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #c0c0c0;
     z-index: 99;
-    background-color: #000;
-    color:#fff;
 }
 header a,header a:link, header a:hover{
-    color:#c9c9c9;
+    color:#444;
 }
 .header-logo-box{
     position: absolute;
@@ -35,7 +33,7 @@ header a,header a:link, header a:hover{
     justify-content: space-between;
 }
 .header-search-area{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #c0c0c0;
 }
 #header-search{
     padding: 0 10px;
@@ -43,9 +41,7 @@ header a,header a:link, header a:hover{
     display: inline-block;
     background-color: transparent;
 }
-#header-search:focus{
 
-}
 #btn-header-search{
     overflow: hidden;
     display: inline-block;
@@ -67,7 +63,7 @@ header a,header a:link, header a:hover{
     height:44px;
 }
 .header-hide.on{
-    background-color: rgba(0,0,0, 0.8);
+    background-color: rgba(255,255,255, 0.8);
 }
 .header-gnb{
     position: relative;
@@ -79,10 +75,11 @@ header a,header a:link, header a:hover{
     top:-30px;
     display: block;
     height:30px;
-    font-size:18px;
+    font-size:16px;
+    color:#444;
 }
 .header-gnb>li>a.on{
-    border-bottom:3px solid #fff;
+    border-bottom:3px solid #c0c0c0;
 }
 .nav-movie{
     left:166px;
@@ -117,7 +114,7 @@ a.nav-store{
 }
 .header-lnb>li>a{
     line-height: 44px;
-    color:#fff;
+    color:#444;
 }
 .header-lnb>li>a:hover{
     text-decoration: underline;
@@ -126,11 +123,9 @@ a.nav-store{
 
 /*** hero 시작 ***/
 .ts-hero{
-    background-color: #000;
     height:600px;
 }
 .ts-hero .container{
-    background-color: #fff;
     height:100%;
 }
 .ts-slide-frame{
@@ -167,25 +162,25 @@ a.nav-store{
 }
 .ts-slide-box .slide .util .slide-detailview{
     display: inline-block;
-    color:#fff;
     padding:5px 10px 5px 10px;
-    border:1px solid #fff;
+    border:1px solid #c0c0c0;
     border-radius:15px;
     transition: 300ms;
+    color:#fff;
 }
 .ts-slide-box .slide .util .slide-detailview:hover{
-    color:#000;
-    background-color: #fff;
+    color:#fff;
+    background-color: #000;
     font-weight: 600;
 }
 .ts-slide-box .slide .util .slide-quickreserve{
     display: block;
     width:120px;
-    color:#fff;
     padding:5px 10px;
     margin-top:5px;
     background: url(../images/ico/ico-schedule-white.png) no-repeat 65px;
     background-size: 20%;
+    color:#fff;
 }
 .back-color{
     background: rgba(0,0,0,0.2);
@@ -196,7 +191,6 @@ a.nav-store{
 
 .box-office{
     height:400px;
-    background-color: #000;
 }
 .box-office>.container{
     /* padding-top: 5px; */
@@ -289,7 +283,7 @@ a.nav-store{
 }
 .office-like>p:last-child{
     font-size:25px;
-    color:#59bec9;
+    color:#fff;
     margin-left:20px;
 }
 /*** best-movie 끝 ***/
