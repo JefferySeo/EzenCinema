@@ -99,9 +99,9 @@ span.eg{
     padding: 3px;
 }
 .h-ticketing a{
-    background: orangered;
     display: inline-block;
-    color: #fff;
+    color: #333;
+    border: 1px solid #000;
     padding: 5px 15px;
     border-radius: 4px;
     font-size: 12px;
