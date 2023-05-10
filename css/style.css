@@ -3,13 +3,16 @@
 font-family: 'Open Sans', sans-serif;
 
 한글 폰트
-font-family: 'Pretendard';
+font-family: 'Noto Sans KR', sans-serif;
 
 layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 */
 
 span.eg{
     font-family: 'Open Sans', sans-serif;
+}
+.h-active{
+    background: #ddd;
 }
 .h-movie-list{
     display: flex;
@@ -27,11 +30,14 @@ span.eg{
     background: #fff;
     border-bottom: 1px solid #333;
 }
-.h-movie-list li{
-    padding: 10px 40px;
-}
 .h-movie-list li:hover{
     background: #ddd;
+}
+.h-movie-list li a{
+    display: block;
+    padding: 10px 40px;
+    width: 100%;
+    height: 100%;
 }
 .h-movie{
     padding-top: 40px;
