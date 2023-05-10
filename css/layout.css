@@ -6,7 +6,7 @@ font-family: 'Open Sans', sans-serif;
 한글 폰트
 font-family: 'Pretendard';
 */
-@import url('../font/pretendard.css');
+
 *{box-sizing: border-box;}
 
 .container{
@@ -24,7 +24,7 @@ body{
     font-size: 15px;
     color: #444;
     font-weight: 400;
-    font-family: 'Pretendard';
+    
 }
 ul, ol{
     list-style: none;

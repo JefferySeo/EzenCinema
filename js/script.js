@@ -84,16 +84,94 @@ $(".c-signup-agree-btn").click(function(){
     }
     
 })
-$(".c-signup-info-btn").click(function(){
-    document.getElementsByClassName("c-signup-info")[0].style.display = "none";
-    document.getElementsByClassName("c-signup-welcome")[0].style.display = "block";
-    $(".c-signupnav li:nth-child(2)").css({
-        "border-bottom" : "none"
-    });
-    $(".c-signupnav li:last-child").css({
-        "border-bottom" : "2px solid"
-    });
-})
+
+function register(){
+    // 필수 입력 확인
+    let cYear = document.getElementById("c-year").value;
+    let cMonth = document.getElementById("c-month").value;
+    let cDay = document.getElementById("c-day").value;
+    let tel = document.getElementById("c-tel").value;
+    let uid = document.getElementById("c-userid").value;
+    let upass = document.getElementById("c-userpass").value;
+    let reupass = document.getElementById("c-reuserpass").value;
+    let uname = document.getElementById("c-username").value;
+    let unickname = document.getElementById("c-nickname").value;
+    let umail = document.getElementById("c-useremail").value;
+    let idDupli = document.getElementById("c-id-dupli").value;
+    let warning = document.getElementsByClassName("c-warning-text");
+    idDupli = "check"; // 바꿔
+    if(cYear == "" || cMonth == "" || cDay == ""){
+        warning[0].innerHTML = "생년월일을 입력해주세요.";
+        warning[0].style.color = "red";
+    }else{
+        warning[0].innerHTML = "";
+    }
+    if(tel == ""){
+        warning[1].innerHTML = "전화번호를 입력해주세요.";
+        warning[1].style.color = "red";
+    }else{
+        warning[1].innerHTML = "";
+    }
+    if(uid == ""){
+        warning[2].innerHTML = "아이디를 입력해주세요.";
+        warning[2].style.color = "red";
+    }else{
+        warning[2].innerHTML = "";
+    }
+    if(upass == ""){
+        warning[3].innerHTML = "비밀번호를 입력해주세요.";
+        warning[3].style.color = "red";
+    }else{
+        warning[3].innerHTML = "";
+    }
+    if(reupass == ""){
+        warning[4].innerHTML = "비밀번호를 확인해주세요.";
+        warning[4].style.color = "red";
+    }else{
+        warning[4].innerHTML = "";
+    }
+    if(uname == ""){
+        warning[5].innerHTML = "이름을 입력해주세요.";
+        warning[5].style.color = "red";
+    }else{
+        warning[5].innerHTML = "";
+    }
+    if(unickname == ""){
+        warning[6].innerHTML = "닉네임을 입력해주세요.";
+        warning[6].style.color = "red";
+    }else{
+        warning[6].innerHTML = "";
+    }
+    if(umail == ""){
+        warning[7].innerHTML = "이메일을 입력해주세요.";
+        warning[7].style.color = "red";
+    }else{
+        warning[7].innerHTML = "";
+    }
+    if(idDupli == "notcheck"){
+        alert("아이디 중복확인 버튼을 눌러주세요.");
+    }
+
+    const list = [cYear, cMonth, cDay, tel, uid, upass, reupass, uname, unickname, umail, idDupli];
+    let cnt = 0;
+    for(i = 0; i < list.length; i++){
+        if(list[i] == ""){
+            cnt += 1;
+        }
+    }
+    if(cnt == 0){
+        document.getElementsByClassName("c-signup-info")[0].style.display = "none";
+        document.getElementsByClassName("c-signup-welcome")[0].style.display = "block";
+        $(".c-signupnav li:nth-child(2)").css({
+            "border-bottom" : "none"
+        });
+        $(".c-signupnav li:last-child").css({
+            "border-bottom" : "2px solid"
+        });
+    }
+    
+    
+}
 
 function cloginSubmit(){
     const loginform = document.getElementById("c-loginform");

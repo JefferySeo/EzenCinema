@@ -162,7 +162,15 @@ span.en{
     border: 1px solid #ccc;
     padding: 10px 10px;
     margin-top: 5px;
-    width: 250px;
+    width: 100%;
+    margin-left: -10px;
+}
+.c-signup-info input.c-userid{
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    margin-top: 5px;
+    width: 60%;
+    margin-left: -10px;
 }
 .c-signup-info .row{
     margin: 0;
@@ -177,15 +185,19 @@ span.en{
     font-weight: 600;
     margin-left: -15px;
 }
-.userid-dupli{
-    width: 100px;
+.c-userid-dupli{
+    width: 38%;
     background-color: #ededed;
     display: inline-block;
     text-align: center;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 2%;
     border-radius: 5px;
     padding: 5px;
+}
+.c-warning-text{
+    padding-top: 15px;
+    font-size: 14px;
 }
 /* ********** welcome ************** */
 .c-signup-welcome{
