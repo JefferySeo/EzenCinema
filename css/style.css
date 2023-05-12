@@ -7,3 +7,359 @@ font-family: 'Pretendard';
 
 layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 */
+/*** header 시작 ***/
+header{
+    position:relative;
+    padding-top:20px;
+    padding-bottom:60px;
+    border-bottom: 1px solid #e8e8e8;
+    z-index: 99;
+    background-color: #000;
+    color:#fff;
+}
+header a,header a:link, header a:hover{
+    color:#c9c9c9;
+}
+.header-logo-box{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+}
+.header-logo-box a img{
+    width:250px;
+}
+.header-top-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header-search-area{
+    border-bottom: 1px solid #fff;
+}
+#header-search{
+    padding: 0 10px;
+    line-height: 30px;
+    display: inline-block;
+    background-color: transparent;
+}
+#header-search:focus{
+
+}
+#btn-header-search{
+    overflow: hidden;
+    display: inline-block;
+    width: 25px;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    border: 0;
+    background: url('../images/ico/ico-search-white.png') no-repeat center;
+    cursor: pointer;
+}
+.header-bottom-nav{
+    position:relative;
+}
+.header-hide{
+    position: absolute;
+    top:61px;
+    width:100%;
+    height:44px;
+}
+.header-hide.on{
+    background-color: rgba(0,0,0, 0.8);
+}
+.header-gnb{
+    position: relative;
+    width:1100px;
+    margin:0 auto;
+}
+.header-gnb>li>a{
+    position: absolute;
+    top:-30px;
+    display: block;
+    height:30px;
+    font-size:18px;
+}
+.header-gnb>li>a.on{
+    border-bottom:3px solid #fff;
+}
+.nav-movie{
+    left:166px;
+}
+.nav-reserve{
+    left:256px;
+}
+.nav-theater{
+    left:345px;
+}
+a.nav-event{
+    right:344px;
+    width:48px;
+}
+a.nav-store{
+    right:237px;
+    width:48px;
+}
+.nav-benefit{
+    right:149px;
+}
+.header-lnb{
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+.header-lnb.on{
+    display: flex;
+}
+.header-lnb>li:not(:first-child){
+    margin-left:19px;
+}
+.header-lnb>li>a{
+    line-height: 44px;
+    color:#fff;
+}
+.header-lnb>li>a:hover{
+    text-decoration: underline;
+}
+/*** header 끝 ***/
+
+/******************BANG STORE START*************************/
+.k-store{
+    height: 2500px;
+    margin-top: 50px;
+    /* position: fixed; */
+}
+.k-store_menu{
+    width: 1100px;
+    position: fixed;
+    background: #fff;
+    top: 160px;
+    z-index: 40;
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #888888;
+}
+.k-store_menu>li{
+    width: 25%;
+    text-align: center
+}
+.k-store_menu>li>a{
+    font-size: 25px;
+    padding-top: 6px;
+    display: block;
+    height: 50.2px;
+}
+.k-store_menu>li>a:active{
+    border-bottom: 2px solid #222;
+}
+/**************set**************/
+.k-store_set{
+    height: 500px;
+    margin-top: 150px;
+}
+#k-store_menu_set{
+    font-size: 26px;
+}
+.k-store_setmenu{
+    display: block;
+    margin-top: 20px;
+    width: 320px;
+    height: 380px;
+}
+.set_img{
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    background: #ddd;
+}
+.set_menu{
+    height: 80px;
+}
+.set_menu>h4{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.set_menu>p{
+    text-align: center;
+}
+.set_menu>span{
+    display: block;
+    text-align: center;
+}
+/**************popcon**************/
+.k-store_popcon{
+    height: 500px;
+    margin-top: 150px;
+}
+#k-store_menu_popcon{
+    font-size: 26px;
+}
+.k-store_popconmenu{
+    display: block;
+    margin-top: 20px;
+    width: 320px;
+    height: 380px;
+}
+.popcon_img{
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    background: #ddd;
+}
+.popcon_menu{
+    height: 80px;
+}
+.popcon_menu>h4{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.popcon_menu>p{
+    text-align: center;
+}
+.popcon_menu>span{
+    display: block;
+    text-align: center;
+}
+/**************beverage**************/
+.k-store_beverage{
+    height: 500px;
+    margin-top: 150px;
+}
+#k-store_menu_beverage{
+    font-size: 26px;
+}
+.k-store_beveragemenu{
+    display: block;
+    margin-top: 20px;
+    width: 320px;
+    height: 380px;
+}
+.beverage_img{
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    background: #ddd;
+}
+.beverage_menu{
+    height: 80px;
+}
+.beverage_menu>h4{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.beverage_menu>p{
+    text-align: center;
+}
+.beverage_menu>span{
+    display: block;
+    text-align: center;
+}
+/**************snack**************/
+.k-store_sanck{
+    height: 500px;
+    margin-top: 150px;
+}
+#k-store_menu_snack{
+    font-size: 26px;
+}
+.k-store_snackmenu{
+    display: block;
+    margin-top: 20px;
+    width: 320px;
+    height: 380px;
+}
+.snack_img{
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    background: #ddd;
+}
+.snack_menu{
+    height: 80px;
+}
+.snack_menu>h4{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.snack_menu>p{
+    text-align: center;
+}
+.snack_menu>span{
+    display: block;
+    text-align: center;
+}
+/******************BANG STORE END*************************/
+
+/*** footer 시작 ***/
+footer{
+    margin-top:30px;
+    background-color: #ededed;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.footer-top{
+    padding-bottom:10px;
+    border-bottom: 1px solid #929292;
+    font-size:12px;
+}
+.footer-logobox{
+    width:150px;
+}
+.footer-logobox img{
+    width:100%;
+    filter:grayscale();
+}
+.f-text li{
+    margin-right:16px;
+    position:relative;
+}
+.f-text li:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:-8px;
+    top:4px;
+    width:1px;
+    height:10px;
+    background-color: #929292;
+}
+.f-text li a{
+    display: block;
+    padding-bottom:1px;
+}
+.f-text li a:hover{
+    padding-bottom:0px;
+    border-bottom:1px solid #929292;
+}
+.footer-bottom{
+    padding-top:20px;
+    font-size:14px;
+}
+.footer-bottom address{
+    display: inline-block;
+    font-style: normal;
+    margin-right: 10px;
+}
+.footer-bottom span{
+    margin-right: 10px;
+}
+.footer-bottom span.bar{
+    padding-left:10px;
+    position: relative;
+}
+.footer-bottom span.bar::before{
+    content:"";
+    position:absolute;
+    left:0; 
+    top:2px;
+    height:12px;
+    border-left: 1px solid #929292;
+}
+/*** footer 끝 ***/

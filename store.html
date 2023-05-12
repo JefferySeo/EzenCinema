@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스토어</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- 헤더 -->
+<header>
+    <div class="container">
+        <div class="header-logo-box">
+            <a href="main.html"><img src="images/logo/logo_orange-white.png" alt="logo"></a>
+        </div>
+        <div class="header-top-nav">
+            <div class="top-left-nav">
+                <div class="header-search-area text-left">
+                    <form action="" method="post" id="header-search-form">
+                        <input type="text" name="header-search" id="header-search" placeholder="영화를 검색하세요">
+                        <button type="submit" id="btn-header-search" class="btn-search">검색</button>
+                    </form>
+                </div>
+            </div>
+            <div class="top-right-nav text-right">
+                <ul class="d-flex">
+                    <li class="px-2"><a href="#">로그인</a></li>
+                    <li class="px-2"><a href="#">회원가입</a></li>
+                    <li class="px-2"><a href="javascript:void(0)">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom-nav">
+            <div class="header-hide">
+                <ul class="header-gnb">
+                    <li>
+                        <a href="javascript:void(0)" class="nav-movie">
+                            영화
+                        </a>
+                        <ul class="header-lnb" style="padding-left: 120px;">
+                            <li><a href="javascript:void(0)">전체영화</a></li>
+                            <li><a href="javascript:void(0)">상영중인 영화</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-reserve">
+                            예매
+                        </a>
+                        <ul class="header-lnb" style="padding-left: 200px;">
+                            <li><a href="javascript:void(0)">빠른예매</a></li>
+                            <li><a href="javascript:void(0)">상영시간표</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-theater">
+                            극장소개
+                        </a>
+                        <ul class="header-lnb" style="padding-left: 320px;">
+                            <li><a href="javascript:void(0)">전체극장</a></li>
+                            <li><a href="javascript:void(0)">특별관</a></li>
+                        </ul>
+                    </li>
+                    <li>    
+                        <a href="javascript:void(0)" class="nav-event">
+                            이벤트
+                        </a>
+                        <ul class="header-lnb" style="padding-left: 598px;">
+                            <li><a href="javascript:void(0)">진행중 이벤트</a></li>
+                            <li><a href="javascript:void(0)">지난 이벤트</a></li>
+                            <li><a href="javascript:void(0)">당첨자 발표</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-store">
+                            스토어
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-benefit">
+                            멤버십
+                        </a>
+                        <ul class="header-lnb" style="padding-left: 834px;">
+                            <li><a href="javascript:void(0)">이젠시네마 멤버십</a></li>
+                            <li><a href="javascript:void(0)">제휴/할인</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /헤더 -->
+
+    <div class="container k-store">
+        <ul class="k-store_menu" id="k-menu">
+            <li class="active"><a href="#k-store_menu_set"class="k-store-menu">세트</a></li>
+            <li><a href="#k-store_menu_popcon" class="k-store-menu">팝콘</a></li>
+            <li><a href="#k-store_menu_beverage"class="k-store-menu">음료</a></li>
+            <li><a href="#k-store_menu_snack"class="k-store-menu">스낵</a></li>
+        </ul>
+        <!-- set -->
+        <div class="k-store_set">
+            <h3 id="k-store_menu_set">세트</h3>
+            <a href="" class="k-store_setmenu">
+                <div class="set_img">
+
+                </div>
+                <div class="set_menu">
+                    <h4>상품이름</h4>
+                    <p>상품내용</p>
+                    <span>상품가격</span>
+                </div>
+            </a>
+        </div>
+        
+        <!-- popcon -->
+        <div class="k-store_popcon">
+            <h3 id="k-store_menu_popcon">팝콘</h3>
+            <a class="k-store_popconmenu">
+                <div class="popcon_img">
+
+                </div>
+                <div class="popcon_menu">
+                    <h4>상품이름</h4>
+                    <p>상품내용</p>
+                    <span>상품가격</span>
+                </div>
+            </a>
+        </div>
+        
+        <!-- beverage -->
+        <div class="k-store_beverage">
+            <h3 id="k-store_menu_beverage">음료</h3>
+            <a class="k-store_beveragemenu">
+                <div class="beverage_img">
+
+                </div>
+                <div class="beverage_menu">
+                    <h4>상품이름</h4>
+                    <p>상품내용</p>
+                    <span>상품가격</span>
+                </div>
+
+            </a>
+        </div>
+        
+        <!-- snack -->
+        <div class="k-store_snack">
+            <h3 id="k-store_menu_snack">스낵</h3>
+            <a class="k-store_snackmenu">
+                <div class="snack_img">
+
+                </div>
+                <div class="snack_menu">
+                    <h4>상품이름</h4>
+                    <p>상품내용</p>
+                    <span>상품가격</span>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+<!-- 푸터 -->
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logobox">
+                <a href="main.html"><img src="images/logo/logo_orange-black.png" alt="footer-logo"></a>
+            </div>
+            <ul class="f-text d-flex">
+                <li><a href="javascript:void(0)">회사소개</a></li>
+                <li><a href="javascript:void(0)">인재채용</a></li>
+                <li><a href="javascript:void(0)">사회공헌</a></li>
+                <li><a href="javascript:void(0)">제휴/광고문의</a></li>
+                <li><a href="javascript:void(0)">이용약관</a></li>
+                <li><a href="javascript:void(0)">위치기반서비스 이용약관</a></li>
+                <li><a href="javascript:void(0)"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="javascript:void(0)">윤리경영</a></li>
+                <li><a href="javascript:void(0)">지속가능경영</a></li>
+                <li><a href="javascript:void(0)">법적고지</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <address>
+                경기 김포시 김포한강4로 125 월드타워 8층, 10층
+            </address>
+            <span class="bar">고객센터 0000-0000</span>
+            <br>
+            <span>대표자 : 누가할래?</span>
+            <span class="bar">사업자 등록번호 000-00-00000</span>
+            <span class="bar">통신판매업신고번호 제0000호</span>
+            <span class="bar">개인정보보호 책임자 : 이건 누가할래?</span>
+            <br>
+            <span>COPYRIGHT&copy; EZEN CINEMA ALL RIGHT RESERVED.</span>
+        </div>
+    </div>
+</footer>
+<!-- /푸터 -->
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
