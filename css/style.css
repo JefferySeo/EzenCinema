@@ -8,6 +8,7 @@ font-family: 'Pretendard';
 layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 */
 /*** header 시작 ***/
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 header{
     position:relative;
     padding-top:20px;
@@ -297,7 +298,238 @@ a.nav-store{
     text-align: center;
 }
 /******************BANG STORE END*************************/
+/******************BANG MOVIEDETAIL START*************************/
+.k-mvdetail{
+    margin-top: 50px;
+    height: 1000px;
+}
+.k-mvdetail_top{
+    width: 1100px;
+    height: 450px;
+    margin: 0;
+}
+.k-mv_left{
+    padding: 0;
+    height: 0px;
+}
+.k-mv_left img{
+    width: 100%;
+    height: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.k-mv_rigth{
+    padding: 20px 20px;
+    height: 450px;
+}
+.k-mv_datat{
+    height: 70px;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.k-score{
+    display: block;
+    width: 33.3%;
+    font-size: 20px;
+}
+.k-like{
+    display: block;
+    width: 33.3%;
+    font-size: 20px;
+}
+.k-booking{
+    display: block;
+    width: 33.3%;
+    font-size: 20px;
+}
+.k-mv_datan{
+    height: 150px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+}
+.k-mv_datan>li{
+    padding-bottom: 20px;
+}
+.k-mv_datan>li>strong{
+    margin-right: 20px;
+}
+.k-mv_datan>li>span{
+    margin-right: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #ddd;
+}
+.k-mv_butset{
+    height: 70px;
+    width: 400px;
+    display: flex;
+    float: right;
+}
+.k-mv_butset>li{
+    width: 33.3%;
+}
+.k-btnTicketing{
+    border: none;
+    width: 150px;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    background: #FF243E;
+}
+.k-mvdetail_bottom{
+    height: 980px;
+}
+.k-tab{
+    display: flex;
+    width: 1100px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+.k-tab li{
+    width: 50%;
+}
+.k-tab li a{
+    display: block;
+    width: 550px;
+    height: 70px;
+    text-align: center;
+    font-size: 25px;
+}
+.k-tab a.active{
+    border-bottom: 1px solid #333;
+}
+.k-information{
+    height: 1000px;
+}
+.k-summary{
+    display: block;
+    height: 170px;
+    padding: 10px 25px;
+    border-bottom: 1px solid #333;
+}
+.k-summary p{
+    margin-top: 10px;
+    width: 600px;
+    height: 110px;
+}
+.k-stillcut{
+    height: 400px;
+}
+.k-pdcasting{
+    height: 200px;
+}
+.k-content{
+    display: none;
+}
+.k-content.active{
+    display: block;
+}
+.k-reviewform{
+    height: 300px;
+    background: #eee;
+}
+.k-reviewform h3{
+    font-weight: 500;
+    padding-top: 30px;
+}
+.k-mvrate{
+    width: 800px;
+    height: 90px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rate {
+    display: inline-block;
+    border: 0;
+    margin-right: 15px;
+    margin-left: 220px;
+    }
+.rating-number{
+    font-size: 50px;
+    position: absolute;
+    top: 5px;
+}
+.rate > input {
+    display: none;
+}
+.rate > label {
+    float: right;color: #ddd
+}
+.rate > label:before {
+    display: inline-block;
+    font-size: 3.2em;
+    padding: .3rem .2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 ";
+}
+.rate .half:before {
+    content: "\f089 "; 
+    position: absolute;
+    padding-right: 0;
+}
+.rate input:checked ~ label, 
+.rate label:hover,.rate label:hover ~ label {
+     color: #f73c32 !important;  
+    } 
+.rate input:checked + .rate label:hover,
+.rate input input:checked ~ label:hover,
+.rate input:checked ~ .rate label:hover ~ label,  
+.rate label:hover ~ input:checked ~ label { 
+    color: #f73c32 !important;  
+} 
 
+.k-reviewbox{
+    display: flex;
+    width: 900px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#k-textbox{
+    width: 700px;
+    height: 130px;
+    resize: none;
+    padding: 15px 25px;
+    font-size: 16px;
+}
+#k-textbtn{
+    width: 200px;
+    height: 130px;
+    background: #999;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.k-reviewlist{
+    width: 1100px;
+    margin-top: 20px;
+}
+#k-listbox{
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+}
+#k-listtext{
+    padding: 20px 30px;
+}
+.k-review-name{
+    display: block;
+}
+.k-review-stars{
+    display: block;
+}
+.k-review-date{
+    float: right;
+}
+.k-review-info{
+    display: block;
+}
+/******************BANG MOVIEDETAIL END***************************/
 /*** footer 시작 ***/
 footer{
     margin-top:30px;

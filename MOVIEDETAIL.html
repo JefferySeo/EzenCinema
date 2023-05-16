@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화상세</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- 헤더 -->
+<header>
+    <div class="container">
+        <div class="header-logo-box">
+            <a href="main.html"><img src="images/logo/logo_orange-white.png" alt="logo"></a>
+        </div>
+        <div class="header-top-nav">
+            <div class="top-left-nav">
+                <div class="header-search-area text-left">
+                    <form action="" method="post" id="header-search-form">
+                        <input type="text" name="header-search" id="header-search" placeholder="영화를 검색하세요">
+                        <button type="submit" id="btn-header-search" class="btn-search">검색</button>
+                    </form>
+                </div>
+            </div>
+            <div class="top-right-nav text-right">
+                <ul class="d-flex">
+                    <li class="px-2"><a href="#">로그인</a></li>
+                    <li class="px-2"><a href="#">회원가입</a></li>
+                    <li class="px-2"><a href="javascript:void(0)">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom-nav">
+            <div class="header-hide">
+                <ul class="header-gnb">
+                    <li>
+                        <a href="javascript:void(0)" class="nav-movie">
+                            영화
+                        </a>
+                        <ul class="header-lnb" style="padding-left: 120px;">
+                            <li><a href="javascript:void(0)">전체영화</a></li>
+                            <li><a href="javascript:void(0)">상영중인 영화</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-reserve">
+                            예매
+                        </a>
+                        <ul class="header-lnb" style="padding-left: 200px;">
+                            <li><a href="javascript:void(0)">빠른예매</a></li>
+                            <li><a href="javascript:void(0)">상영시간표</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-theater">
+                            극장소개
+                        </a>
+                        <ul class="header-lnb" style="padding-left: 320px;">
+                            <li><a href="javascript:void(0)">전체극장</a></li>
+                            <li><a href="javascript:void(0)">특별관</a></li>
+                        </ul>
+                    </li>
+                    <li>    
+                        <a href="javascript:void(0)" class="nav-event">
+                            이벤트
+                        </a>
+                        <ul class="header-lnb" style="padding-left: 598px;">
+                            <li><a href="javascript:void(0)">진행중 이벤트</a></li>
+                            <li><a href="javascript:void(0)">지난 이벤트</a></li>
+                            <li><a href="javascript:void(0)">당첨자 발표</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-store">
+                            스토어
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="nav-benefit">
+                            멤버십
+                        </a>
+                        <ul class="header-lnb" style="padding-left: 834px;">
+                            <li><a href="javascript:void(0)">이젠시네마 멤버십</a></li>
+                            <li><a href="javascript:void(0)">제휴/할인</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /헤더 -->
+<!-- 영화상세 -->
+    <div class="container k-mvdetail">
+        <div class="k-mvdetail_top row">
+            <div class="k-mv_left col-3">
+                <img src="" alt="">
+            </div>
+            <div class="k-mv_rigth col-9">
+                <h2 class="k-mv_title">영화제목</h2>
+                <div class="k-mv_datat">
+                    <a href="" class="k-score">
+                        평점 <span>점수</span>
+                    </a>
+                    <a href="" class="k-like">
+                        좋아요 <span>점수</span>
+                    </a>
+                    <a href="" class="k-booking">
+                        예매율 <span>점수</span>
+                    </a>
+                </div>
+                    <ul class="k-mv_datan">
+                        <li>
+                            <strong>
+                                장르
+                            </strong>
+                            <span>000</span>
+                            <span>000</span>
+                        </li>
+                        <li>
+                            <strong>
+                                감독
+                            </strong>
+                            <span>000</span>
+                        </li>
+                        <li>
+                            <strong>
+                                출연
+                            </strong>
+                            <span>000</span>
+                            <span>000</span>
+                        </li>
+                    </ul>
+                    <ul class="k-mv_butset">
+                        <li><button type="button" class="k-btnshare">공유</button></li>
+                        <li><button type="button" class="k-btnlike">좋아요</button></li>
+                        <li><button type="button" class="k-btnTicketing">예매하기</button></li>
+                    </ul>
+            </div>
+        </div>
+    <!-- 리뷰 -->
+        <div class="k-mvdetail_bottom">
+            <ul class="k-tab">
+                <li><a href="javascript:void(0)" class="active" id="information">정보</a></li>
+                <li><a href="javascript:void(0)" id="review">리뷰</a></li>
+            </ul>
+            <div class="information-review">
+                <div id="k-information" class="k-content active">
+                    <div class="k-summary">
+                        <h3>줄거리</h3>
+                        <p>rrrrrrrrrrrrrrrrrrrrrrr</p>
+                    </div>
+                    <div class="k-stillcut">
+                        <h3>스틸컷</h3>
+                    </div>
+                    <div class="k-pdcasting">
+                        <h3>감독 및 배우</h3>
+                    </div>
+                </div>
+                <div id="k-review" class="k-content">
+                    <div class="k-reviewform">
+                        <h3 class="text-center">평점·관람평 작성</h3>
+                        <div class="k-mvrate">
+                            <fieldset class="rate">
+                                <input type="radio" id="rating10" name="rating" value="10"><label for="rating10" title="5점"></label>
+                                <input type="radio" id="rating9" name="rating" value="9"><label class="half" for="rating9" title="4.5점"></label>
+                                <input type="radio" id="rating8" name="rating" value="8"><label for="rating8" title="4점"></label>
+                                <input type="radio" id="rating7" name="rating" value="7"><label class="half" for="rating7" title="3.5점"></label>
+                                <input type="radio" id="rating6" name="rating" value="6"><label for="rating6" title="3점"></label>
+                                <input type="radio" id="rating5" name="rating" value="5"><label class="half" for="rating5" title="2.5점"></label>
+                                <input type="radio" id="rating4" name="rating" value="4"><label for="rating4" title="2점"></label>
+                                <input type="radio" id="rating3" name="rating" value="3"><label class="half" for="rating3" title="1.5점"></label>
+                                <input type="radio" id="rating2" name="rating" value="2"><label for="rating2" title="1점"></label>
+                                <input type="radio" id="rating1" name="rating" value="1"><label class="half" for="rating1" title="0.5점"></label>     
+                            </fieldset>
+                            <span class="rating-number">0</span>
+                        </div>
+                        <div class="k-reviewbox">
+                            <textarea  id="k-textbox" placeholdrt="평점 및 영화 관람평을 작성해주세요."></textarea>
+                            <button type="button" id="k-textbtn">관람평 작성</button>
+                        </div>
+                        
+                    </div>
+                    <div class="k-reviewlist">
+                        <h3>관람객 관람평</h3>
+                        <ul id="k-listbox">
+                            <li id="k-listtext">
+                                <span class="k-review-name">이름</span>
+                                <span class="k-review-stars">별점
+                                    <span class="k-review-starsnum">점수</span>
+                                    <span class="k-review-date">날짜</span>
+                                </span>
+                                <span class="k-review-info">내용</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>       
+        </div>
+    </div>
+<!-- /영화상세 -->
+<!-- 푸터 -->
+<!-- <footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logobox">
+                <a href="main.html"><img src="images/logo/logo_orange-black.png" alt="footer-logo"></a>
+            </div>
+            <ul class="f-text d-flex">
+                <li><a href="javascript:void(0)">회사소개</a></li>
+                <li><a href="javascript:void(0)">인재채용</a></li>
+                <li><a href="javascript:void(0)">사회공헌</a></li>
+                <li><a href="javascript:void(0)">제휴/광고문의</a></li>
+                <li><a href="javascript:void(0)">이용약관</a></li>
+                <li><a href="javascript:void(0)">위치기반서비스 이용약관</a></li>
+                <li><a href="javascript:void(0)"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="javascript:void(0)">윤리경영</a></li>
+                <li><a href="javascript:void(0)">지속가능경영</a></li>
+                <li><a href="javascript:void(0)">법적고지</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <address>
+                경기 김포시 김포한강4로 125 월드타워 8층, 10층
+            </address>
+            <span class="bar">고객센터 0000-0000</span>
+            <br>
+            <span>대표자 : 누가할래?</span>
+            <span class="bar">사업자 등록번호 000-00-00000</span>
+            <span class="bar">통신판매업신고번호 제0000호</span>
+            <span class="bar">개인정보보호 책임자 : 이건 누가할래?</span>
+            <br>
+            <span>COPYRIGHT&copy; EZEN CINEMA ALL RIGHT RESERVED.</span>
+        </div>
+    </div>
+</footer> -->
+<!-- /푸터 -->
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

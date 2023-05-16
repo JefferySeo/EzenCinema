@@ -13,6 +13,34 @@ $(function(){
         $('.header-gnb>li>a').removeClass('on')
         $('.header-gnb>li>.header-lnb').removeClass('on');
     })
+    // 영화상세
+$(function(){
+
+        $('.k-tab>li').click(function(){
+            $('.k-tab>li>a').toggleClass('active');
+            if($('#information').hasClass("active")){
+                $('#k-information').addClass("active");
+            }else{
+                $('#k-information').removeClass("active");
+            }
+            if($('#review').hasClass("active")){
+                $('#k-review').addClass("active");
+            }else{
+                $('#k-review').removeClass("active");
+            }
+        });
+        // $(document).ready(function(){
+            
+        // });
+        
+        $(document).ready(function() {
+            $('fieldset.rate input').on('click', function() {
+              var ratingValue = $(this).val();
+              $('.rating-number').text(ratingValue);
+            });
+          });
+});
+
 
 });
 $(function(){
