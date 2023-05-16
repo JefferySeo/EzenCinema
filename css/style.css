@@ -147,31 +147,65 @@ span.eg{
     font-size: 40px;
     font-weight: bold;
 }
-.h-booking, .h-my_review{
+.h-mybooking, .h-my_review{
     width: 75%;
     height: 200px;
     margin: 40px 0;
     border-bottom: 1px solid #ddd;
 }
-.h-booking h3, .h-my_review h3{
+.h-mybooking h3, .h-my_review h3{
     height: 30px;
     border-bottom: 1px solid #000;
     padding: 0 10px;
 }
-.h-booking h3 span, .h-my_review h3 span{
+.h-mybooking h3 span, .h-my_review h3 span{
     display: inline-block;
 }
-.h-booking h3 .h-plus, .h-my_review h3 .h-plus{
+.h-mybooking h3 .h-plus, .h-my_review h3 .h-plus{
     float: right;
 }
-.h-booking h3 .h-plus a, .h-my_review h3 .h-plus a{
+.h-mybooking h3 .h-plus a, .h-my_review h3 .h-plus a{
     font-size: 12px;
     font-weight: normal;
 }
-.h-bookingbox, .h-my_reviewbox{
+.h-mybookingbox, .h-my_reviewbox{
     width: 100%;
     height: 170px;
     text-align: center;
     line-height: 130px;
     padding: 20px 0;
+}
+
+/******** booking ********/
+.h-booking{
+    margin: 15px;
+}
+.h-booking_box{
+    border: 1px solid #333;
+    height: 400px;
+}
+.h-b-movie-booking{
+    padding: 10px;
+    height: 85%;
+    overflow-y: scroll;
+}
+.h-b-movie,
+.h-b-location,
+.h-b-date,
+.h-b-time{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.b-on{
+    background-color: #ddd;
+}
+.h-b-time{
+    width: 100%;
+}
+.h-time{
+    float: left;
+}
+.h-sit{
+    float: right;
 }

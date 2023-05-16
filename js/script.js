@@ -49,6 +49,27 @@ $(function(){
     }
   });
 
+  //booking
+
+  $(".h-b-movie-btn").click(function(){
+    $(this).toggleClass("b-on");
+  });
+
+  $(".h-b-location-btn").click(function(){
+    $(".h-b-location-btn").removeClass("b-on");
+    $(this).addClass("b-on");
+  });
+  
+  $(".h-b-date-btn").click(function(){
+    $(".h-b-date-btn").removeClass("b-on");
+    $(this).addClass("b-on");
+  });
+
+  $(".h-b-time-btn").click(function(){
+    $(".h-b-time-btn").removeClass("b-on");
+    $(this).addClass("b-on");
+  });
+
 })//jquery
 
 const movieList = document.querySelector(".h-movie-list");
