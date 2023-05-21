@@ -189,6 +189,24 @@ span.eg{
     height: 85%;
     overflow-y: scroll;
 }
+.h-location,
+.h-date,
+.h-time{
+    position: relative;
+}
+.h-location-blurbox,
+.h-date-blurbox,
+.h-time-blurbox{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
 .h-b-movie,
 .h-b-location,
 .h-b-date,
@@ -196,6 +214,8 @@ span.eg{
     cursor: pointer;
     border: none;
     background-color: transparent;
+    width: 100%;
+    text-align: start;
 }
 .b-on{
     background-color: #ddd;
@@ -208,4 +228,18 @@ span.eg{
 }
 .h-sit{
     float: right;
+}
+.h-booking-btn-box{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
+.h-booking-btn{
+    padding: 5px;
+    border: 1px solid #333;
+}
+.h-booking-btn:hover{
+    color: #fff;
+    background: #333;
 }

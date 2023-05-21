@@ -48,26 +48,31 @@ $(function(){
       $('html').animate({scrollTop : offset.top}, 400);
     }
   });
-
+  
   //booking
-
+  
   $(".h-b-movie-btn").click(function(){
-    $(this).toggleClass("b-on");
+    $(".h-b-movie-btn").removeClass("b-on");
+    $(this).addClass("b-on");
+    $(".h-location-blurbox").css({"display" : "none"});
   });
 
-  $(".h-b-location-btn").click(function(){
-    $(".h-b-location-btn").removeClass("b-on");
+  $(".h-b-location-btn button").click(function(){
+    $(".h-b-location-btn button").removeClass("b-on");
     $(this).addClass("b-on");
+    $(".h-date-blurbox").css({"display" : "none"});
   });
   
-  $(".h-b-date-btn").click(function(){
-    $(".h-b-date-btn").removeClass("b-on");
+  $(".h-b-date-btn button").click(function(){
+    $(".h-b-date-btn button").removeClass("b-on");
     $(this).addClass("b-on");
+    $(".h-time-blurbox").css({"display" : "none"});
   });
 
-  $(".h-b-time-btn").click(function(){
-    $(".h-b-time-btn").removeClass("b-on");
+  $(".h-b-time-btn button").click(function(){
+    $(".h-b-time-btn button").removeClass("b-on");
     $(this).addClass("b-on");
+    $(".h-booking-btn-box").css({"display" : "block"});
   });
 
 })//jquery
