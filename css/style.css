@@ -11,13 +11,48 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 span.eg{
     font-family: 'Open Sans', sans-serif;
 }
-.h-active{
-    background: #ddd;
+.h-movie-list li .h-active{
+    background: #D3DCFD;
+    color: #3D56AE;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.h-movie-search-box{
+    text-align: center;
+    margin: 20px;
+}
+#h-movie-search{
+    width: 300px;
+    height: 30px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1.5px solid #5C7EF7;
+    display: inline;
+}
+#h-movie-search:focus{
+    outline: none;
+    border-color: #5C7EF7;
+}
+.h-movie-search-btn{
+    display: inline-block;
+    border: none;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+    background: url(../images/h-button/버튼.png) no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+.h-movie-search-btn:hover{
+    background-image: url(../images/h-button/버튼hover.png);
+    transition: 0.5s;
 }
 .h-movie-list{
     display: flex;
     height: 40px;
-    border-bottom: 1px solid #333;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1),
+                0 1px rgba(0, 0, 0, 0.7);
 }
 .h-movie-list.drop{
     position: fixed;
@@ -28,38 +63,56 @@ span.eg{
     left: 0;
     padding: 0;
     background: #fff;
-    border-bottom: 1px solid #333;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1),
+                0 1px rgba(0, 0, 0, 0.7);
 }
 .h-movie-list li:hover{
-    background: #ddd;
+    background: #D3DCFD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.h-movie-list li:hover a{
+    color: #3D56AE;
 }
 .h-movie-list li a{
     display: block;
-    padding: 10px 40px;
+    line-height: 30px;
+    padding: 5px 50px;
+    font-size: 20px;
     width: 100%;
     height: 100%;
+    color: #333;
 }
 .h-movie{
-    padding-top: 40px;
+    padding-top: 10px;
+}
+.h-movie h5{
+    margin: 0 0 10px 35px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #333;
 }
-.h-movie h2{
-    margin-bottom: 10px;
+.h-movie .h-plus{
+    display: inline;
+    float: right;
+    width: 40px;
+    height: 15px;
+    background: url(../images/h-button/Frame\ 152.png) no-repeat;
+    background-size: cover;
 }
 .h-movie ul{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .h-movie ul li{
     text-align: center;
-}
-.h-movie ul li a{
-    display: inline-block;
-    width: 200px;
+    padding: 0 37px;
 }
 .h-imgbox{
     width: 200px;
     height: 300px;
     position: relative;
+    margin: auto;
+    border-radius: 16px;
+    overflow: hidden;
 }
 .h-imgbox img{
     width: 200px;
@@ -74,40 +127,72 @@ span.eg{
     height: 100%;
     display: none;
     position: absolute;
-    background-color: #000;
-    opacity: 0.7;
     color: #fff;
     top: 0;
     padding: 10px 20px;
 }
-.h-review-rate{
+.h-movie-content-bg{
     position: absolute;
-    font-size: 14px;
-    left: calc(50% - 17%);
-    bottom: 10px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
 }
-.h-review-rate span{
-    font-size: 20px;
-    font-weight: 300;
+.h-movie-content .h-movie-info{
+    display: block;
+    width: 120px;
+    height: 25px;
+    background: url(../images/h-button/Property\ 1=상세보기\,\ Property\ 2=off.png) no-repeat;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.h-rate-date{
-    font-size: 13px;
+.h-movie-content .h-movie-info:hover{
+    background: url(../images/h-button/Property\ 1=상세보기\,\ Property\ 2=om.png) no-repeat;
+    background-size: cover;
+}
+.h-movie-content .h-movie-booking{
+    display: block;
+    width: 120px;
+    height: 25px;
+    background: url(../images/h-button/상세보기_예매.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.h-movie-content .h-movie-booking:hover{
+    background: url(../images/h-button/상세보기_예매hover.png) no-repeat;
+    background-size: cover;
+}
+.h-movie-title{
+    font-size: 12px;
+    padding: 10px 0 0;
+}
+.h-rate-star{
+    font-size: 10px;
 }
 .h-rate::after{
     content: "|";
     display: inline-block;
     padding: 3px;
+    color: #D9D9D9;
 }
-.h-ticketing a{
+.h-star:before{
+    content: "";
     display: inline-block;
-    color: #333;
-    border: 1px solid #000;
-    padding: 5px 15px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    vertical-align: -5px;
+    background: url(../images/h-button/Property\ 1=별점\,\ Property\ 2=s\,\ Property\ 3=on.png) no-repeat;
+    background-size: cover;
 }
-
 
 /********** my page *************/
 .h-member_info{

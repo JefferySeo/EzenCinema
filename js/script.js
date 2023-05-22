@@ -1,7 +1,7 @@
 $(function(){
   //영화 이미지에 hover하면 영화 줄거리가 보이게 한다
-  $(".h-imgbox").hover(function(){
-      $(this).find(".h-movie-content").stop().fadeToggle(300);
+  $(".h-movie-all").hover(function(){
+      $(this).find(".h-imgbox").find(".h-movie-content").stop().fadeToggle(300);
   });
   
   $("#nav-movie").click(function(){

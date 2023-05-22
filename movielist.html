@@ -10,7 +10,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>전체영화</h1>
+        <div class="h-movie-search-box">
+            <input type="text" name="h-movie-search" id="h-movie-search" placeholder="영화 검색하기">
+            <a href="javascript:void(0)" class="h-movie-search-btn"></a>
+        </div>
         <ul class="h-movie-list justify-content-center font-weight-bold">
             <li><a href="javascript:void(0)" id="nav-movie">현재 상영작</a></li>
             <li><a href="javascript:void(0)" id="nav-upcoming">상영 예정작</a></li>
@@ -18,117 +21,89 @@
             <li><a href="javascript:void(0)" id="nav-animation">애니메이션</a></li>
         </ul>
         <div class="h-movie" id="movie">
-            <h2>현재 상영작</h2>
+            <h5><span>현재 상영작</span><a href="javascript:void(0)" class="h-plus"></a></h5>
             <ul class="h-movie-movie">
                 <li class="col-3">
-                    <a href="javascript:void(0)">
+                    <div class="h-movie-all">
                         <div class="h-imgbox">
-                            <img src="" alt="">
+                            <img src="images/poster/Fast X.jpg" alt="Fast X">
                             <div class="h-movie-content">
-                                <div class="h-movie-info">
-                                    <p>
-                                        영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글
-                                        영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글
-                                    </p>
-                                </div>
-                                <p class="h-review-rate">관람평 &nbsp;&nbsp;<span>5.0</span></p>
+                                <div class="h-movie-content-bg"></div>
+                                <a href="javascript:void(0)" class="h-movie-info"></a>
+                                <a href="javascript:void(0)" class="h-movie-booking"></a>
                             </div>
                         </div>
-                    </a>
-                        <h3 class="h-movie-title">영화이름</h3>
-                        <div class="h-rate-date">
-                            <span class="h-rate">예매율 50.0%</span>
-                            <span class="h-date">개봉일 2023.05.07</span>
+                        <p class="h-movie-title">분노의 질주 : 라이드 오어 다이</p>
+                        <div class="h-rate-star">
+                            <span class="h-rate">예매율 31.4%</span>
+                            <span class="h-star">9.0</span>
                         </div>
-                        <div class="h-ticketing">
-                            <a href="javascript:void(0)" class="h-ticket">예매하기</a>
-                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
         <div class="h-movie" id="upcoming">
-            <h2>상영 예정작</h2>
-            <ul class="h-moive-upcoming">
+            <h5><span>상영 예정작</span><a href="javascript:void(0)" class="h-plus"></a></h5>
+            <ul class="h-movie-movie">
                 <li class="col-3">
-                    <a href="javascript:void(0)">
+                    <div class="h-movie-all">
                         <div class="h-imgbox">
-                            <img src="" alt="">
+                            <img src="images/poster/Fast X.jpg" alt="Fast X">
                             <div class="h-movie-content">
-                                <div class="h-movie-info">
-                                    <p>
-                                        영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글
-                                        영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글
-                                    </p>
-                                </div>
-                                <p class="h-review-rate">관람평 &nbsp;&nbsp;<span>5.0</span></p>
+                                <div class="h-movie-content-bg"></div>
+                                <a href="javascript:void(0)" class="h-movie-info"></a>
+                                <a href="javascript:void(0)" class="h-movie-booking"></a>
                             </div>
                         </div>
-                    </a>
-                    <h3 class="h-movie-title">영화이름</h3>
-                    <div class="h-rate-date">
-                        <span class="h-rate">예매율 50.0%</span>
-                        <span class="h-date">개봉일 2023.05.07</span>
-                    </div>
-                    <div class="h-ticketing">
-                        <a href="javascript:void(0)" class="h-ticket">예매하기</a>
+                        <p class="h-movie-title">분노의 질주 : 라이드 오어 다이</p>
+                        <div class="h-rate-star">
+                            <span class="h-rate">예매율 31.4%</span>
+                            <span class="h-star">9.0</span>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="h-movie" id="top">
-            <h2>인기 영화</h2>
-            <ul class="h-movie-top">
+            <h5><span>인기 영화</span><a href="javascript:void(0)" class="h-plus"></a></h5>
+            <ul class="h-movie-movie">
                 <li class="col-3">
-                    <a href="javascript:void(0)">
+                    <div class="h-movie-all">
                         <div class="h-imgbox">
-                            <img src="" alt="">
+                            <img src="images/poster/Fast X.jpg" alt="Fast X">
                             <div class="h-movie-content">
-                                <div class="h-movie-info">
-                                    <p>
-                                        영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글
-                                        영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글
-                                    </p>
-                                </div>
-                                <p class="h-review-rate">관람평 &nbsp;&nbsp;<span>5.0</span></p>
+                                <div class="h-movie-content-bg"></div>
+                                <a href="javascript:void(0)" class="h-movie-info"></a>
+                                <a href="javascript:void(0)" class="h-movie-booking"></a>
                             </div>
                         </div>
-                    </a>
-                    <h3 class="h-movie-title">영화이름</h3>
-                    <div class="h-rate-date">
-                        <span class="h-rate">예매율 50.0%</span>
-                        <span class="h-date">개봉일 2023.05.07</span>
-                    </div>
-                    <div class="h-ticketing">
-                        <a href="javascript:void(0)" class="h-ticket">예매하기</a>
+                        <p class="h-movie-title">분노의 질주 : 라이드 오어 다이</p>
+                        <div class="h-rate-star">
+                            <span class="h-rate">예매율 31.4%</span>
+                            <span class="h-star">9.0</span>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="h-movie" id="animation">
-            <h2>애니메이션</h2>
-            <ul class="h-movie-animation">
+            <h5><span>애니메이션</span><a href="javascript:void(0)" class="h-plus"></a></h5>
+            <ul class="h-movie-movie">
                 <li class="col-3">
-                    <a href="javascript:void(0)">
+                    <div class="h-movie-all">
                         <div class="h-imgbox">
-                            <img src="" alt="">
+                            <img src="images/poster/Fast X.jpg" alt="Fast X">
                             <div class="h-movie-content">
-                                <div class="h-movie-info">
-                                    <p>
-                                        영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글
-                                        영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글영화소개글
-                                    </p>
-                                </div>
-                                <p class="h-review-rate">관람평 &nbsp;&nbsp;<span>5.0</span></p>
+                                <div class="h-movie-content-bg"></div>
+                                <a href="javascript:void(0)" class="h-movie-info"></a>
+                                <a href="javascript:void(0)" class="h-movie-booking"></a>
                             </div>
                         </div>
-                    </a>
-                    <h3 class="h-movie-title">영화이름</h3>
-                    <div class="h-rate-date">
-                        <span class="h-rate">예매율 50.0%</span>
-                        <span class="h-date">개봉일 2023.05.07</span>
-                    </div>
-                    <div class="h-ticketing">
-                        <a href="javascript:void(0)" class="h-ticket">예매하기</a>
+                        <p class="h-movie-title">분노의 질주 : 라이드 오어 다이</p>
+                        <div class="h-rate-star">
+                            <span class="h-rate">예매율 31.4%</span>
+                            <span class="h-star">9.0</span>
+                        </div>
                     </div>
                 </li>
             </ul>
