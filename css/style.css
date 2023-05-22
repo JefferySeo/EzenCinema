@@ -206,7 +206,9 @@ span.eg{
     left: 0;
     opacity: 0.5;
 }
-
+input[type=radio]{
+    display: none;
+}
 .h-b-movie,
 .h-b-location,
 .h-b-date,
