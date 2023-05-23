@@ -1,5 +1,5 @@
 $(function(){
-  //영화 이미지에 hover하면 영화 줄거리가 보이게 한다
+  //영화 이미지에 hover하면 상세보기와 예매하기가 보이게 한다
   $(".h-movie-all").hover(function(){
       $(this).find(".h-imgbox").find(".h-movie-content").stop().fadeToggle(300);
   });
@@ -48,6 +48,15 @@ $(function(){
       $('html').animate({scrollTop : offset.top}, 400);
     }
   });
+
+  //mypage
+  $(".h-review-gnb li").click(function(){
+    $(".h-review-gnb li").removeClass("active");
+    $(this).toggleClass("active");
+    $(".h-lnb").css({"display" : "none"});
+    $(this).find(".h-lnb").css({"display" : "block"});
+  });
+
   
   //booking
   
