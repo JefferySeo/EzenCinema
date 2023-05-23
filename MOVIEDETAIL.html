@@ -12,10 +12,9 @@
 </head>
 <body>
 
-<!-- /헤더 -->
 <!-- 영화상세 -->
 <div class="k-bg">
-    <div class="backbox" style="background: url('images/poster/Guardians\ of\ the\ Galaxy\ Volume\ 3.jpg') no-repeat 50%;"></div>
+    <div class="backbox" style="background: url('images/poster/Guardians\ of\ the\ Galaxy\ Volume\ 3.jpg\');"></div>
     <div class="grabox"></div>
     <div class="container k-mvdetail">
         <div class="k-mvdetail_top row">
@@ -34,55 +33,87 @@
                 <h1 class="k-mv_title2">가디언즈 오브 갤럭시: Volume3</h1>
                 <h4 class="k-mv_title3">Guardians of Galaxy Volume3</h4>
                 <div class="k-mv_datat">
-                
-                </div>
+                        <!-- <div class="k_mv_datat_like" onclick="k_mv_datat_like()">
+                            <img id="likeimage" src="images/moviedetail/likeoff.png" alt="좋아요">
+                        </div> -->
+                        <div class="k_mv_datat_like">
+                            <img id="likeimage" src="images/moviedetail/likeoff.png" alt="좋아요">
+                          </div>
+                        <div>
+                            <img src="images/moviedetail/shareoff.png" alt="좋아요">
+                        </div>
+                    </div>
                     <ul class="k-mv_datan">
                         <li>
-                            <strong>
+                            <div>
                                 관람객 평점
                                  <i class="fa-solid fa-star"></i>
-                                <span></span>
-                            </strong>
-                            <span>000</span>
-                            <span>000</span>
+                                <span>0.0</span>
+                            </div>
+                            <div>
+                                예매율
+                                <span>0</span>
+                                위
+                                <span>0.0%</span>
+                            </div>
+                            <div>
+                                누적 관객수
+                                <span>0명</span>
+                            </div>
                         </li>
                         <li>
-                            <strong>
+                            <div>
                                 장르
-                            </strong>
-                            <span>000</span>
-                            <span>000</span>
+                            </div>
+                            <span>액션/미국</span>
+                            <div>
+                                개봉
+                            </div>
+                            <span>2023.05.03</span>
+                            <span>150분</span>
                         </li>
                         <li>
-                            <strong>
+                            <div>
                                 감독
-                            </strong>
-                            <span>000</span>
+                            </div>
+                            <span>제인스 건</span>
                         </li>
                         <li>
-                            <strong>
+                            <div>
                                 출연
-                            </strong>
-                            <span>000</span>
-                            <span>000</span>
+                            </div>
+                            <span>크리스 프랫,</span>
+                            <span>조 샐다나,</span>
+                            <span>데이브 바티스타</span>
+                            <span>카렌 길런</span>
+                            <span>폼 클레멘티에프,</span>
+                            <span>빈 디젤</span>
+                            <span>브래들리 쿠퍼</span>
                         </li>
                     </ul>
             </div>
         </div>
         <div class="k-mv_butset">
-            <img src="images/moviedetail/Property 1, Property 2=off.png" alt="예매버튼">
+            <!-- <img src="images/moviedetail/button.png" alt="예매버튼"  onclick=""> -->
+            <button type="button" class="k-ticketing">예매하기</button>
         </div>
     <!-- 리뷰 -->
         <div class="k-mvdetail_bottom">
             <ul class="k-tab">
                 <li><a href="javascript:void(0)" class="active" id="information">정보</a></li>
-                <li><a href="javascript:void(0)" id="review">리뷰</a></li>
+                <li><a href="javascript:void(0)" id="review">평점/리뷰(0)</a></li>
             </ul>
             <div class="information-review">
                 <div id="k-information" class="k-content active">
                     <div class="k-summary">
-                        <h3>줄거리</h3>
-                        <p>rrrrrrrrrrrrrrrrrrrrrrr</p>
+                        <h3>시놉시스</h3>
+                        <p>'가모라'를 잃고 슬픔에 빠져 있던 '피터 퀼'이 위기에 처한 은하계와 동료를 지키
+                            기 위해 다시 한번 가디언즈 팀과 힘을 모르고, 성공하지 못할 경우 그들의 마지
+                            막이 될지도 모르는 미션에 나서는 이야기
+                        </p>
+                    </div>
+                    <div class="k-trailer">
+                        <h3>예고편</h3>
                     </div>
                     <div class="k-stillcut">
                         <h3>스틸컷</h3>
@@ -110,13 +141,16 @@
                             <span class="rating-number">0</span>
                         </div>
                         <div class="k-reviewbox">
-                            <textarea  id="k-textbox" placeholdrt="평점 및 영화 관람평을 작성해주세요."></textarea>
+                            <div class="k-text_box">
+                                <textarea  id="k-textbox" placeholder="평점 및 영화 관람평을 작성해주세요." maxlength="220"></textarea>
+                                <div class="count"><span>0</span>/220</div>
+                            </div>
                             <button type="button" id="k-textbtn">관람평 작성</button>
                         </div>
                         
                     </div>
                     <div class="k-reviewlist">
-                        <h3>관람객 관람평</h3>
+                        <h3><img src="images/moviedetail/Property 1=별점, Property 2=s, Property 3=off.png" alt="">전체<span>(0)</span></h3>
                         <ul id="k-listbox">
                             <li id="k-listtext">
                                 <span class="k-review-name">이름</span>
@@ -135,43 +169,8 @@
     </div>
 </div>
 <!-- /영화상세 -->
-<!-- 푸터 -->
-<!-- <footer>
-    <div class="container">
-        <div class="footer-top">
-            <div class="footer-logobox">
-                <a href="main.html"><img src="images/logo/logo_orange-black.png" alt="footer-logo"></a>
-            </div>
-            <ul class="f-text d-flex">
-                <li><a href="javascript:void(0)">회사소개</a></li>
-                <li><a href="javascript:void(0)">인재채용</a></li>
-                <li><a href="javascript:void(0)">사회공헌</a></li>
-                <li><a href="javascript:void(0)">제휴/광고문의</a></li>
-                <li><a href="javascript:void(0)">이용약관</a></li>
-                <li><a href="javascript:void(0)">위치기반서비스 이용약관</a></li>
-                <li><a href="javascript:void(0)"><strong>개인정보처리방침</strong></a></li>
-                <li><a href="javascript:void(0)">윤리경영</a></li>
-                <li><a href="javascript:void(0)">지속가능경영</a></li>
-                <li><a href="javascript:void(0)">법적고지</a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <address>
-                경기 김포시 김포한강4로 125 월드타워 8층, 10층
-            </address>
-            <span class="bar">고객센터 0000-0000</span>
-            <br>
-            <span>대표자 : 누가할래?</span>
-            <span class="bar">사업자 등록번호 000-00-00000</span>
-            <span class="bar">통신판매업신고번호 제0000호</span>
-            <span class="bar">개인정보보호 책임자 : 이건 누가할래?</span>
-            <br>
-            <span>COPYRIGHT&copy; EZEN CINEMA ALL RIGHT RESERVED.</span>
-        </div>
-    </div>
-</footer> -->
-<!-- /푸터 -->
-<script src="js/jquery-1.12.4.min.js"></script>
-<script src="js/script.js"></script>
-</body>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+    </body>
 </html>
