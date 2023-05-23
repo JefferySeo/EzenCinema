@@ -21,17 +21,10 @@ $(function(){
     $(window).scroll(function(){
         const header = $('#header').offset().top;
         if(header > 0){
-            $('#header').css({
-                position:'fixed',
-                top:0,
-                border:'none'
-            })
+            $('#header').addClass('fixed');
+            
         }else{
-            $('#header').css({
-                position:'relative',
-                top:'30px',
-                border:'1.8px solid #000'
-            })
+            $('#header').removeClass('fixed');
         }
     })
     
