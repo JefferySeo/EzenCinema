@@ -5,113 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>영화상세</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- 헤더 -->
-<header>
-    <div class="container">
-        <div class="header-logo-box">
-            <a href="main.html"><img src="images/logo/logo_orange-white.png" alt="logo"></a>
-        </div>
-        <div class="header-top-nav">
-            <div class="top-left-nav">
-                <div class="header-search-area text-left">
-                    <form action="" method="post" id="header-search-form">
-                        <input type="text" name="header-search" id="header-search" placeholder="영화를 검색하세요">
-                        <button type="submit" id="btn-header-search" class="btn-search">검색</button>
-                    </form>
-                </div>
-            </div>
-            <div class="top-right-nav text-right">
-                <ul class="d-flex">
-                    <li class="px-2"><a href="#">로그인</a></li>
-                    <li class="px-2"><a href="#">회원가입</a></li>
-                    <li class="px-2"><a href="javascript:void(0)">고객센터</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="header-bottom-nav">
-            <div class="header-hide">
-                <ul class="header-gnb">
-                    <li>
-                        <a href="javascript:void(0)" class="nav-movie">
-                            영화
-                        </a>
-                        <ul class="header-lnb" style="padding-left: 120px;">
-                            <li><a href="javascript:void(0)">전체영화</a></li>
-                            <li><a href="javascript:void(0)">상영중인 영화</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" class="nav-reserve">
-                            예매
-                        </a>
-                        <ul class="header-lnb" style="padding-left: 200px;">
-                            <li><a href="javascript:void(0)">빠른예매</a></li>
-                            <li><a href="javascript:void(0)">상영시간표</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" class="nav-theater">
-                            극장소개
-                        </a>
-                        <ul class="header-lnb" style="padding-left: 320px;">
-                            <li><a href="javascript:void(0)">전체극장</a></li>
-                            <li><a href="javascript:void(0)">특별관</a></li>
-                        </ul>
-                    </li>
-                    <li>    
-                        <a href="javascript:void(0)" class="nav-event">
-                            이벤트
-                        </a>
-                        <ul class="header-lnb" style="padding-left: 598px;">
-                            <li><a href="javascript:void(0)">진행중 이벤트</a></li>
-                            <li><a href="javascript:void(0)">지난 이벤트</a></li>
-                            <li><a href="javascript:void(0)">당첨자 발표</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" class="nav-store">
-                            스토어
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" class="nav-benefit">
-                            멤버십
-                        </a>
-                        <ul class="header-lnb" style="padding-left: 834px;">
-                            <li><a href="javascript:void(0)">이젠시네마 멤버십</a></li>
-                            <li><a href="javascript:void(0)">제휴/할인</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
+
 <!-- /헤더 -->
 <!-- 영화상세 -->
+<div class="k-bg">
+    <div class="backbox" style="background: url('images/poster/Guardians\ of\ the\ Galaxy\ Volume\ 3.jpg') no-repeat 50%;"></div>
+    <div class="grabox"></div>
     <div class="container k-mvdetail">
         <div class="k-mvdetail_top row">
-            <div class="k-mv_left col-3">
-                <img src="" alt="">
+            <div class="k-mv_left col-5">
+                <div class="k-img">
+                    <div class="k-age">
+                        <img src="images/moviedetail/12세.png" alt="12세"/>
+                    </div>
+                    <div class="k-poster">
+                        <img src="images/poster/Guardians of the Galaxy Volume 3.jpg" alt="가디언즈 오브 갤럭시">
+                    </div>
+                </div> 
             </div>
-            <div class="k-mv_rigth col-9">
-                <h2 class="k-mv_title">영화제목</h2>
+            <div class="k-mv_rigth col-7">
+                <h4 class="k-mv_title1">#톨비시네마</h4>
+                <h1 class="k-mv_title2">가디언즈 오브 갤럭시: Volume3</h1>
+                <h4 class="k-mv_title3">Guardians of Galaxy Volume3</h4>
                 <div class="k-mv_datat">
-                    <a href="" class="k-score">
-                        평점 <span>점수</span>
-                    </a>
-                    <a href="" class="k-like">
-                        좋아요 <span>점수</span>
-                    </a>
-                    <a href="" class="k-booking">
-                        예매율 <span>점수</span>
-                    </a>
+                
                 </div>
                     <ul class="k-mv_datan">
+                        <li>
+                            <strong>
+                                관람객 평점
+                                 <i class="fa-solid fa-star"></i>
+                                <span></span>
+                            </strong>
+                            <span>000</span>
+                            <span>000</span>
+                        </li>
                         <li>
                             <strong>
                                 장르
@@ -133,12 +67,10 @@
                             <span>000</span>
                         </li>
                     </ul>
-                    <ul class="k-mv_butset">
-                        <li><button type="button" class="k-btnshare">공유</button></li>
-                        <li><button type="button" class="k-btnlike">좋아요</button></li>
-                        <li><button type="button" class="k-btnTicketing">예매하기</button></li>
-                    </ul>
             </div>
+        </div>
+        <div class="k-mv_butset">
+            <img src="images/moviedetail/Property 1, Property 2=off.png" alt="예매버튼">
         </div>
     <!-- 리뷰 -->
         <div class="k-mvdetail_bottom">
@@ -201,6 +133,7 @@
             </div>       
         </div>
     </div>
+</div>
 <!-- /영화상세 -->
 <!-- 푸터 -->
 <!-- <footer>

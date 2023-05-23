@@ -9,120 +9,9 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 */
 /*** header 시작 ***/
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-header{
-    position:relative;
-    padding-top:20px;
-    padding-bottom:60px;
-    border-bottom: 1px solid #e8e8e8;
-    z-index: 99;
-    background-color: #000;
-    color:#fff;
-}
-header a,header a:link, header a:hover{
-    color:#c9c9c9;
-}
-.header-logo-box{
-    position: absolute;
-    top:0;
-    left:50%;
-    transform: translate(-50%);
-}
-.header-logo-box a img{
-    width:250px;
-}
-.header-top-nav{
-    display: flex;
-    justify-content: space-between;
-}
-.header-search-area{
-    border-bottom: 1px solid #fff;
-}
-#header-search{
-    padding: 0 10px;
-    line-height: 30px;
-    display: inline-block;
-    background-color: transparent;
-}
-#header-search:focus{
+body {font-family: 'SUITE', sans-serif;}
 
-}
-#btn-header-search{
-    overflow: hidden;
-    display: inline-block;
-    width: 25px;
-    margin: 0;
-    padding: 0;
-    text-indent: -9999px;
-    border: 0;
-    background: url('../images/ico/ico-search-white.png') no-repeat center;
-    cursor: pointer;
-}
-.header-bottom-nav{
-    position:relative;
-}
-.header-hide{
-    position: absolute;
-    top:61px;
-    width:100%;
-    height:44px;
-}
-.header-hide.on{
-    background-color: rgba(0,0,0, 0.8);
-}
-.header-gnb{
-    position: relative;
-    width:1100px;
-    margin:0 auto;
-}
-.header-gnb>li>a{
-    position: absolute;
-    top:-30px;
-    display: block;
-    height:30px;
-    font-size:18px;
-}
-.header-gnb>li>a.on{
-    border-bottom:3px solid #fff;
-}
-.nav-movie{
-    left:166px;
-}
-.nav-reserve{
-    left:256px;
-}
-.nav-theater{
-    left:345px;
-}
-a.nav-event{
-    right:344px;
-    width:48px;
-}
-a.nav-store{
-    right:237px;
-    width:48px;
-}
-.nav-benefit{
-    right:149px;
-}
-.header-lnb{
-    position: absolute;
-    z-index: 99;
-    display: none;
-}
-.header-lnb.on{
-    display: flex;
-}
-.header-lnb>li:not(:first-child){
-    margin-left:19px;
-}
-.header-lnb>li>a{
-    line-height: 44px;
-    color:#fff;
-}
-.header-lnb>li>a:hover{
-    text-decoration: underline;
-}
-/*** header 끝 ***/
+
 
 /******************BANG STORE START*************************/
 .k-store{
@@ -299,34 +188,96 @@ a.nav-store{
 }
 /******************BANG STORE END*************************/
 /******************BANG MOVIEDETAIL START*************************/
+.k-bg{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    
+}
+.backbox{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-size: 100%;
+}
+.k-bg>img{
+    width: 120%;
+    height: 700px;
+
+    position:absolute;
+    top:0;
+    left:0;
+}
+.k-bg>.grabox{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /* background: linear-gradient(to bottom, transparent 1%, #333); */
+    background: linear-gradient(to bottom,transparent,#333);
+}
 .k-mvdetail{
-    margin-top: 50px;
-    height: 1000px;
+    /* margin-top: 50px; */
+    height: 1500px;
+    padding-top: 250px;
 }
 .k-mvdetail_top{
+    
     width: 1100px;
-    height: 450px;
+    height: 640px;
     margin: 0;
 }
 .k-mv_left{
+    width: 40%;
+    position: relative;
     padding: 0;
     height: 0px;
 }
-.k-mv_left img{
-    width: 100%;
-    height: 380px;
-    margin-left: auto;
-    margin-right: auto;
+.k-img{
+    position: relative;
+    width: 385px;
+    height: 570px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #888888;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.k-poster img{
+    position: absolute;
+    max-width: 100%;
+    height: 550px;
+    top: 10px;
+}
+.k-age{
+    position: absolute;
+    z-index: 50;
+    top: -15px;
+    left: -15px;
 }
 .k-mv_rigth{
-    padding: 20px 20px;
+    width: 60%;
     height: 450px;
+    padding: 0;
+    padding-top: 300px;
+}
+.k-mv_title1,
+.k-mv_title2,
+.k-mv_title3{
+    color: #fff;
 }
 .k-mv_datat{
     height: 70px;
     display: flex;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 30px;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    font-size: 13px;
+    color: #ffa406;
+    margin-left: 3px;
 }
 .k-score{
     display: block;
@@ -346,10 +297,9 @@ a.nav-store{
 .k-mv_datan{
     height: 150px;
     padding: 10px 20px 10px 20px;
-    margin-bottom: 20px;
 }
 .k-mv_datan>li{
-    padding-bottom: 20px;
+    padding-bottom: 9px;
 }
 .k-mv_datan>li>strong{
     margin-right: 20px;
@@ -357,7 +307,6 @@ a.nav-store{
 .k-mv_datan>li>span{
     margin-right: 20px;
     padding-left: 20px;
-    border-left: 1px solid #ddd;
 }
 .k-mv_butset{
     height: 70px;
@@ -365,16 +314,13 @@ a.nav-store{
     display: flex;
     float: right;
 }
-.k-mv_butset>li{
-    width: 33.3%;
+.k-mv_butset{
+    width: 1100px;
+    margin-bottom: 20px;
 }
-.k-btnTicketing{
-    border: none;
-    width: 150px;
-    color: #fff;
-    height: 40px;
-    border-radius: 20px;
-    background: #FF243E;
+.k-mv_butset img{
+    margin-left: auto;
+    margin-right: auto;
 }
 .k-mvdetail_bottom{
     height: 980px;
@@ -456,7 +402,7 @@ a.nav-store{
     display: none;
 }
 .rate > label {
-    float: right;color: #ddd
+    float: right;color: #D3DCFD
 }
 .rate > label:before {
     display: inline-block;
@@ -474,13 +420,13 @@ a.nav-store{
 }
 .rate input:checked ~ label, 
 .rate label:hover,.rate label:hover ~ label {
-     color: #f73c32 !important;  
+     color: #3D56AE !important;  
     } 
 .rate input:checked + .rate label:hover,
 .rate input input:checked ~ label:hover,
 .rate input:checked ~ .rate label:hover ~ label,  
 .rate label:hover ~ input:checked ~ label { 
-    color: #f73c32 !important;  
+    color: #3D56AE !important;  
 } 
 
 .k-reviewbox{
