@@ -1,7 +1,7 @@
 /*** header 시작 ***/
 .gonggan{
     height:2000px;
-    /* background-color: #000; */
+    background-color: #ededed;
 }
 header{
     position:fixed;
