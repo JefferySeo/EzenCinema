@@ -1,8 +1,17 @@
 $(function(){
     // header 내비게이션 작동
+    // $(".gnb>li").mouseover(function(){
+    //     $(this).find(".lnb").stop().fadeIn(300);
+    //     $("header.fixed").addClass("on");
+    // });
+    // $(".gnb>li").mouseout(function(){
+    //     $(this).find(".lnb").stop().fadeOut(300);
+    //     $("header.fixed").removeClass("on");
+    // });
     $(".gnb>li").hover(function(){
         $(this).find(".lnb").stop().fadeToggle(300);
-    })
+        $("header.fixed>.subdp").stop().fadeToggle(300);
+    });
     $(document).ready(function(){
         // header-search 나와라
         $("#search-on").click(function(event){
@@ -22,7 +31,6 @@ $(function(){
         const header = $('#header').offset().top;
         if(header > 0){
             $('#header').addClass('fixed');
-            
         }else{
             $('#header').removeClass('fixed');
         }
