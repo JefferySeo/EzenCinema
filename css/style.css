@@ -567,8 +567,8 @@ span.eg{
     padding: 10px 0;
 }
 .h-myreview-poster img{
-    width: 140px;
-    height: 200px;
+    width: 120px;
+    height: 180px;
 }
 .h-myreview-content{
     margin-left: 10px;
@@ -652,12 +652,10 @@ span.eg{
 .h-mywatch-post img{
     width: 120px;
     height: 180px;
-    padding-top: 10px;
     margin-left: 15px;
 }
 .h-mywatch-info{
     margin-left: 20px;
-    padding-top: 10px;
 }
 .h-mywatch-info h3{
     font-size: 14px;
