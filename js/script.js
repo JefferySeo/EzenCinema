@@ -368,11 +368,6 @@ $(document).ready(function(){
     }
     strMonth += `</select>`;
     document.getElementsByClassName("c-month")[0].innerHTML = strMonth;
-
-    /////////////////////////////////////////////////////
-    if(document.getElementsByClassName("c-part2-sns")[0].style.display == "block"){
-        
-    }
 })
 function cgetDate(){
     const cyear = $("#year").val();
@@ -500,4 +495,99 @@ function cSignUp(){
     }
     
 }
-/************************************** */
+
+function cSignUpSns(){
+    const userid = document.getElementById("userid").value;
+    const username = document.getElementById("username").value;
+    const nickname = document.getElementById("nickname").value;
+    const year = document.getElementById("year").value;
+    const month = document.getElementById("month").value;
+    const day = document.getElementById("day").value;
+    const tel = document.getElementById("tel").value;
+    const postcode = document.getElementById("postcode").value;
+    const addr = document.getElementById("addr").value;
+    const detailaddr = document.getElementById("detailaddr").value;
+    const email1 = document.getElementById("email1").value;
+    const email2 = document.getElementById("email2").value;
+
+    const alert = document.getElementsByClassName("c-warning");
+
+    if(userid == ""){
+        alert[0].style.color = "red";
+        alert[0].innerHTML = "아이디를 입력해주세요.";
+    }else{
+        alert[0].innerHTML = "";
+    }
+    if(username == ""){
+        alert[1].style.color = "red";
+        alert[1].innerHTML = "이름을 입력해주세요.";
+    }else{
+        alert[1].innerHTML = "";
+    }
+    if(nickname == ""){
+        alert[2].style.color = "red";
+        alert[2].innerHTML = "닉네임을 입력해주세요.";
+    }else{
+        alert[2].innerHTML = "";
+    }
+    if(year == "" || month == "" || day == ""){
+        alert[3].style.color = "red";
+        alert[3].innerHTML = "생년월일을 입력해주세요.";
+    }else{
+        alert[3].innerHTML = "";
+    }
+    if(tel == ""){
+        alert[4].style.color = "red";
+        alert[4].innerHTML = "전화번호를 입력해주세요.";
+    }else{
+        alert[4].innerHTML = "";
+    }
+    if(postcode == "" || addr == "" || detailaddr == ""){
+        alert[5].style.color = "red";
+        alert[5].innerHTML = "주소를 입력해주세요.";
+    }else{
+        alert[5].innerHTML = "";
+    }
+    if(email1 == "" || email2 == ""){
+        alert[6].style.color = "red";
+        alert[6].innerHTML = "이메일을 입력해주세요.";
+    }else{
+        alert[6].innerHTML = "";
+    }
+
+    let list = [userid, username, nickname, year, month, day, tel, addr, detailaddr, email1, email2];
+    let cnt = 0;
+    for(i = 0; i < list.length; i++){
+        if(list[i] == ""){
+            cnt += 1;
+        }
+        
+    }
+    if(cnt == 0){
+        $(".c-part2-sns").css({
+            display : "none"
+        });
+        $(".c-part3").css({
+            display : "block"
+        });
+        $(".c-sign-show:eq(0)").css({
+            display: "none"
+        });
+        $(".c-sign-hide:eq(0)").css({
+            display: "block"
+        });
+        $(".c-sign-show:eq(1)").css({
+            display: "block"
+        });
+        $(".c-sign-hide:eq(1)").css({
+            display: "none"
+        });
+        $(".c-sign-show:eq(0)>div>span:eq(1)").css({
+            display: "none"
+        })
+        $(".c-sign-show:eq(1)>div>span:eq(1)").css({
+            display: "block"
+        })
+    }
+    
+}
