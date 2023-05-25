@@ -12,20 +12,7 @@
 <body>
     <div class="c-signContainer">
 <!------------- title ------------------>
-            <ul class="c-ul-signup">
-                <li class="c-sign-show">
-                    <div class="c-text-center">
-                        <img src="images/icon/user/Property 1=on.png" alt="userOn"><br>
-                        <span>약관동의</span>
-                        <span class="c-show"></span>
-                    </div>
-                </li>
-                <li class="c-sign-hide">
-                    <div class="c-text-center">
-                        <img src="images/icon/user/Property 1=off.png" alt="userOn"><br>
-                        <span>약관동의</span>
-                    </div>
-                </li>
+            <ul class="c-ul-signup-sns">
                 <li class="c-sign-show">
                     <div class="c-text-center">
                         <img src="images/icon/pen/Property 1=on.png" alt="penOn"><br>
@@ -53,192 +40,155 @@
                     </div>
                 </li>
             </ul>
-<!----------------------------- 약관 동의 --------------------------->  
-            <div class="c-part1">
-                <div class="c-text-center c-title">
-                    <h2>약관동의</h2>
-                    <h4>EZEN CINEMA 서비스 이용을 위한 약관에 동의 해주세요.</h4>
-                </div>
-                <div class="c-law-content">
-                    <p class="c-law-show"><a href="javascript:cEssentialAgreeAll();"><img src="images/icon/describe/Property 1=no.png" alt="no"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>필수 항목을 전체 동의합니다.</strong></a></p>
-                    <p class="c-law-hide"><a href="javascript:cEssentialNotAgreeAll();"><img src="images/icon/describe/Property 1=yes.png" alt="yes"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>필수 항목을 전체 동의합니다.</strong></a></p>
-                    <hr>
-                    <p class="c-law-show"><a href="javascript:cCheckAll();"><img src="images/icon/describe/Property 1=no.png" alt="no"> &nbsp;&nbsp;&nbsp;&nbsp;[필수] <strong>EZEN CINEMA 서비스 이용약관</strong>에 동의합니다.</a><a href="javascript:cShowLaw(0);"><img src="images/icon/describe/next.png" alt="describe"></a></p>
-                    <p class="c-law-hide"><a href="javascript:cNotCheckAll();"><img src="images/icon/describe/Property 1=yes.png" alt="yes"> &nbsp;&nbsp;&nbsp;&nbsp;[필수] <strong>EZEN CINEMA 서비스 이용약관</strong>에 동의합니다.</a><a href="javascript:cShowLaw(0);"><img src="images/icon/describe/next.png" alt="describe"></a></p>
-
-                    <p class="c-law-show"><a href="javascript:cCheckAll();"><img src="images/icon/describe/Property 1=no.png" alt="yes"> &nbsp;&nbsp;&nbsp;&nbsp;[필수] <strong>개인정보 수집 및 이용</strong>에 대한 안내에 동의합니다.</a><a href="javascript:cShowLaw(1);"><img src="images/icon/describe/next.png" alt="describe"></a></p>
-                    <p class="c-law-hide"><a href="javascript:cNotCheckAll();"><img src="images/icon/describe/Property 1=yes.png" alt="yes"> &nbsp;&nbsp;&nbsp;&nbsp;[필수] <strong>개인정보 수집 및 이용</strong>에 대한 안내에 동의합니다.</a><a href="javascript:cShowLaw(1);"><img src="images/icon/describe/next.png" alt="describe"></a></p>
-
-                    <p class="c-law-show"><a href="javascript:cCheckAll();"><img src="images/icon/describe/Property 1=no.png" alt="no"> &nbsp;&nbsp;&nbsp;&nbsp;[필수] <strong>통신사 이용약관</strong>에 동의합니다.</a><a href="javascript:cShowLaw(2);"><img src="images/icon/describe/next.png" alt=""></a></p>
-                    <p class="c-law-hide"><a href="javascript:cNotCheckAll();"><img src="images/icon/describe/Property 1=yes.png" alt="yes"> &nbsp;&nbsp;&nbsp;&nbsp;[필수] <strong>통신사 이용약관</strong>에 동의합니다.</a><a href="javascript:cShowLaw(2);"><img src="images/icon/describe/next.png" alt=""></a></p>
-                    <p class="c-law-show">
-                        <a href="javascript:cChoiceAgree();"><img src="images/icon/describe/Property 1=no.png" alt="no"> &nbsp;&nbsp;&nbsp;&nbsp;[선택] <strong>마케팅 정보수신</strong>에 동의합니다.</a><a href="javascript:cShowLaw(3);"><img src="images/icon/describe/next.png" alt="describe"></a>
-                    </p>
-                    <p class="c-law-hide">
-                        <a href="javascript:cChoiceNotAgree();"><img src="images/icon/describe/Property 1=yes.png" alt="yes"> &nbsp;&nbsp;&nbsp;&nbsp;[선택] <strong>마케팅 정보수신</strong>에 동의합니다.</a><a href="javascript:cShowLaw(3);"><img src="images/icon/describe/next.png" alt="describe"></a>
-                    </p>
-                    <p class="c-add-agree">
-                        <a href="javascript:cCheckSnsAll();" class="c-law-show">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/icon/describe/Property 1=no.png" alt="no"> &nbsp;&nbsp;이메일</a>
-                        <a href="javascript:cNotCheckSnsAll();" class="c-law-hide">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/icon/describe/Property 1=yes.png" alt="yes"> &nbsp;&nbsp;이메일</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="javascript:cCheckSnsAll();" class="c-law-show"><img src="images/icon/describe/Property 1=no.png" alt="no"> &nbsp;&nbsp;SMS</a>
-                        <a href="javascript:cNotCheckSnsAll();" class="c-law-hide"><img style="width: 13px;" src="images/icon/describe/Property 1=yes.png" alt="yes"> &nbsp;&nbsp;SMS</a>
-                    </p>    
-                    <p class="c-agree-alert"></p>
-                    <!--!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EZEN CINEMA 가입을 위해서 [필수] 약관을 선택해주세요.-->
-                    <a href="javascript:cAgreeAll();" class="c-signup-agree-btn">확인</a>
-                </div>
+<!--------------------------- sns 회원가입 ----------------------------------->
+<div class="c-part2-sns">
+    <div class="c-text-center c-title">
+        <h2>회원가입</h2>
+        <h4>EZEN CINEMA의 회원이 되어주세요!</h4>
+    </div>
+    <p class="c-essential-alert">* 는 필수 입력 정보입니다.</p>
+    <div class="c-getMemInfo">
+        <div class="c-input-id">
+            <div class="first">
+                * 아이디 
             </div>
+            <div class="second">
+                <input type="text" name="userid" id="userid">
+                <span>영문 소문자 또는 영문 대문자, 숫자 조합 6~12자리</span>
+                <span class="c-warning"></span>
+            </div>
+            <div class="third">
+                <a href="javascript:idDupli();" class="idCheck" id="idCheck">중복확인</a>
+            </div>
+        </div>
 
-<!--------------------------- 회원가입 ----------------------------------->
-            <div class="c-part2">
-                <div class="c-text-center c-title">
-                    <h2>회원가입</h2>
-                    <h4>EZEN CINEMA의 회원이 되어주세요!</h4>
-                </div>
-                <p class="c-essential-alert">* 는 필수 입력 정보입니다.</p>
-                <div class="c-getMemInfo">
-                    <div class="c-input-id">
-                        <div class="first">
-                            * 아이디 
-                        </div>
-                        <div class="second">
-                            <input type="text" name="userid" id="userid">
-                            <span>영문 소문자 또는 영문 대문자, 숫자 조합 6~12자리</span>
-                            <span class="c-warning"></span>
-                        </div>
-                        <div class="third">
-                            <a href="javascript:idDupli();" class="idCheck" id="idCheck">중복확인</a>
-                        </div>
-                    </div>
+        <div class="c-input-userpass">
+            <div class="first">
+                * 비밀번호
+            </div>
+            <div class="second">
+                <input type="password" name="userpass" id="userpass">
+                <span class="c-warning"></span>
+            </div>
+            <div class="third">
+            </div>
+        </div>
 
-                    <div class="c-input-userpass">
-                        <div class="first">
-                            * 비밀번호
-                        </div>
-                        <div class="second">
-                            <input type="password" name="userpass" id="userpass">
-                            <span class="c-warning"></span>
-                        </div>
-                        <div class="third">
-                        </div>
-                    </div>
-
-                    <div class="c-input-reuserpass">
-                        <div class="first">
-                            * 비밀번호 확인
-                        </div>
-                        <div class="second">
-                            <input type="password" name="reuserpass" id="reuserpass">
-                            <span>영문 소문자, 숫자 조합 10자 이상</span>
-                            <span class="c-warning"></span>
-                        </div>
-                        <div class="third">
-                        </div>
-                    </div>
+        <div class="c-input-reuserpass">
+            <div class="first">
+                * 비밀번호 확인
+            </div>
+            <div class="second">
+                <input type="password" name="reuserpass" id="reuserpass">
+                <span>영문 소문자, 숫자 조합 10자 이상</span>
+                <span class="c-warning"></span>
+            </div>
+            <div class="third">
+            </div>
+        </div>
 <hr class="c-signup">
-                    <div class="c-input-username">
-                        <div class="first">
-                            * 이름
-                        </div>
-                        <div class="second">
-                            <input type="text" name="username" id="username" placeholder="이름을 입력해주세요.">
-                            <span class="c-warning"></span>
-                        </div>
-                        <div class="third">
-                        </div>
-                    </div>
-
-                    <div class="c-input-nickname">
-                        <div class="first">
-                            * 닉네임
-                        </div>
-                        <div class="second">
-                            <input type="text" name="nickname" id="nickname" placeholder="닉네임을 입력해주세요.">
-                            <span class="c-warning"></span>
-                        </div>
-                        <div class="third">
-                        </div>
-                    </div>
-
-                    <div class="c-input-birthdate">
-                        <div class="first">
-                            * 생년월일
-                        </div>
-                        <div class="second">
-                            <div>
-                                <span class="c-year">
-                                    <select name="year" id="year" class="year">
-                                        <option value="">년</option>
-                                    </select>
-                                </span>
-                                <span class="c-month">
-                                    <select name="month" id="month" class="month">
-                                        <option value="">월</option>
-                                    </select>
-                                </span>
-                                <span class="c-day">
-                                    <select name="day" id="day" class="day">
-                                        <option value="">일</option>
-                                    </select>
-                                </span>
-                            </div>
-                            <span class="c-warning"></span>
-                        </div>
-                        <div class="third">
-                        </div>
-                    </div>
-
-                    <div class="c-input-tel">
-                        <div class="first">
-                            * 전화번호
-                        </div>
-                        <div class="second">
-                            <input type="number" name="tel" id="tel" placeholder="숫자만 입력해주세요.">
-                            <span class="c-warning"></span>
-                        </div>
-                        <div class="third">
-                        </div>
-                    </div>
-
-                    <div class="c-input-addr">
-                        <div class="first">
-                            * 주소
-                        </div>
-                        <div class="second">
-                            <input type="text" name="postcode" id="postcode">
-                            <input type="text" name="addr" id="addr">
-                            <input type="text" name="detailaddr" id="detailaddr" placeholder="상세 주소를 입력해주세요." style="margin-bottom: 0;">
-                            <span class="c-warning"></span>
-                        </div>
-                        <div class="third">
-                            <a href="javascript:idDupli();">우편번호 검색</a>
-                        </div>
-                    </div>
-
-                    <div class="c-input-email">
-                        <div class="first">
-                            * 이메일
-                        </div>
-                        <div class="second">
-                            <input type="text" name="email1" id="email1" placeholder="이메일">
-                            @
-                            <select name="email2" id="email2">
-                                <option value="naver.com">naver.com</option>
-                                <option value="naver.com">naver.com</option>
-                                <option value="naver.com">naver.com</option>
-                                <option value="naver.com">naver.com</option>
-                            </select><br>
-                            <span class="c-warning"></span>
-                        </div>
-                        <div class="third">
-                        </div>
-                    </div>
-                </div>
-                <a href="javascript:cSignUp();" class="c-signup-btn">가입하기</a>
-                
-
+        <div class="c-input-username">
+            <div class="first">
+                * 이름
             </div>
+            <div class="second">
+                <input type="text" name="username" id="username" placeholder="이름을 입력해주세요.">
+                <span class="c-warning"></span>
+            </div>
+            <div class="third">
+            </div>
+        </div>
+
+        <div class="c-input-nickname">
+            <div class="first">
+                * 닉네임
+            </div>
+            <div class="second">
+                <input type="text" name="nickname" id="nickname" placeholder="닉네임을 입력해주세요.">
+                <span class="c-warning"></span>
+            </div>
+            <div class="third">
+            </div>
+        </div>
+
+        <div class="c-input-birthdate">
+            <div class="first">
+                * 생년월일
+            </div>
+            <div class="second">
+                <div>
+                    <span class="c-year">
+                        <select name="year" id="year" class="year">
+                            <option value="">년</option>
+                        </select>
+                    </span>
+                    <span class="c-month">
+                        <select name="month" id="month" class="month">
+                            <option value="">월</option>
+                        </select>
+                    </span>
+                    <span class="c-day">
+                        <select name="day" id="day" class="day">
+                            <option value="">일</option>
+                        </select>
+                    </span>
+                </div>
+                <span class="c-warning"></span>
+            </div>
+            <div class="third">
+            </div>
+        </div>
+
+        <div class="c-input-tel">
+            <div class="first">
+                * 전화번호
+            </div>
+            <div class="second">
+                <input type="number" name="tel" id="tel" placeholder="숫자만 입력해주세요.">
+                <span class="c-warning"></span>
+            </div>
+            <div class="third">
+            </div>
+        </div>
+
+        <div class="c-input-addr">
+            <div class="first">
+                * 주소
+            </div>
+            <div class="second">
+                <input type="text" name="postcode" id="postcode">
+                <input type="text" name="addr" id="addr">
+                <input type="text" name="detailaddr" id="detailaddr" placeholder="상세 주소를 입력해주세요." style="margin-bottom: 0;">
+                <span class="c-warning"></span>
+            </div>
+            <div class="third">
+                <a href="javascript:idDupli();">우편번호 검색</a>
+            </div>
+        </div>
+
+        <div class="c-input-email">
+            <div class="first">
+                * 이메일
+            </div>
+            <div class="second">
+                <input type="text" name="email1" id="email1" placeholder="이메일">
+                @
+                <select name="email2" id="email2">
+                    <option value="naver.com">naver.com</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="naver.com">naver.com</option>
+                </select><br>
+                <span class="c-warning"></span>
+            </div>
+            <div class="third">
+            </div>
+        </div>
+    </div>
+    <a href="javascript:cSignUp();" class="c-signup-btn">가입하기</a>
+    
+
+</div>
 
 <!----------------------------- 가입완료 ---------------------------------->            
             <div class="c-part3">

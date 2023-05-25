@@ -7,82 +7,139 @@ font-family: 'Pretendard';
 
 layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 */
+body {
+    font-family: 'SUITE', sans-serif;
+}
 .c-login{
-    width: 400px;
+    width: 430px;
+    background: rgba(0,0,0,0.7);
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color: #434343;
+    color: #fff;
+    border-radius: 10px;
+    padding: 17px 33px;
+    font-weight: 300;
     display: none;
-    z-index: 100;
 }
-.c-loginTitle{
-    padding: 5px 15px;
-    width: 100%;
-    color: #fff;
-    background: #989898;
-    display: flex;
-    justify-content: space-between;
+
+.c-login h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
 }
-.c-loginTitle span{
-    padding-top: 3px;
-    color: #fff;
+.c-login h5{
+    margin-top: 3.3px;
+    font-weight: 300;
 }
-.c-loginBox{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background: #fff;
-}
-.c-loginform{
-    display: flex;
-    flex-direction: column;
-}
-.c-loginBox input{
-    padding: 10px;
-    border: 1px solid #ccc;
+.c-login-userid{
+    margin-top: 13px;
     margin-bottom: 5px;
 }
-.c-loginBox button{
-    padding: 10px;
-    color: #434343;
-    border: none;
-    font-size: 18px;
-    margin-bottom: 15px;
+.c-login-userpass{
+    margin-bottom: 7px;
 }
-.c-loginBottom{
-    display: flex;
-    justify-content: center;
-    color: #434343;
+.c-login input.c-userid, 
+.c-login input.c-userpass{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-left: 7px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border: 2px solid #ccc;
+    color: #5c7ef7;
+    outline: none;
+    font-family: 'SUITE', sans-serif;
+} 
+
+.c-login-userid, .c-login-userpass{
+    position: relative;
 }
-.c-loginBottom>a{
-    color: #434343;
+.c-login-userid span{
+    position: absolute;
+    top: 25%;
+    left: 7px;
+    font-size: 14px;
+    color: #ccc;
 }
-.c-loginBottom>a:not(:last-child)::after{
-    content: "";
+.c-login-userpass span{
+    position: absolute;
+    top: 25%;
+    left: 7px;
+    font-size: 14px;
+    color: #ccc;
+}
+.c-id-save{
+    display: none;
+    font-size: 13px;
+}
+.c-id-not-save{
+    font-size: 13px;
+}
+.c-id-not-save>img, .c-id-save>img{
     width: 10px;
-    border: 1px solid #ccc;
-    margin: 0 15px;
 }
-.c-loginSns{
+.c-login-btn{
+    text-align: center;
+    background-color: #5c7ef7;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 33px;
+}
+.c-login-btn h3{
+    margin-top: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+.c-meminfo{
+    margin-top: 10px;
+}
+.c-meminfo>div{
     display: flex;
     justify-content: center;
-    padding-top: 30px;
 }
-.c-loginSns a{
-    border-radius: 50px;
-    overflow: hidden;
+.c-meminfo a{
+    color: #fff;
+    font-size: 12px;
 }
-.c-loginSns img{
-    width: 30px;   
+.c-meminfo a:first-child::after,
+.c-meminfo a:nth-child(2)::after{
+    content: "|";
+    margin-left: 7px;
+    margin-right: 7px;
 }
-.c-loginSns a:not(:last-child){
-    margin-right: 10px;
+.c-login-fieldset{
+    margin-top: 16px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.c-login-sns{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+.c-login-sns a>img,
+.c-login-sns div>img{
+    width: 30px;
+}
+.c-login-sns a:first-child{
+    margin-left: 0;
+    
+}
+.c-login-sns a,
+.c-login-sns div{
+    margin-left: 10px;
+    border-radius: 50%;
 }
 .c-shadow{
-    background: rgba(0,0,0,0.3);
+    background: rgba(88,88,88,.5);
     position: fixed;
     left: 0;
     top: 0;
@@ -90,138 +147,404 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     height: 100%;
     display: none;
 }
-.c-signup-agree{
-    /* display: none; */
-}
-/* ********* signup ********** */
-body.c-signup{
-    background-color: #ededee;
-    /* overflow: hidden; */
+
+/*******************************************************/
+
+body {
+    font-family: 'SUITE', sans-serif;
 }
 .c-signContainer{
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-    background-color: #fff;
-    
-    padding: 30px 100px;
-}
-.c-signContainer img{
-    display: block;
-    width: 300px;
+    margin-top: 200px;
+    width: 1100px;
     margin-left: auto;
     margin-right: auto;
 }
-.c-signupnav{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-}
-.c-signupnav li{
-    padding-bottom: 10px;
-}
-.c-signupnav li:first-child{
-    border-bottom: 2px solid;
-}
-/* ******* agree *********** */
-.c-signup-title{
-    margin-top: 30px;
-}
-span.en{
-    font-family: 'Open Sans', sans-serif;
-}
-.c-agree-content{
-    border: 1px solid #ccc;
-    height: 150px;
-    overflow-y: auto;
-    padding: 15px;
-    margin: 10px 0px;
-}
-.c-signup-btn{
-    display: flex;
-    justify-content: center;
-}
-.c-signup-btn a{
-    width: 250px;
-    font-size: 20px;
-    margin-top: 20px;
-    border: none;
-    padding: 10px;
-    background-color: #ccc;
-    text-align: center;
-}
-/* ********* member_info ********** */
-.c-signup-info{
-    display: none;
-}
-.c-signup-info form{
-    border-top: 1px solid;
-}
-.c-signup-info input{
-    border: 1px solid #ccc;
-    padding: 10px 10px;
-    margin-top: 5px;
-    width: 100%;
-    margin-left: -10px;
-}
-.c-signup-info input.c-userid{
-    border: 1px solid #ccc;
-    padding: 10px 10px;
-    margin-top: 5px;
-    width: 60%;
-    margin-left: -10px;
-}
-.c-signup-info .row{
-    margin: 0;
-    border-bottom: 1px solid #ccc;
-}
-.c-signup-info .col-3 label{
-    display: block;
-    background-color: #ededed;
-    padding-left: 15px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: 600;
-    margin-left: -15px;
-}
-.c-userid-dupli{
-    width: 38%;
-    background-color: #ededed;
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-    margin-left: 2%;
-    border-radius: 5px;
-    padding: 5px;
-}
-.c-warning-text{
-    padding-top: 15px;
-    font-size: 14px;
-}
-/* ********** welcome ************** */
-.c-signup-welcome{
-    display: none;
-}
-.c-signup-welcome-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.c-signup-welcome a{
-    width: 200px;
-    display: block;
-    background-color: #ccc;
-    text-align: center;
-    padding: 10px;
-    
-}
-.c-warning{
-    font-size: 12px;
-    color: red;
+.c-signContainer ul{
     margin: 0;
     padding: 0;
-    height: 14px;
-    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 726px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #5c7ef7;
+    border-bottom: 2px solid rgba(92, 126, 247, 0.3);
+}
+.c-signContainer ul.c-ul-signup-sns{
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 354px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #5c7ef7;
+    border-bottom: 2px solid rgba(92, 126, 247, 0.3);
+}
+ul.c-ul-signup>li:nth-child(2){
+    display: none;
+}
+ul.c-ul-signup>li.c-sign-show:not(:first-child){
+    display: none;
+}
+ul.c-ul-signup-sns>li:nth-child(2){
+    display: none;
+}
+ul.c-ul-signup-sns>li.c-sign-show:not(:first-child){
+    display: none;
+}
+.c-sign-show{
+    position: relative;
+}
+.c-sign-hide{
+    color: rgba(92, 126, 247, 0.3);
+}
+.c-sign-hide>div, .c-sign-show>div{
+    margin-bottom: 10px;
+}
+.c-text-center{
+    text-align: center;
+}
+
+/******************* 약관동의 **********************/
+
+.c-part1{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+.c-sign-show>div>span:last-child{
+    position: absolute;
+    bottom: -2px;
+    left: -3px;
+    width: 70px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #5c7ef7;
+    display: block;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.c-sign-show:first-child>div>span:last-child{
+    display: block;
+}
+.c-title{
+    margin-top: 40px;
+}
+.c-title h2{
+    font-weight: 600;
+}
+.c-title h4{
+    font-weight: 400;
+}
+.c-law-content{
+    margin-top: 120px;
+}
+.c-law-content>p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.c-law-content p:first-child,
+.c-law-content p:nth-child(2){
+    font-size: 17px;
+}
+p.c-add-agree{
+    display: block;
+}
+p.c-add-agree img{
+    width: 13px;
+}
+.c-law-content p>a:first-child>img{
+    width: 13px;
+}
+.c-law-content p>a:last-child>img{
+    width: 16px;
+}
+p.c-law-hide{
+    display: none;
+    color: #5c7ef7;
+}
+p.c-law-hide>a{
+    color: #5c7ef7;
+}
+a.c-law-hide{
+    display: none;
+    color: #5c7ef7;
+}
+p.c-agree-alert{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    color: red;
+    height: 13px;  
+    font-size: 13px;
+    
+}
+a.c-signup-agree-btn{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #ccc;
+    color: white;
+    font-size: 22px;
+}
+.c-shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(88,88,88,0.5);
+    display: none;
+}
+.c-showLaw{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 600px;
+    height: 400px;
+    background: #ededed;
+    padding: 30px;
+    border-radius: 8px;
+    display: none;
+}
+.c-showLaw h2{
+    margin: 0;
+    font-weight: 600;
+    display: inline-block;
+}
+.c-law-head{
+    display: flex;
+    justify-content: space-between;
+}
+.c-law-head a>img{
+    width: 30px;
+}
+.c-showLaw h4{
+    margin-bottom: 0;
+}
+.c-showLaw h5{
+    margin-top: 10px;
+}
+.c-showLaw>p{
+    word-wrap: break-word;
+}
+.c-showLaw .c-law-describe{
+    overflow-y: auto;
+    height: 200px;
+    padding: 0px 5px;
+}
+
+/* ************ 회원가입 *************** */
+.c-part2{
+    width: 1100px;
+    display: none;
+    margin-bottom: 80px;
+}
+.c-part2-sns{
+    display: block;
+    width: 1100px;
+    margin-bottom: 80px;
+}
+p.c-essential-alert{
+    margin-top: 50px;
+}
+div.c-getMemInfo{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+div.c-getMemInfo>div{
+    display: flex;
+}
+div.c-getMemInfo>div.c-input-id{
+    margin-bottom: 30px;
+}
+div.c-getMemInfo>div.c-input-userpass{
+    margin-bottom: 20px;
+}
+div.c-getMemInfo>div.c-input-username{
+    margin-bottom: 20px;
+}
+div.c-getMemInfo>div.c-input-nickname{
+    margin-bottom: 20px;
+}
+div.c-getMemInfo>div.c-input-birthdate{
+    margin-bottom: 60px;
+}
+div.c-getMemInfo>div.c-input-tel{
+    margin-bottom: 60px;
+}
+div.c-getMemInfo>div.c-input-addr{
+    margin-bottom: 60px;
+}
+div.c-getMemInfo .first{
+    width: 250px;
+    line-height: 60px;
+    font-size: 18px;
+}
+div.c-getMemInfo .second{
+    width: 650px;
+    position: relative;
+}
+div.c-getMemInfo .second span{
+    margin-top: 5px;
+    font-size: 13px;
+    height: 13px;
+    color: #777;
+}
+div.c-getMemInfo .third{
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+}
+div.c-getMemInfo .third>a{
+    background-color: #5c7ef7;
+    color: #fff;
+    width: 126px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 100px;
+    line-height: 50px;
+}
+.c-part2 #userid,.c-part2 #userpass,.c-part2 #reuserpass, 
+.c-part2 #username,.c-part2 #nickname,
+.c-part2 #tel,.c-part2 #postcode,.c-part2 #addr,.c-part2 #detailaddr{
+    height: 60px;
+    border: 2px solid;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+}
+.c-part2-sns #userid,.c-part2-sns #userpass,.c-part2-sns #reuserpass, 
+.c-part2-sns #username,.c-part2-sns #nickname,
+.c-part2-sns #tel,.c-part2-sns #postcode,.c-part2-sns #addr,.c-part2-sns #detailaddr{
+    height: 60px;
+    border: 2px solid;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+}
+#month, #year, #day{
+    width: 32%;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 17px;
+}
+#email1{
+    height: 60px;
+    border: 2px solid;
+    border-radius: 4px;
+    width: 367px;
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 17px;
+}
+#email2{
+    height: 60px;
+    border: 2px solid;
+    border-radius: 4px;
+    margin-left: 5px;
+    width: 250px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+hr.c-signup{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #ccc;
+    border: 1px solid;
+}
+.c-input-birthdate .second .year{
+    width: 210px;
+    margin-right: 7px;
+}
+.c-input-birthdate .second .month{
+    width: 210px;
+    margin-right: 7px;
+}
+.c-input-birthdate .second .day{
+    width: 210px;
+}
+.c-input-addr .second input{
+    margin-bottom: 10px;
+}
+.c-input-addr .third a{
+    font-size: 17px;
+}
+a.c-signup-btn{
+    height: 80px;
+    line-height: 80px;
+    background-color: #5c7ef7;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 100px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/******************** 가입완료 *********************/
+.c-part3{
+    display: none;
+}
+.c-cele-img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 239px;
+    height: 94px;
+    display: block;
+}
+.c-part3 .c-title h2{
+    font-weight: 500;
+}
+.c-part3 .c-title h1{
+    font-weight: 600;
+}
+.c-cele-content{
+    margin-top: 150px;
+}
+.c-cele-content p{
+    font-size: 22px;
+}
+.c-cele-content a{
+    border-radius: 100px;
+    display: inline-block;
+    width: 157px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.c-go-main{
+    border: 2px solid #ccc;
+}
+.c-go-login{
+    border: 2px solid #5c7ef7;
+    color: #fff;
+    background-color: #5c7ef7;
 }

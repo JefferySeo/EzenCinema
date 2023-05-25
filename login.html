@@ -4,52 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
 </head>
 <body>
-    <a href="#" onclick="cloginClick();">로그인</a>
-
+    <a href="javascript:showLoginPopup();">로그인</a>
+    <div class="c-shadow"></div>
     <div class="c-login">
-        <div class="c-loginTitle">
-            <h3>로그인</h3>
-            <a href="#">
-                <span onclick="cloginClose();">X</span>
-            </a>
-            
+        <h2>로그인</h2>
+        <h5>EZEN CINEMA 계정으로 로그인</h5>
+        <div class="c-login-userid">
+            <input spellcheck="false" type="text" id="userid" class="c-userid" onfocus="idFunc()">
+            <span class="move">아이디</span>
         </div>
-        <div class="c-loginBox">
-            <form class="c-loginform" id="c-loginform" name="c-loginform">
-                <input type="text" id="c-userid" name="userid" placeholder="아이디">
-                <p class="c-warning"></p>
-                <input type="password" id="c-userpass" name="userpass" placeholder="비밀번호">
-                <p class="c-warning"></p>
-                <label for="c-useridSave"><input type="checkbox" id="c-useridSave">아이디 저장</label>
-                <button type="Button" class="loginSubmit" onclick="cloginSubmit();">로그인</button>
-            </form>
-            <div class="c-loginBottom">
-                <a href="#">ID/PW 찾기</a>
-                <a href="#">회원가입</a>
-                <a href="#">비회원 예매확인</a>
-            </div>
-            <div class="c-loginSns">
-                <a href="#">
-                    <img src="/images/sns/naver.png" alt="naverLogin">
-                </a>
-                <a href="#">
-                    <img src="/images/sns/kakao.png" alt="kakaoLogin">
-                </a>
-                <a href="#">
-                    <img src="/images/sns/google.png" alt="kakaoLogin">
-                </a>
+        <div class="c-login-userpass">
+            <input spellcheck="false" type="password" id="userpass" class="c-userpass" onfocus="passFunc()">
+            <span class="move">비밀번호</span>
+        </div>  
+        <a href="#" class="c-id-not-save" style="color: #fff"><img class="c-check c-check-no" id="c-check-no" src="images/icon/describe/check.png" alt="idNo"> &nbsp;아이디 저장</a>
+        <a href="#" class="c-id-save" style="color: #5c7ef7; font-weight: 500;"><img class="c-check c-check-yes" id="c-check-yes" src="images/icon/describe/Property 1=yes.png" alt="idYes"> &nbsp;아이디 저장</a>
+        <a href="javascript:loginSubmit();" class="c-login-btn"><h3>로그인</h3></a>
+        <div class="c-meminfo">
+            <div>
+                <a href="">아이디 찾기</a>
+                <a href="">비밀번호 찾기</a>
+                <a href="">회원가입</a>
             </div>
         </div>
+        <fieldset class="c-login-fieldset">
+            <legend align="center">&nbsp;&nbsp; 다른 서비스 계정으로 로그인 &nbsp;&nbsp;</legend>
+            <div class="c-login-sns">
+                <a href="javascript:loginWithKakao();"><img src="images/sns/login_kakao.png" alt="login_kakao"></a>
+<!--
+<%
+    /* 네이버 로그인 */
+    String clientId = "vAA18rocBL8pJBmrDGXD";//애플리케이션 클라이언트 아이디값";
+    String redirectURI = URLEncoder.encode("http://localhost:8080/board/NaverOauth", "UTF-8");
+    SecureRandom random = new SecureRandom();
+    String state = new BigInteger(130, random).toString();
+    String apiURL = "https://nid.naver.com/oauth2.0/authorize?response_type=code";
+    apiURL += "&client_id=" + clientId;
+    apiURL += "&redirect_uri=" + redirectURI;
+    apiURL += "&state=" + state;
+    session.setAttribute("state", state);
+%>
+-->
+                <a href="javascript:loginWithNaver();"><img src="images/sns/login_naver.png" alt="login_naver"></a>
+                <div
+                id="g_id_onload" 
+                data-client_id="664366376528-akqm43rhadquji4s4uip3h3353ior23r.apps.googleusercontent.com"
+                data-login_uri="http://localhost:8080/board/GoogleOauth"
+                ><img src="images/sns/login_google.png" alt="login_google"></div>
+            </div>
+        </fieldset>
     </div>
-    <div class="c-shadow">
-    </div>
-    skdjflskdjflskdjflksdjflksdjflskdjfslkdfj
+
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
+        integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="js/script.js"></script>
 </body>
 </html>
