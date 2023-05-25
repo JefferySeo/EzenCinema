@@ -572,13 +572,15 @@ span.eg{
 }
 .h-myreview-content{
     margin-left: 10px;
+    width: 50%;
 }
 .h-myreview-content h3{
     font-size: 12px;
     margin: 40px 0 20px;
+    width: 100%;
 }
 .h-review-rate{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
 }
 .h-review-rate span{
@@ -587,7 +589,7 @@ span.eg{
 .h-review-comment{
     font-size: 10px;
     /* font-weight: bold; */
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .h-like{
     display: inline-block;
@@ -595,7 +597,7 @@ span.eg{
     height: 12px;
     background: url(../images/h-button/like.png) no-repeat;
     background-size: cover;
-    line-height: 12px;
+    vertical-align: middle;
 }
 .h-like-date{
     margin-left: 10px;
@@ -604,7 +606,7 @@ span.eg{
 .h-review-edit{
     position: absolute;
     right: 45px;
-    bottom: 53px;
+    bottom: 62px;
 }
 .h-review-edit a.h-review-update,
 .h-review-edit a.h-review-delete{
