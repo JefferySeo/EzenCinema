@@ -213,7 +213,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     top:0;
     width:100%;
     height:100%;
-    background-size: 120%;
+     background-size: 120%;
     background-repeat: no-repeat;
     background-position: 30% 45%;
 }
@@ -231,7 +231,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     left:0;
     width:100%;
     height:100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.65);
     backdrop-filter: blur(10px);
     
 }
@@ -245,7 +245,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     bottom:0px;
     width:100%;
     height:40px;
-    background: linear-gradient(to bottom, transparent, #fcf8f8);
+    background: linear-gradient(to bottom, transparent, #686868);
 }
 .k-mvdetail{
     /* margin-top: 50px; */
@@ -272,7 +272,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     border-radius: 10px;
     border: 1px solid #888888;
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .k-poster img{
     position: absolute;
@@ -284,14 +284,14 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 .k-age{
     position: absolute;
     z-index: 50;
-    top: 21px;
-    left: 17px;
+    top: 12px;
+    left: 10px;
 }
 .k-mv_rigth{
     width: 60%;
     height:590px;
     padding: 0;
-    padding-top: 150px;
+    padding-top: 110px;
 }
 .k-mv_title1,
 .k-mv_title2,
@@ -326,7 +326,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     margin-left: 3px;
 }
 .k-mv_datan{
-    height: 150px;
+    height: 200px;
     padding: 20px 0 20px 0;
 }
 .k-mv_datan>li{
@@ -352,7 +352,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     display:inline ;
 }
 .k-mv_butset{
-    margin-top: 45px;
+    margin-top: 15px;
     width: 650px;
 }
 .k-ticketing{
@@ -781,6 +781,7 @@ list-style-type: none;
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    border: 1px solid #b9b6b1;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 /******************BANG MOVIEDETAIL END***************************/

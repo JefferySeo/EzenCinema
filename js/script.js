@@ -101,7 +101,7 @@ $(function(){
         $('.k-text_box textarea').keyup(function(){
             var content = $(this).val();
             $('.k-text_box .count span').html(content.length);
-            if (content.length > 200){
+            if (content.length > 220){
               alert("최대 220자까지 입력 가능합니다.");
               $(this).val(content.substring(0, 220));
               $('.k-text_box .count span').html(220);
