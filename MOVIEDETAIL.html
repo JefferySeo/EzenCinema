@@ -7,6 +7,7 @@
     <title>영화상세</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +15,7 @@
 
 <!-- 영화상세 -->
 <div class="k-bg">
-    <div class="backbox" style="background: url('images/poster/Guardians\ of\ the\ Galaxy\ Volume\ 3.jpg\');"></div>
+    <div class="backbox" style="background: url('images/poster/Guardians\ of\ the\ Galaxy\ Volume\ 3.jpg');"></div>
     <div class="grabox"></div>
     <div class="container k-mvdetail">
         <div class="k-mvdetail_top row">
@@ -36,8 +37,9 @@
                         <!-- <div class="k_mv_datat_like" onclick="k_mv_datat_like()">
                             <img id="likeimage" src="images/moviedetail/likeoff.png" alt="좋아요">
                         </div> -->
-                        <div class="k_mv_datat_like">
-                            <img id="likeimage" src="images/moviedetail/likeoff.png" alt="좋아요">
+                        <div class="k_mv_datat_like" id="likeimage">
+                            <span></span>
+                            <!-- <img id="likeimage" src="images/moviedetail/likeoff.png" alt="좋아요"> -->
                           </div>
                         <div>
                             <img src="images/moviedetail/shareoff.png" alt="좋아요">
@@ -91,13 +93,14 @@
                             <span>브래들리 쿠퍼</span>
                         </li>
                     </ul>
+                    <div class="k-mv_butset">
+                        <!-- <img src="images/moviedetail/button.png" alt="예매버튼"  onclick=""> -->
+                        <button type="button" class="k-ticketing">예매하기</button>
+                    </div>
             </div>
         </div>
-        <div class="k-mv_butset">
-            <!-- <img src="images/moviedetail/button.png" alt="예매버튼"  onclick=""> -->
-            <button type="button" class="k-ticketing">예매하기</button>
-        </div>
-    <!-- 리뷰 -->
+        
+    
         <div class="k-mvdetail_bottom">
             <ul class="k-tab">
                 <li><a href="javascript:void(0)" class="active" id="information">정보</a></li>
@@ -111,6 +114,9 @@
                             기 위해 다시 한번 가디언즈 팀과 힘을 모르고, 성공하지 못할 경우 그들의 마지
                             막이 될지도 모르는 미션에 나서는 이야기
                         </p>
+                        <div >
+                            <button type="button" class="k-summary_btn">더보기</button>
+                        </div>
                     </div>
                     <div class="k-trailer">
                         <h3>예고편</h3>
@@ -120,57 +126,174 @@
                     </div>
                     <div class="k-pdcasting">
                         <h3>감독 및 배우</h3>
+                        <div class="k-page-wrapper" style="position:relative;">
+                            <!--page slider -->
+                            <div class="k-post-slider">
+                                <i class="fa-solid fa-circle-arrow-left prev"></i>
+                                <i class="fa-solid fa-circle-arrow-right next"></i>
+                              <div class="k-post-wrapper">
+                                <div class="k-post">
+                                    <div class="k-slider-image">
+                                        <img src="img/paris.jpg">
+                                    </div>
+                                    <div class="k-post-info">
+                                        <h4><a href="#" class="post-subject">제임스 건</a></h4>
+                                        <i class="far fa-user" style="height:10%;">감독</i>
+                                    </div>
+                                </div>
+                                <div class="k-post">
+                                    <div class="k-slider-image">
+                                        <img src="img/paris.jpg">
+                                    </div>
+                                    <div class="k-post-info">
+                                        <h4><a href="#" class="post-subject">제임스 건</a></h4>
+                                        <i class="far fa-user" style="height:10%;">감독</i>
+                                    </div>
+                                </div>
+                                <div class="k-post">
+                                    <div class="k-slider-image">
+                                        <img src="img/paris.jpg">
+                                    </div>
+                                    <div class="k-post-info">
+                                        <h4><a href="#" class="post-subject">제임스 건</a></h4>
+                                        <i class="far fa-user" style="height:10%;">감독</i>
+                                    </div>
+                                </div>
+                                <div class="k-post">
+                                    <div class="k-slider-image">
+                                        <img src="img/paris.jpg">
+                                    </div>
+                                    <div class="k-post-info">
+                                        <h4><a href="#" class="post-subject">제임스 건</a></h4>
+                                        <i class="far fa-user" style="height:10%;">감독</i>
+                                    </div>
+                                </div>
+                                <div class="k-post">
+                                    <div class="k-slider-image">
+                                        <img src="img/paris.jpg">
+                                    </div>
+                                    <div class="k-post-info">
+                                        <h4><a href="#" class="post-subject">제임스 건</a></h4>
+                                        <i class="far fa-user" style="height:10%;">감독</i>
+                                    </div>
+                                </div>
+                                <div class="k-post">
+                                    <div class="k-slider-image">
+                                        <img src="img/paris.jpg">
+                                    </div>
+                                    <div class="k-post-info">
+                                        <h4><a href="#" class="post-subject">제임스 건</a></h4>
+                                        <i class="far fa-user" style="height:10%;">감독</i>
+                                    </div>
+                                </div>
+                                <div class="k-post">
+                                    <div class="k-slider-image">
+                                        <img src="img/paris.jpg">
+                                    </div>
+                                    <div class="k-post-info">
+                                        <h4><a href="#" class="post-subject">제임스 건</a></h4>
+                                        <i class="far fa-user" style="height:10%;">감독</i>
+                                    </div>
+                                </div>
+                                <div class="k-post">
+                                    <div class="k-slider-image">
+                                        <img src="img/paris.jpg">
+                                    </div>
+                                    <div class="k-post-info">
+                                        <h4><a href="#" class="post-subject">제임스 건</a></h4>
+                                        <i class="far fa-user" style="height:10%;">감독</i>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--post slider-->
+                          </div>
                     </div>
                 </div>
-                <div id="k-review" class="k-content">
-                    <div class="k-reviewform">
-                        <h3 class="text-center">평점·관람평 작성</h3>
-                        <div class="k-mvrate">
-                            <fieldset class="rate">
-                                <input type="radio" id="rating10" name="rating" value="10"><label for="rating10" title="5점"></label>
-                                <input type="radio" id="rating9" name="rating" value="9"><label class="half" for="rating9" title="4.5점"></label>
-                                <input type="radio" id="rating8" name="rating" value="8"><label for="rating8" title="4점"></label>
-                                <input type="radio" id="rating7" name="rating" value="7"><label class="half" for="rating7" title="3.5점"></label>
-                                <input type="radio" id="rating6" name="rating" value="6"><label for="rating6" title="3점"></label>
-                                <input type="radio" id="rating5" name="rating" value="5"><label class="half" for="rating5" title="2.5점"></label>
-                                <input type="radio" id="rating4" name="rating" value="4"><label for="rating4" title="2점"></label>
-                                <input type="radio" id="rating3" name="rating" value="3"><label class="half" for="rating3" title="1.5점"></label>
-                                <input type="radio" id="rating2" name="rating" value="2"><label for="rating2" title="1점"></label>
-                                <input type="radio" id="rating1" name="rating" value="1"><label class="half" for="rating1" title="0.5점"></label>     
-                            </fieldset>
-                            <span class="rating-number">0</span>
-                        </div>
-                        <div class="k-reviewbox">
-                            <div class="k-text_box">
-                                <textarea  id="k-textbox" placeholder="평점 및 영화 관람평을 작성해주세요." maxlength="220"></textarea>
-                                <div class="count"><span>0</span>/220</div>
-                            </div>
-                            <button type="button" id="k-textbtn">관람평 작성</button>
-                        </div>
-                        
+        <!-- 리뷰 -->
+            <div id="k-review" class="k-content">
+                <div class="k-reviewform">
+                    <h3 class="text-center">평점·관람평 작성</h3>
+                    <div class="k-mvrate">
+                        <fieldset class="rate">
+                            <input type="radio" id="rating10" name="rating" value="10"><label for="rating10" title="5점"></label>
+                            <input type="radio" id="rating9" name="rating" value="9"><label class="half" for="rating9" title="4.5점"></label>
+                            <input type="radio" id="rating8" name="rating" value="8"><label for="rating8" title="4점"></label>
+                            <input type="radio" id="rating7" name="rating" value="7"><label class="half" for="rating7" title="3.5점"></label>
+                            <input type="radio" id="rating6" name="rating" value="6"><label for="rating6" title="3점"></label>
+                            <input type="radio" id="rating5" name="rating" value="5"><label class="half" for="rating5" title="2.5점"></label>
+                            <input type="radio" id="rating4" name="rating" value="4"><label for="rating4" title="2점"></label>
+                            <input type="radio" id="rating3" name="rating" value="3"><label class="half" for="rating3" title="1.5점"></label>
+                            <input type="radio" id="rating2" name="rating" value="2"><label for="rating2" title="1점"></label>
+                            <input type="radio" id="rating1" name="rating" value="1"><label class="half" for="rating1" title="0.5점"></label>
+
+                        </fieldset>
+                        <span class="rating-number">0</span>
                     </div>
-                    <div class="k-reviewlist">
-                        <h3><img src="images/moviedetail/Property 1=별점, Property 2=s, Property 3=off.png" alt="">전체<span>(0)</span></h3>
-                        <ul id="k-listbox">
-                            <li id="k-listtext">
-                                <span class="k-review-name">이름</span>
-                                <span class="k-review-stars">별점
-                                    <span class="k-review-starsnum">점수</span>
-                                    <span class="k-review-date">날짜</span>
-                                </span>
-                                <span class="k-review-info">내용</span>
-                            </li>
-                        </ul>
+                    <div class="k-reviewbox">
+                        <div class="k-text_box">
+                            <textarea  id="k-textbox" placeholder="평점 및 영화 관람평을 작성해주세요." maxlength="220"></textarea>
+                            <div class="count"><span>0</span>/220</div>
+                        </div>
+                        <button type="button" id="k-textbtn">관람평 작성</button>
                     </div>
                     
                 </div>
+                <div class="k-reviewtitle">
+                    <h3><i class="fa-solid fa-star"></i>전체<span>(0)</span></h3>
+                    <div class="k-reviewtitle_ul">
+                        <span><a href="javascript:void(0)" class="active" id="k-score_1">최신순</a></span>
+                        <span><a href="javascript:void(0)" id="k-score_2">추천순</a></span>
+                        <span><a href="javascript:void(0)" id="k-score_3">평점 높은순</a></span>
+                        <span><a href="javascript:void(0)" id="k-score_4">평점 낮은순</a></span>
+                    </div>
+                </div>
+                <div class="k-reviewlist_all">
+                    <div class="k-reviewlist">
+                        <div class="k-listleft col-1">
+                            <img src="images/moviedetail/1.png" alt="프로필"/>
+                        </div>
+                        <div class="k-listright col-11">
+                            <ul id="k-listbox">
+                                <li id="k-listtext">
+                                    <div class="k-listtext_box">
+                                        <span class="k-review-name">aa123</span>
+                                        <span class="k-review-stars">★★★★★</span>
+                                        <span class="k-review-starsnum">10</span>
+                                        <span class="k-review-date">2023-05-24</span>
+                                    </div>
+                                    <p class="k-review-info">재밌어요!</p>
+                                    <div class="k-utilbox">
+                                        <span class="k-like2"></span>
+                                        <span class="k-declaration"></span>
+                                    </div> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="k-list_btn">더보기</button>
+                    </div>
+                </div>
+            </div>
             </div>       
         </div>
     </div>
 </div>
 <!-- /영화상세 -->
-
+<!-- scrollUp -->
+<!-- <div class="pull-box">
+    <div class="scroll-box" id="scroll-box" >
+        <a href="#" class="reserv" id="reserv"></a>
+        <div id="scrollUp" onclick="scrollUp()">
+            TOP
+        </div>
+    </div>
+</div> -->
+<!-- scrollUp -->
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
     </body>
 </html>

@@ -8,10 +8,23 @@ font-family: 'Pretendard';
 layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 */
 /*** header 시작 ***/
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 /* body {font-family: 'SUITE', sans-serif;} */
 
 
+/* #scrollUp{
+    display: inline-block;
+    background-color: #93AAFF;
+    color: #fff;
+    width:70px;
+    height:35px;
+    padding-top: 7px;
+    margin-right: 60px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+    float: right;
+} */
 
 /******************BANG STORE START*************************/
 .k-store{
@@ -191,7 +204,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 .k-bg{
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 720px;
     
 }
 .backbox{
@@ -263,7 +276,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     width: 60%;
     height:590px;
     padding: 0;
-    padding-top: 300px;
+    padding-top: 150px;
 }
 .k-mv_title1,
 .k-mv_title2,
@@ -273,31 +286,41 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 .k-mv_datat{
     height: 70px;
     display: flex;
-    padding: 20px;
+    padding: 20px 0 20px 0;
 }
 .k-mv_datat>div>img{
-    margin-right: 20px;
     cursor: pointer;
 }
-.likeon {
-    content: url('images/moviedetail/likeon.png');
-  }
+#likeimage>span{
+    width: 60px;
+    height: 27px;
+    margin-right: 20px;
+    display: inline-block;
+    background-position: 0px 4px;
+    background-repeat: no-repeat;
+    background: url('../images/moviedetail/likeoff.png');
+    cursor: pointer;
+}
+#likeimage>span.on{
+    background: url('../images/moviedetail/likeon.png');
+}
 .fa-solid, .fas {
     font-weight: 900;
-    font-size: 13px;
+    font-size: 14px;
     color: #ffa406;
     margin-left: 3px;
 }
 .k-mv_datan{
     height: 150px;
-    padding: 10px 20px 10px 20px;
+    padding: 20px 0 20px 0;
 }
 .k-mv_datan>li{
-    padding-bottom: 9px;
+    padding-bottom: 15px;
 }
 .k-mv_datan>li>div{
     margin-right: 5px;
     font-size: 14px;
+    color: #fff;
     font-weight: 400;
     display: inline-block;
 }
@@ -309,22 +332,16 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     margin-right: 5px;
     /* padding-left: 10px; */
     font-size: 12px;
-    color: #999;
+    color: #fff;
     font-weight: 300;
     display:inline ;
 }
 .k-mv_butset{
-    height: 70px;
-    width: 400px;
-    display: flex;
-    float: right;
-}
-.k-mv_butset{
-    width: 1100px;
-    margin-bottom: 20px;
+    margin-top: 45px;
+    width: 650px;
 }
 .k-ticketing{
-    width: 1100px;
+    width: 700px;
     height: 50px;
     font-size: 20px;
     border: none;
@@ -345,6 +362,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     background: url('images/MOVIEDETAIL/hover.png');
 } */
 /****************top end*****************/
+/****************영화 정보 시작*****************/
 .k-mvdetail_bottom{
     height: 980px;
 }
@@ -378,15 +396,23 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     height: 230px;
     padding: 40px 0 30px 0;
 }
+.k-summary_btn{
+    display: block;
+    width: 1100px;
+    height: 45px;
+    margin-top: 20px;
+    border: 1px solid #b9b6b1;
+    border-radius: 30px;
+    cursor: pointer;
+}
 /* .k-summary h3{
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
 } */
-.k-summary p{
+.k-summary>p{
     margin-top: 10px;
-    width: 600px;
-    height: 110px;
+    width: 1100px;
 }
 .k-trailer{
     height: 420px;
@@ -400,13 +426,112 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     margin-bottom: 15px;
 } */
 .k-pdcasting{
-    height: 412px;
-    background: #3D56AE;
+    height: 390px;
+    /* background: #ddd; */
+    padding-top: 10px;
 }
-.k-pdcasting h3{
-    padding: 10px 0;
+/* .k-pdcasting h3{
     color: #fff;
+} */
+.k-post-slider{
+    width:90%;
+    height: 250px;
+    margin:0px auto;
+    margin-top: 40px;
+    position:relative;
 }
+.k-post-slider .k-silder-title{
+text-align:center;
+margin:30px auto;
+}
+.k-post-slider .next{
+position:absolute;
+top:45%;
+right:-45px;
+font-size:2em;
+color:#bbb;
+cursor: pointer;
+}
+.k-post-slider .prev{
+position:absolute;
+top:45%;
+left:-45px;
+font-size:2em;
+color:#bbb;
+    cursor: pointer;
+}
+.k-post-wrapper{
+    width:100%;
+    height: 250px;
+    margin:0px auto;
+    overflow: hidden;
+    padding-top: 10px;
+    /* padding:50px 0px 10px 0px; */
+  }
+.slick-list{
+    height: 250px;
+}
+.k-post{
+    position: relative;
+    width:167px;
+    height:235px;
+    margin:0px 10px;
+    /* display:inline-block; */
+    background:white;
+    border-radius: 20px;
+    border: 1px solid #b9b6b1;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.k-post-info{
+    position: absolute;
+    text-align: center;
+    top: 145px;
+    left: 57px;
+    font-size:15px;
+    height:30%;
+}
+.k-slider-image{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    width: 70px;
+    height: 70px;
+    background: #333;
+    border-radius: 50%;
+}
+/* .slick-dots {
+display: flex;
+justify-content: center;
+margin: 0;
+padding: 1rem 0;
+
+list-style-type: none;
+}
+.dots_custom{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.dots_custom li{
+    width: 10px;
+    height: 10px;
+    background:#fff;
+    margin: 0 5px;
+    transition:0.5s;
+}
+.dots_custom li.k-post-wrapper-active{
+    background: #ddd;
+    width: 10px;
+    height: 10px;
+}
+.dots_custom li button{
+    display: none;
+} */
+    
+
+/****************riew*****************/
 .k-content{
     display: none;
 }
@@ -428,8 +553,6 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     margin-left: auto;
     margin-right: auto;
 }
-
-/****************riew*****************/
 .rate {
     display: inline-block;
     border: 0;
@@ -445,7 +568,8 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     display: none;
 }
 .rate > label {
-    float: right;color: #D3DCFD
+    float: right;
+    color: #D3DCFD
 }
 .rate > label:before {
     display: inline-block;
@@ -521,92 +645,127 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     color: #fff;
 }
 
+.k-reviewtitle{
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    position: relative;
+}
+.k-reviewtitle>h3{
+    width: 60%;
+}
+.k-reviewtitle>h3>.fa-star{
+    font-size: 16px;
+    color: #d3dcfd;
+    margin-right: 3px;
+    margin-left: 10px;
+}
+.k-reviewtitle_ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.k-reviewtitle_ul>span{
+    text-align: center;
+}
+.k-reviewtitle_ul>span{
+    border-right: 1px solid #b9b6b1;
+}
+.k-reviewtitle_ul>span:last-child{
+    border: none;
+}
+.k-reviewtitle_ul>span>a{
+    margin-left: 2px;
+    margin-right: 6px;
+    font-size: 14px;
+    color: #b9b6b1;
+}
+.k-reviewtitle_ul>span>a.active{
+    color: #90a2df;
+}
 .k-reviewlist{
     width: 1100px;
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
 }
-#k-listbox{
-    margin-top: 15px;
-    border-top: 1px solid #ddd;
+.k-listleft{
+    padding: 0;
+}
+.k-listleft img{
+    padding-left: 5px;
+    padding-top: 10px;
+}
+.k-listright{
+    padding: 0;
 }
 #k-listtext{
-    padding: 20px 30px;
+    padding-top: 20px;
+    position: relative;
+}
+.k-listtext_box{
+    padding: 0 20px 0 10px;
 }
 .k-review-name{
-    display: block;
+    display: inline-block;
 }
 .k-review-stars{
-    display: block;
+    display: inline-block;
 }
 .k-review-date{
     float: right;
 }
 .k-review-info{
     display: block;
+    width: 100%;
+    /* height: 60px; */
+    background: #faf8f8;
+    border-radius: 30px;
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.k-utilbox{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    top: 55px;
+    right: -25px;
+}
+.k-like2{
+    width: 19px;
+    height: 19px;
+    background-image: url('../images/moviedetail/suggestionoff.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.k-like2.on{
+    background-image: url('../images/moviedetail/suggestionon.png');
+}
+.k-declaration{
+    width: 17px;
+    height: 17px;
+    margin-top: 3px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-image: url('../images/moviedetail/declaration.png');
+}
+.k-listright_btn{
+    width: 1100px;
+    height: 50px;
+}
+.k-list_btn{
+    display: block;
+    width: 1100px;
+    height: 45px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 /******************BANG MOVIEDETAIL END***************************/
-/*** footer 시작 ***/
-footer{
-    margin-top:30px;
-    background-color: #ededed;
-    padding-top:10px;
-    padding-bottom:10px;
-}
-.footer-top{
-    padding-bottom:10px;
-    border-bottom: 1px solid #929292;
-    font-size:12px;
-}
-.footer-logobox{
-    width:150px;
-}
-.footer-logobox img{
-    width:100%;
-    filter:grayscale();
-}
-.f-text li{
-    margin-right:16px;
-    position:relative;
-}
-.f-text li:not(:last-child)::after{
-    content:"";
-    position:absolute;
-    right:-8px;
-    top:4px;
-    width:1px;
-    height:10px;
-    background-color: #929292;
-}
-.f-text li a{
-    display: block;
-    padding-bottom:1px;
-}
-.f-text li a:hover{
-    padding-bottom:0px;
-    border-bottom:1px solid #929292;
-}
-.footer-bottom{
-    padding-top:20px;
-    font-size:14px;
-}
-.footer-bottom address{
-    display: inline-block;
-    font-style: normal;
-    margin-right: 10px;
-}
-.footer-bottom span{
-    margin-right: 10px;
-}
-.footer-bottom span.bar{
-    padding-left:10px;
-    position: relative;
-}
-.footer-bottom span.bar::before{
-    content:"";
-    position:absolute;
-    left:0; 
-    top:2px;
-    height:12px;
-    border-left: 1px solid #929292;
-}
-/*** footer 끝 ***/

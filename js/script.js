@@ -13,25 +13,51 @@ $(function(){
         $('.header-gnb>li>a').removeClass('on')
         $('.header-gnb>li>.header-lnb').removeClass('on');
     })
-    // 영화상세
+    
 });
+/*-------------------------------scrollUp---------------------------------*/
+// function scrollUp(){
+//     window.scrollTo({top:0, behavior: 'smooth'});
+// }
+// $(function(){
+//         $(window).on('scroll',function(){
+//             if($(window).scrollTop()>300){
+//               $('#scroll-box').fadeIn()
+//               $('#reserv').animate({
+//                 right : 60
+//               });
+//             }else if($(window).scrollTop()<=300){
+//               $('#scroll-box').fadeOut();
+              
+//             }
+//         });
+// });
+/*-------------------------------scrollUp---------------------------------*/
+
+
+
+
+// 영화상세
 $(function(){
         //좋아요 버튼
-        $(document).ready(function() {
-            $(".k_mv_datat_like").click(function() {
-              $("#likeimage").attr("src", function(index, currentSrc) {
-                if (currentSrc === "images/moviedetail/likeoff.png") {
-                  return "images/moviedetail/likeon.png";
-                } else {
-                  return "images/moviedetail/likeoff.png";
-                }
-              });
-            });
-          });
+        // $(document).ready(function() {
+        //     $(".k_mv_datat_like").click(function() {
+        //       $("#likeimage").attr("src", function(index, currentSrc) {
+        //         if (currentSrc === "images/moviedetail/likeoff.png") {
+        //           return "images/moviedetail/likeon.png";
+        //         } else {
+        //           return "images/moviedetail/likeoff.png";
+        //         }
+        //       });
+        //     });
+        //   });
         //좋아요 버튼
-        // $('#likeimage').click(function(){
-        //     $('#likeimage').toggleClass()
-        // })
+        $('#likeimage>span').click(function(){
+            $('#likeimage>span').toggleClass("on")
+        });
+        //기본 span안에 likeoff.png 이미지가 들어가있고
+        //클릭을 하면 on이라는 Class 생기면서 on Class에
+        //style.css를 likeon.png 으로 경로를 바꿔준다
 
         // likeimage라는 이미지를 클릭했을때
         // 이미지 소스가 src="images/moviedetail/likeon.png"으로
@@ -52,12 +78,22 @@ $(function(){
             }
         });
 
+        $('.k-post-wrapper').slick({
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            // autoplay: true,
+            // autoplaySpeed: 2000,
+            nextArrow:$('.next'),
+            prevArrow:$('.prev'),
+          });
+
+
+
         $(document).ready(function() {
-            
-        //textarea 글자입력 설정
-        $('fieldset.rate input').on('click', function() {
-              var ratingValue = $(this).val();
-              $('.rating-number').text(ratingValue);
+            //textarea 글자입력 설정
+            $('fieldset.rate input').on('click', function() {
+                var ratingValue = $(this).val();
+                $('.rating-number').text(ratingValue);
             });
         });
 
@@ -70,6 +106,19 @@ $(function(){
               $(this).val(content.substring(0, 220));
               $('.k-text_box .count span').html(220);
             }
+        });
+
+        //리뷰 좋아요버튼
+        $('.k-like2').click(function(){
+            $('.k-like2').toggleClass("on")
+        });
+
+        //리뷰 순위 active
+        $(document).ready(function(){
+            $('.k-reviewtitle_ul>span>a').click(function(){
+                $('.k-reviewtitle_ul>span>a').removeClass("active");
+                $(this).addClass("active");
+            });
         });
 });
 
