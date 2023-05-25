@@ -9,9 +9,9 @@ $(function(){
       const scroll = $(document).scrollTop();
       
       if(scroll == 0){
-        $('html').animate({scrollTop : offset.top-40}, 400);
+        $('html').animate({scrollTop : offset.top-80}, 400);
       }else{
-        $('html').animate({scrollTop : offset.top}, 400);
+        $('html').animate({scrollTop : offset.top-40}, 400);
       }
   });
 
@@ -21,9 +21,9 @@ $(function(){
     const scroll = $(document).scrollTop();
 
     if(scroll == 0){
-      $('html').animate({scrollTop : offset.top-40}, 400);
+      $('html').animate({scrollTop : offset.top-80}, 400);
     }else{
-      $('html').animate({scrollTop : offset.top}, 400);
+      $('html').animate({scrollTop : offset.top-40}, 400);
     }
   });
 
@@ -32,9 +32,9 @@ $(function(){
     const scroll = $(document).scrollTop();
     
     if(scroll == 0){
-      $('html').animate({scrollTop : offset.top-40}, 400);
+      $('html').animate({scrollTop : offset.top-80}, 400);
     }else{
-      $('html').animate({scrollTop : offset.top}, 400);
+      $('html').animate({scrollTop : offset.top-40}, 400);
     }
   });
 
@@ -43,9 +43,9 @@ $(function(){
     const scroll = $(document).scrollTop();
     
     if(scroll == 0){
-      $('html').animate({scrollTop : offset.top-40}, 400);
+      $('html').animate({scrollTop : offset.top-60}, 400);
     }else{
-      $('html').animate({scrollTop : offset.top}, 400);
+      $('html').animate({scrollTop : offset.top-40}, 400);
     }
   });
 
@@ -85,24 +85,26 @@ $(function(){
   });
 
 })//jquery
-
+const SearchBox = document.querySelector(".h-movie-search-box");
 const movieList = document.querySelector(".h-movie-list");
-const movieListHeight = movieList.offsetHeight;
+const SearchBoxHeight = SearchBox.offsetTop;
+const movieListHight = movieList.offsetTop;
+console.log(movieListHight);
 
 const movie = document.querySelector('#nav-movie');
-const movieHeight = window.pageYOffset + document.querySelector("#movie").getBoundingClientRect().top-movieListHeight-1;
+const movieHeight = window.pageYOffset + document.querySelector("#movie").getBoundingClientRect().top-81;
 const upcoming = document.querySelector("#nav-upcoming");
-const upcomingHeight = window.pageYOffset + document.querySelector("#upcoming").getBoundingClientRect().top-movieListHeight-1;
+const upcomingHeight = window.pageYOffset + document.querySelector("#upcoming").getBoundingClientRect().top-81;
 const navTop = document.querySelector("#nav-top");
-const navTopHeight = window.pageYOffset + document.querySelector("#top").getBoundingClientRect().top-movieListHeight-1;
+const navTopHeight = window.pageYOffset + document.querySelector("#top").getBoundingClientRect().top-81;
 const animation = document.querySelector("#nav-animation");
-const animationHeight = window.pageYOffset + document.querySelector("#animation").getBoundingClientRect().top-movieListHeight-1;
+const animationHeight = window.pageYOffset + document.querySelector("#animation").getBoundingClientRect().top-81;
 
 window.onscroll = function () {
   const windowTop = window.scrollY;
   	// 스크롤 세로값이 h-movie-list높이보다 크거나 같으면 
 	// h-movie-list에 클래스 'drop'을 추가한다
-  if (windowTop >= movieListHeight) {
+  if (windowTop >= SearchBoxHeight) {
     movieList.classList.add("drop");
   } 
   // 아니면 클래스 'drop'을 제거

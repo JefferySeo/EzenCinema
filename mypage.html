@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container h-position-relative">
-        <div class="h-mypage-bg"></div>
+    <div class="h-mypage-bg"></div>
+    <div class="container position-relative">
         <div class="row">
             <div class="h-left-nav col-2">
                 <div class="h-nav">
@@ -38,12 +38,24 @@
                             <p>멤버십 포인트</p>
                         </a>
                     </div>
+                    <div class="h-nav-mywatched">
+                        <a href="javascript:void(0)">
+                            <div class="h-img"></div>
+                            <p>본 영화 등록</p>
+                        </a>
+                    </div>
+                    <div class="h-nav-myticket">
+                        <a href="javascript:void(0)">
+                            <div class="h-img"></div>
+                            <p>영화 관람권 등록</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="h-mypage-info col-10" id="h-mypage-info">
                 <div class="h-member_info">
                     <div class="h-welcom"></div>
-                    <div class="h-member_name"><p>ooo님</p></div>
+                    <div class="h-member_name"><p>김기영 <span>님</span></p></div>
                     <div class="h-member_edit">
                         <p>
                             <a href="javascript:void(0)">내정보수정</a>
@@ -53,7 +65,7 @@
                     <div class="h-mypage-home">
                         <div class="h-home"></div>
                         <div class="h-home-right"></div>
-                        마이페이지
+                        <p>마이페이지</p>
                     </div>
                     <div class="h-member_rate">
                         <p>현재 고객님의 등급은</p>
@@ -99,7 +111,7 @@
                                 <h3>가디언즈 오브 갤럭시 : Volume 3</h3>
                                 <div class="h-booking-dinfo">
                                     <p>예매번호 <span>OOO-OOO-OOOOO</span></p>
-                                    <p>상영관/관람과석 <span>3관/G열 5</span></p>
+                                    <p>상영관/관람좌석 <span>3관/G열 5</span></p>
                                     <p>관람인원 <span>성인 1명</span></p>
                                     <p>결제일시 <span>2023.05.02(화) 18:38</span></p>
                                     <p>관람일시 <span>2023.05.03(수) 12:00(3회차)</span></p>
@@ -122,7 +134,7 @@
                                 <h3>존 윅 4</h3>
                                 <div class="h-cancel-dinfo">
                                     <p>예매번호 <span>OOO-OOO-OOOOO</span></p>
-                                    <p>상영관/관람과석 <span>3관/G열 5</span></p>
+                                    <p>상영관/관람좌석 <span>3관/G열 5</span></p>
                                     <p>관람인원 <span>성인 1명</span></p>
                                     <p>관람일시 <span>2022.12.18(일) 15:10(4회차)</span></p>
                                     <p>결제일시 <span>2022.12.17(토) 14:03</span></p>
@@ -141,20 +153,22 @@
                             <li class="active">
                                 <a href="javascript:void(0)">내가 쓴 리뷰</a>
                                 <div class="h-myreview h-lnb">
-                                    <div class="row">
-                                        <div class="h-myreview-poster">
-                                            <img src="images/poster/Guardians of the Galaxy Volume 3.jpg" alt="리뷰포스터">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="h-myreview-poster">
+                                                <img src="images/poster/Guardians of the Galaxy Volume 3.jpg" alt="리뷰포스터">
+                                            </div>
+                                            <div class="h-myreview-content">
+                                                <h3>가디언즈 오브 갤럭시: Volume 3</h3>
+                                                <p class="h-review-rate">평점 <span>10</span></p>
+                                                <p class="h-review-comment">재밌어용 그루트 귀여웡^O^</p>
+                                                <p><span class="h-like"></span><span class="h-like-date">2일 전</span></p>
+                                            </div>
                                         </div>
-                                        <div class="h-myreview-content">
-                                            <h3>가디언즈 오브 갤럭시: Volume 3</h3>
-                                            <p class="h-review-rate">평점 <span>10</span></p>
-                                            <p class="h-review-comment">재밌어용 그루트 귀여웡^O^</p>
-                                            <p><span class="h-like"></span><span class="h-like-count">12</span><span class="h-like-date">2일 전</span></p>
+                                        <div class="h-review-edit">
+                                            <a href="javascript:void(0)" class="h-review-update">수정</a>
+                                            <a href="javascript:void(0)" class="h-review-delete">삭제</a>
                                         </div>
-                                    </div>
-                                    <div class="h-review-edit">
-                                        <a href="javascript:void(0)" class="h-review-update">수정</a> |
-                                        <a href="javascript:void(0)" class="h-review-delete">삭제</a>
                                     </div>
                                     <div class="h-review-more"><a href="javascript:void(0)"></a></div>
                                 </div>
@@ -191,32 +205,6 @@
                                         </div>
                                     </div>
                                     <div class="h-hope-more"><a href="javascript:void(0)"></a></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">1:1문의</a>
-                                <div class="h-ask h-lnb">
-                                    <h3>
-                                        나의 문의 내역 전체(<span>2</span>건)
-                                        <div class="h-ask-btn"><a href="javascript:void(0)"></a></div>
-                                        <input type="text" class="h-ask-search" placeholder="검색어를 입력해 주세요.">
-                                        <select class="h-ask-sel" name="ask" id="ask">
-                                            <option value="전체보기">전체</option>
-                                        </select>
-                                    </h3>
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th class="col-2">번호</th>
-                                                <th class="col-2">극장</th>
-                                                <th class="col-2">유형</th>
-                                                <th class="col-2">제목</th>
-                                                <th class="col-2">답변상태</th>
-                                                <th class="col-2">등록일</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
                                 </div>
                             </li>
                         </ul>
