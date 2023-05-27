@@ -29,5 +29,28 @@ $(function(){
         }
     })
     
-    
+    // booking
+    $(".h-b-movie-btn").click(function(){
+        $(".h-b-movie-btn").removeClass("b-on");
+        $(this).addClass("b-on");
+        $(".h-location-blurbox").css({"display" : "none"});
+    });
+
+    $(".h-location-box label").click(function(){
+        $(".h-location-box label").removeClass("b-on");
+        $(this).addClass("b-on");
+        $(".h-date-blurbox").css({"display" : "none"});
+    });
+
+    $(".h-b-date-btn button").click(function(){
+        $(".h-b-date-btn button").removeClass("b-on");
+        $(this).addClass("b-on");
+        $(".h-time-blurbox").css({"display" : "none"});
+    });
+
+    $(".h-b-time-btn button").click(function(){
+        $(".h-b-time-btn button").removeClass("b-on");
+        $(this).addClass("b-on");
+        $(".h-booking-btn-box").css({"display" : "block"});
+    });
 })

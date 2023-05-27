@@ -5,7 +5,7 @@
 }
 header{
     position:fixed;
-    top:30px;
+    top:40px;
     left:calc(50% - 550px);
     z-index:999;
     width:1100px;
@@ -151,7 +151,6 @@ header.fixed #header-search:focus{
 
 /*** footer 시작 ***/
 footer{
-    margin-top:30px;
     background-color: #333333;
     padding-top:50px;
     padding-bottom:50px;
@@ -219,3 +218,140 @@ footer{
     border-left: 1px solid #929292;
 }
 /*** footer 끝 ***/
+
+/*** booking ***/
+section.booking{
+    background-image: url(../images/back/booking_background.png);
+    background-repeat: no-repeat;
+}
+section.booking>.container{
+    padding-top:230px;
+    padding-bottom:60px;
+}
+section.booking h3{
+    text-align: center;
+    background-color: #444;
+    color:#fff;
+    height:45px;
+}
+.movie_select{
+    position:relative;
+}
+.h-booking_box{
+    border: 2px solid #000;
+    height: 700px;
+    background-color: #fff;
+}
+.h-movie_choose{
+    width:418px;
+}
+.h-b-movie-booking{
+    height: 650px;
+    overflow:auto;
+}
+.cumtom_scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+.cumtom_scrollbar::-webkit-scrollbar-thumb {
+    background-color: #444;
+}
+.cumtom_scrollbar::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+.h-b-movietitle{
+    vertical-align: top;
+    font-weight: 600;
+    margin-left:10px;
+    font-size:18px;
+    line-height: 29px;
+}
+.h-movie-age{
+    display: inline-block;
+    width:30px;
+    height:30px;
+}
+.loca_left{
+    width:50%;
+    background-color: #FEF0E3;
+}
+.loca_right{
+    width:50%;
+}
+.h-location,
+.h-date,
+.h-time{
+    position: relative;
+}
+div.h-date{
+    width: 80px;
+}
+.h-location-blurbox,
+.h-date-blurbox,
+.h-time-blurbox{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+div.h-location{
+    width: 292px;
+}
+/* input[type=radio]{
+    display: none;
+} */
+.h-b-movie,
+.h-b-location,
+.h-b-date,
+.h-b-time{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    text-align: start;
+}
+.select_btn{
+    display: block;
+    height:46px;
+    padding: 8px 13px;
+    font-size:18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.b-on{
+    background-color: #FFA406;
+}
+span.count{
+    font-size:14px;
+}
+.h-b-time{
+    width: 100%;
+}
+.h-time{
+    float: left;
+}
+div.h-time{
+    width:287px;
+}
+.h-sit{
+    float: right;
+}
+.h-booking-btn-box{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
+.h-booking-btn{
+    padding: 5px;
+    border: 1px solid #333;
+}
+.h-booking-btn:hover{
+    color: #fff;
+    background: #333;
+}
+/*** booking 끝 ***/
