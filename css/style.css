@@ -300,9 +300,9 @@ div.h-date{
 div.h-location{
     width: 292px;
 }
-/* input[type=radio]{
+input[type=radio]{
     display: none;
-} */
+}
 .h-b-movie,
 .h-b-location,
 .h-b-date,
