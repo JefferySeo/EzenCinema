@@ -98,7 +98,10 @@ $(function(){
             PopupSlide.style.display = "none";
             fadeOut.style.display = "none";
         });
-
+        //슬라이드 링크 변경
+        $(".k-slide>div>.k-trailer_btn").click(function(){
+            
+        });
         $('.k-post-wrapper').slick({
             slidesToShow: 5,
             slidesToScroll: 2,
