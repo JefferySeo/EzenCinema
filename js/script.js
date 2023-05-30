@@ -92,8 +92,20 @@ $(".c-shadow").click(function(){
 
 // 로그인 제출
 function loginSubmit(){
-    const userid = document.getElementById("userid").value;
-    const userpass = document.getElementById("userpass").value;
+    const userid = $("#userid").val();
+    const userpass = $("#userpass").val();
+    const alert = document.getElementById("c-login-alert");
+    if(userid == "" || userid == null){
+        alert.style.color = "red";
+        alert.innerHTML = "아이디를 입력해주세요.";
+    }else if(userpass == "" || userpass == null){
+        alert.style.color = "red";
+        alert.innerHTML = "비밀번호를 입력해주세요.";
+    }else{
+        alert.innerHTML = "";
+    }
+
+    /*
     fetch("로그인 확인 경로 서블릿", {
         headers : {"Content-Type" : "Application/json"},
         method : "post",
@@ -104,6 +116,7 @@ function loginSubmit(){
 
         })
     })
+    */
 }
 
 // 카카오 로그인
@@ -170,6 +183,8 @@ function cNotCheckAll(){
     if(clickAgree[1].style.display == "flex" 
     && clickAgree[2].style.display == "flex" 
     && clickAgree[3].style.display == "flex"){
+        
+    }else{
         $(".c-law-hide:eq(0)").css({
             display : "none"
         });
@@ -278,6 +293,8 @@ function cNotCheckSnsAll(){
     const clickAgree = document.getElementsByClassName("c-law-show");
     if(clickAgree[5].style.display == "inline-block" 
     && clickAgree[6].style.display == "inline-block" ){
+        
+    }else{
         $(".c-law-hide:eq(4)").css({
             display : "none"
         });
@@ -350,6 +367,7 @@ function cAgreeAll(){
     }
 }
 /* *********** 회원가입 *********** */
+
 $(document).ready(function(){
     let strYear = "";
     strYear += `<select name="year" id="year" class="year">`;

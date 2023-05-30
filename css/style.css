@@ -23,7 +23,12 @@ body {
     font-weight: 300;
     display: none;
 }
-
+#c-login-alert{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 14px;
+    font-size: 11px;
+}
 .c-login h1, h2, h3, h4, h5, h6{
     margin: 0;
     padding: 0;
