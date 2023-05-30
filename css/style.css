@@ -420,34 +420,84 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     border-radius: 30px;
     cursor: pointer;
 }
-/* .k-summary h3{
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 15px;
-} */
+
 .k-summary>p{
     margin-top: 10px;
     width: 1100px;
 }
-.k-trailer{
-    height: 420px;
-}
+
 .k-stillcut{
     height: 695px;
 }
-/* .k-stillcut h3{
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 15px;
-} */
+.k-trailer{
+    position: relative;
+    width: 1100px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  .k-slider{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  .k-slider>.slideprev{
+    position: absolute;
+    width: 25px;
+    height: 60px;
+    top: 35%;
+    left: 30px;
+    cursor: pointer;
+  }
+  .k-slider>.slidenext{
+    position: absolute;
+    width: 25px;
+    height: 60px;
+    top: 35%;
+    right: 30px;
+    cursor: pointer;
+  }
+  .k-slider div{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .k-slider div img{
+    width: 800px;
+    height: 100%;
+  }
+  .k-trailer_btn{
+    position: absolute;
+    background: none;
+    border: none;
+    top: 32%;
+    left: 44%;
+    cursor: pointer;
+  }
+  .k-fade{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1500;
+    display: none;
+  }
+  .k-popup{
+    position: fixed;
+    width: 1000px;
+    height: 562px;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    display: none;
+  }
 .k-pdcasting{
     height: 390px;
-    /* background: #ddd; */
     padding-top: 10px;
 }
-/* .k-pdcasting h3{
-    color: #fff;
-} */
+
 .k-post-slider{
     width:90%;
     height: 250px;

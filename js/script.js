@@ -77,6 +77,27 @@ $(function(){
                 $('#k-review').removeClass("active");
             }
         });
+        //예고편 슬라이드
+        $('.k-slide').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            nextArrow:$('.slidenext'),
+            prevArrow:$('.slideprev'),
+          });
+        //영상 켜기
+          $(".k-trailer_btn").click(function(){
+            const Popup = document.getElementsByClassName("k-popup")[0];
+            const fade = document.getElementsByClassName("k-fade")[0];
+            Popup.style.display = "block";
+            fade.style.display = "block";
+        });
+        //영상 끄기
+        $(".k-fade").click(function(){
+            const PopupSlide = document.getElementsByClassName("k-popup")[0];
+            const fadeOut = document.getElementsByClassName("k-fade")[0];
+            PopupSlide.style.display = "none";
+            fadeOut.style.display = "none";
+        });
 
         $('.k-post-wrapper').slick({
             slidesToShow: 5,

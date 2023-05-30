@@ -12,7 +12,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<div class="k-fade"></div>
+<div class="k-popup">
+    <iframe
+        width="1000" height="562" 
+        src="https://www.youtube.com/embed/XyHr-s3MfCQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+</div>
 <!-- 영화상세 -->
 <div class="k-bg">
     <div class="backbox" style="background-image: url('images/poster/Guardians\ of\ the\ Galaxy\ Volume\ 3.jpg');"></div>
@@ -34,12 +44,8 @@
                 <h1 class="k-mv_title2">가디언즈 오브 갤럭시: Volume3</h1>
                 <h4 class="k-mv_title3">Guardians of Galaxy Volume3</h4>
                 <div class="k-mv_datat">
-                        <!-- <div class="k_mv_datat_like" onclick="k_mv_datat_like()">
-                            <img id="likeimage" src="images/moviedetail/likeoff.png" alt="좋아요">
-                        </div> -->
                         <div class="k_mv_datat_like" id="likeimage">
                             <span></span>
-                            <!-- <img id="likeimage" src="images/moviedetail/likeoff.png" alt="좋아요"> -->
                           </div>
                         <div>
                             <img src="images/moviedetail/shareoff.png" alt="좋아요">
@@ -118,11 +124,21 @@
                             <button type="button" class="k-summary_btn">더보기</button>
                         </div>
                     </div>
-                    <div class="k-trailer">
-                        <h3>예고편</h3>
-                    </div>
                     <div class="k-stillcut">
                         <h3>스틸컷</h3>
+                    </div>
+                    <div class="k-trailer">
+                        <h3>트레일러(<span>3</span>)</h3>
+                        <div class="k-slider">
+                              <img src="images/moviedetail/prev.png" class="slideprev" alt="1"></i>
+                              <img src="images/moviedetail/next.png" class="slidenext" alt="2"></i>
+                              <div class="k-slide">
+                                    <div><img src="images/moviedetail/001.png" data-imgsrc="https://www.youtube.com/embed/rMJ8qLe6q3A" alt="001"/></div>
+                                    <div><img src="images/moviedetail/002.png" data-imgsrc="https://www.youtube.com/embed/ce3lO-Fa3Jc" alt="001"/></div>
+                                    <div><img src="images/moviedetail/003.png" data-imgsrc="https://www.youtube.com/embed/ce3lO-Fa3Jc" alt="001"/></div>
+                              </div>
+                              <button class="k-trailer_btn"><img src="images/moviedetail/start.png" alt="start"></button>
+                        </div>
                     </div>
                     <div class="k-pdcasting">
                         <h3>감독 및 배우</h3>
