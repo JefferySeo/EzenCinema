@@ -54,7 +54,7 @@ $(function(){
     $(".h-review-gnb li").removeClass("active");
     $(this).toggleClass("active");
     $(".h-lnb").css({"display" : "none"});
-    $(this).find(".h-lnb").css({"display" : "block"});
+    $(this).find(".h-lnb").css({"display" : "flex"});
   });
 
   

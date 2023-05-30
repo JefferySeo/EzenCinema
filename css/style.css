@@ -204,14 +204,16 @@ span.eg{
 }
 
 /********** my page *************/
-.h-left-nav .h-nav{
+
+.h-right-nav{
     position: absolute;
-    width: 110px;
-    height: 400px;
+    width: 80px;
+    height: 280px;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-    top: 300px;
-    right: 30px;
+    background-color: #fff;
+    top: 0;
+    right: 90px;
 }
 .h-nav-booking{
     position: absolute;
@@ -222,47 +224,31 @@ span.eg{
 }
 .h-nav-buy{
     position: absolute;
-    top: 80px;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
 }
 .h-nav-timetable{
     position: absolute;
-    top: 140px;
+    top: 155px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
 }
 .h-nav-mypoint{
     position: absolute;
-    top: 200px;
+    top: 220px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
 }
-.h-nav-mywatched{
-    position: absolute;
-    top: 260px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-}
-.h-nav-myticket{
-    position: absolute;
-    top: 320px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-}
-
 .h-nav-booking a,
 .h-nav-buy a,
 .h-nav-timetable a,
-.h-nav-mypoint a,
-.h-nav-mywatched a,
-.h-nav-myticket a{
+.h-nav-mypoint a{
     display: block;
+    cursor: default;
 }
 .h-nav-booking a .h-img{
     width: 30px;
@@ -292,57 +278,32 @@ span.eg{
     background-size: cover;
     margin: auto;
 }
-.h-nav-mywatched a .h-img{
-    width: 30px;
-    height: 22px;
-    background: url(../images/h-button/Union.png) no-repeat;
-    background-size: cover;
-    margin: auto;
-}
-.h-nav-myticket a .h-img{
-    width: 30px;
-    height: 32px;
-    background: url(../images/h-button/Union2.png) no-repeat;
-    background-size: cover;
-    margin: auto;
-}
 .h-nav-booking a p,
 .h-nav-buy a p,
 .h-nav-timetable a p,
-.h-nav-mypoint a p,
-.h-nav-mywatched a p,
-.h-nav-myticket a p{
+.h-nav-mypoint a p{
     font-size: 12px;
     font-weight: bold;
     text-align: center;
 }
-.h-nav-booking a:hover p,
-.h-nav-buy a:hover p,
-.h-nav-timetable a:hover p,
-.h-nav-mypoint a:hover p,
-.h-nav-mywatched a:hover p,
-.h-nav-myticket a:hover p{
+.h-nav-booking a:hover,
+.h-nav-buy a:hover,
+.h-nav-timetable a:hover,
+.h-nav-mypoint a:hover{
     color: #3D56AE;
 }
-
-.h-mypage-bg{
-    background: #5C7EF7;
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    top: 50px;
-    left: 0;
+.h-mypage-info{
+    margin: 0 auto;
 }
-
 .h-member_info{
     width: 80%;
     height: 230px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    margin: 80px 0 55px;
+    margin: 100px auto 55px;
     padding: 0;
     position: relative;
     background: #fff;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 .h-welcom{
     width: 120px;
@@ -431,7 +392,7 @@ span.eg{
 }
 .h-myoption{
     position: absolute;
-    left: 225px;
+    left: 205px;
     bottom: 30px;
     justify-content: space-between;
     font-weight: bold;
@@ -441,8 +402,9 @@ span.eg{
     font-weight: bold;
     color: #3D56AE;
 }
-.h-myoption .row .h-mypoint{
-    margin-right: 20px;
+.h-myoption .row .h-mypoint,
+.h-myoption .row .h-my-favorit{
+    margin: 0 20px;
 }
 .h-myoption ul li{
     margin-left: 5px;
@@ -461,119 +423,53 @@ span.eg{
     padding: 0 10px;
     color: #333;
 }
-.h-mybooking, .h-mycancel{
-    width: 80%;
-    padding-bottom: 20px;
-    margin: 20px 0;
-    border-bottom: 1px solid #5C7EF7;
-}
-.h-mybooking h2, .h-mycancel h2{
-    border-bottom: 3px solid #5C7EF7;
-    padding: 5px 0 0 10px;
-}
-.h-mybooking h2 span, .h-mycancel h2 span{
-    font-size: 18px;
-    display: inline-block;
-}
-.h-mybooking h2 .h-plus, .h-mycancel h2 .h-plus{
-    float: right;
-    margin-top: 5px;
-}
-.h-mybooking h2 .h-plus a, .h-mycancel h2 .h-plus a{
-    display: inline-block;
-    width: 63px;
-    height: 18px;
-    background: url(../images/h-button/S.png) no-repeat;
-    background-size: cover;
-    transition: 0.5s;
-}
-.h-mybooking h2 .h-plus a:hover, .h-mycancel h2 .h-plus a:hover{
-    background: url(../images/h-button/S-hover.png) no-repeat;
-    background-size: cover;
-    transition: 0.5s;
-}
-.h-mybookingbox, .h-mycancelbox{
-    margin-top: 10px;
-}
-.h-mybookingbox-none, .h-mycancelbox-none{
-    width: 100%;
-    height: 170px;
-    text-align: center;
-    line-height: 130px;
-    padding: 20px 0;
-}
-.h-movie-post, .h-cancel-post{
-    margin-left: 15px;
-}
-.h-movie-post img, .h-cancel-post img{
-    width: 120px;
-    height: 180px;
-    padding-top: 10px;
-}
-.h-booking-info{
-    margin-left: 20px;
-    padding-top: 10px;
-}
-.h-cancel-info{
-    margin-left: 20px;
-    padding-top: 5px;
-}
-.h-booking-info h3, .h-cancel-info h3{
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-.h-booking-info h3{
-    margin-top: 20px;
-}
-.h-cancel-info h3{
-    margin-top: 10px;
-}
-.h-booking-info p, .h-cancel-info p{
-    font-size: 14px;
-    font-weight: bold;
-    padding: 1px 0;
-}
-.h-booking-info p span, .h-cancel-info p span{
-    font-size: 12px;
-    font-weight: normal;
-    padding-left: 10px;
-}
 .h-my_review{
     position: relative;
-    height: 320px;
+    height: 300px;
     width: 80%;
+    margin: 0 auto;
 }
 .h-review-gnb{
     display: flex;
     justify-content: start;
 }
 .h-lnb{
-    border-bottom: 1px solid #5C7EF7;
+    display: flex;
     left: 0px;
-}
-.h-reviewbox{
-    border-bottom: 3px solid #5C7EF7;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .h-review-gnb li{
-    margin: 20px;
+    margin-right: 5px;
 }
 .h-review-gnb li.active>a{
     color: #3D56AE;
+    background: #D3DCFD;
 }
 .h-review-gnb li>a{
-    font-size: 20px;
+    width: 135px;
+    height: 33px;
+    display: inline-block;
+    font-size: 15px;
     font-weight: bold;
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    line-height: 33px;
 }
 .h-myreview{
     position: absolute;
     width: 100%;
-    top: 70px;
-    padding: 10px 0;
-    display: flex;
+    top: 33px;
+    padding: 15px 0;
+    background: #fff;
 }
 .h-myreview-poster img{
-    width: 120px;
-    height: 180px;
+    width: 100px;
+    height: 140px;
+    margin-left: 15px;
 }
 .h-myreview-content{
     margin-left: 10px;
@@ -581,7 +477,7 @@ span.eg{
 }
 .h-myreview-content h3{
     font-size: 12px;
-    margin: 40px 0 20px;
+    margin: 10px 0 20px;
     width: 100%;
 }
 .h-review-rate{
@@ -630,78 +526,49 @@ span.eg{
     top: 8px;
     left: 29px;
 }
-.h-review-more{
-    position: absolute;
-    right: 15px;
-    bottom: 20px;
-}
-.h-review-more a{
-    display: block;
-    width: 56px;
-    height: 16px;
-    background: url(../images/h-button/S.png) no-repeat;
-    background-size: cover;
-    transition: 0.5s;
-}
-.h-review-more a:hover{
-    background-image: url(../images/h-button/S-hover.png);
-    transition: 0.5s;
-}
-.h-mywatch{
+.h-mybooking{
     position: absolute;
     width: 100%;
-    top: 70px;
+    top: 33px;
     display: none;
-    padding: 10px 0;
+    padding: 15px 0;
+    background: #fff;
 }
-.h-mywatch-post img{
-    width: 120px;
-    height: 180px;
+.h-mybooking-post img{
+    width: 100px;
+    height: 140px;
     margin-left: 15px;
 }
-.h-mywatch-info{
-    margin-left: 20px;
+.h-mybooking-info{
+    margin-left: 10px;
 }
-.h-mywatch-info h3{
+.h-mybooking-info h3{
     font-size: 14px;
-    margin: 30px 0 10px;
+    margin: 10px 0 10px;
 }
-.h-mywatch-info p{
-    font-size: 14px;
+.h-mybooking-info p{
+    font-size: 12px;
     font-weight: bold;
     padding: 1px 0;
 }
-.h-mywatch-info p span{
-    font-size: 12px;
+.h-mybooking-info p span{
+    font-size: 10px;
     font-weight: normal;
     padding-left: 10px;
-}
-.h-watch-more a{
-    position: absolute;
-    right: 15px;
-    bottom: 20px;
-    display: inline-block;
-    width: 56px;
-    height: 16px;
-    background: url(../images/h-button/S.png) no-repeat;
-    background-size: cover;
-    transition: 0.5s;
-}
-.h-watch-more a:hover{
-    background-image: url(../images/h-button/S-hover.png);
-    transition: 0.5s;
 }
 .h-movie-hope{
     position: absolute;
     width: 100%;
-    top: 80px;
+    top: 33px;
     display: none;
+    background: #fff;
+    padding-top: 10px;
 }
 .h-hope-poster img{
-    width: 120px;
-    height: 180px;
+    width: 100px;
+    height: 140px;
     padding-top: 10px;
-    margin-left: 20px;
+    margin: 0 20px;
 }
 .h-hope-poster h3,
 .h-hope-poster p{
@@ -715,21 +582,19 @@ span.eg{
     font-size: 10px;
     margin-bottom: 10px;
 }
-.h-hope-more a{
+.h-morebtn{
     position: absolute;
-    right: 15px;
-    bottom: 20px;
-    display: inline-block;
-    width: 56px;
-    height: 16px;
-    background: url(../images/h-button/S.png) no-repeat;
-    background-size: cover;
-    transition: 0.5s;
-}.h-hope-more a:hover{
-    background-image: url(../images/h-button/S-hover.png);
-    transition: 0.5s;
+    bottom: -40px;
+    width: 100%;
 }
-
+.h-more{
+    display: block;
+    width: 54px;
+    height: 20px;
+    background: url(../images/h-button/more.png) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
 /******** booking ********/
 .h-booking{
     margin: 15px;
