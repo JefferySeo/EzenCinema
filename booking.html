@@ -102,7 +102,6 @@
                                     <span class="h-b-movietitle">슈퍼마리오 브라더스</span>
                                 </label>
                             </li>
-                            
                         </ul>
                     </div>
                 </div>
@@ -116,17 +115,17 @@
                     </div>
                     <div class="h-location-blurbox"></div>
                 </div>
-                <div class="h-date h-booking_box mr-2">
-                    <h3 class="p-2">날짜</h3>
-                    <div class="h-date-box cumtom_scrollbar">
-                        <ul class="h-date-list">
-                            <li class="h-b-date-btn"><button type="button" class="h-b-date"><span class="h-date">2023-05-15</span></button></li>
-                            <li class="h-b-date-btn"><button type="button" class="h-b-date"><span class="h-date">2023-05-16</span></button></li>
-                        </ul>
-                    </div>
-                    <div class="h-date-blurbox"></div>
-                </div>
+                
                 <div class="h-time h-booking_box">
+                    <h3 class="p-2">날짜</h3>
+                    <div class="date-select">
+                        <h4 class="p-2 text-center year_month">2023년 5월</h4>
+                        <button class="btn_prev" onclick="dateSlidePrev()"></button>
+                        <button class="btn_next" onclick="dateSlideNext()"></button>
+                        <div class="date-slide d-flex" id="dateSlide">
+                            <!-- 여기는 스크립트가 뿌려줌 -->
+                        </div>
+                    </div>
                     <h3 class="p-2">상영시간</h3>
                     <div class="h-time-box cumtom_scrollbar">
                         <ul class="h-time-list">

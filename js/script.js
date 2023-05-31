@@ -39,12 +39,6 @@ $(function(){
     $(".h-location-box label").click(function(){
         $(".h-location-box label").removeClass("b-on");
         $(this).addClass("b-on");
-        $(".h-date-blurbox").css({"display" : "none"});
-    });
-
-    $(".h-b-date-btn button").click(function(){
-        $(".h-b-date-btn button").removeClass("b-on");
-        $(this).addClass("b-on");
         $(".h-time-blurbox").css({"display" : "none"});
     });
 
@@ -53,4 +47,31 @@ $(function(){
         $(this).addClass("b-on");
         $(".h-booking-btn-box").css({"display" : "block"});
     });
+
+    // 날짜클릭 액티브
+    $(".date-slide>.date").click(function(){
+        $(".date").removeClass("b-on");
+        $(this).addClass("b-on");
+    })
 })
+
+let day = dayjs();
+let ddd = "";
+const dateSlide = document.getElementById('dateSlide');
+for(let i = -3 ; i < 30 ; i++){
+    ddd = (day.add(i,"day").$d).toString();
+    let dt = parseInt(ddd.slice(8,10))
+    
+    dateSlide.innerHTML 
+        += `<div class="date">
+                <p class="datenum">${dt}</p>
+                <span class="day">${ddd.slice(0,3)}</span>
+            </div>`;
+}
+
+const dateSlidePrev = () => {
+    console.log(dateSlide.style.left -= 10);
+    // if(dateSlide.style.left > 0){
+    //     dateSlide.style.left
+    // }
+}
