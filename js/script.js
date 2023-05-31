@@ -83,9 +83,17 @@ $(function(){
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
-            nextArrow:$('#btn-right'),
-            prevArrow:$('#btn-left'),
-            
+            centerMode:true,
+            centerPadding: '60px',
+            nextArrow: $('#btn-right'),
+            prevArrow: $('#btn-left'),
+        });
+        $('.pt-in').on('afterChange', function(event, slick, currentSlide) {
+            $('#cnum').text(currentSlide + 1);
+        });
+        $('.pt-in').on('afterChange', function(event, slick, currentSlide) {
+            $('.page .bar').removeClass('active onn');
+            $('.page .bar').eq(currentSlide).addClass('active onn');
         });
         
         //예고편 슬라이드
@@ -97,6 +105,7 @@ $(function(){
             dots:true,
             dotsClass:'slide_dots',
           });
+
 
         //영상 켜기
           $(".k-trailer_btn").click(function(){
