@@ -362,7 +362,7 @@ div.h-time{
 }
 .date-slide{
     position:absolute;
-    left:5px;
+    left:0;
     transition: left 200ms ease-in-out;
 }
 .year_month{

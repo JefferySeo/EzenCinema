@@ -58,7 +58,7 @@ $(function(){
 let day = dayjs();
 let ddd = "";
 const dateSlide = document.getElementById('dateSlide');
-for(let i = -3 ; i < 30 ; i++){
+for(let i = -3 ; i <= 30 ; i++){
     ddd = (day.add(i,"day").$d).toString();
     let dt = parseInt(ddd.slice(8,10))
     
@@ -69,9 +69,23 @@ for(let i = -3 ; i < 30 ; i++){
             </div>`;
 }
 
+
+let ps = 0;
 const dateSlidePrev = () => {
-    console.log(dateSlide.style.left -= 10);
-    // if(dateSlide.style.left > 0){
-    //     dateSlide.style.left
-    // }
+    ps = dateSlide.offsetLeft;
+    if(ps < 0){
+        ps += 100;
+        dateSlide.style.left = ps + "px";
+    }
+    console.log(ps);
 }
+const dateSlideNext = () => {
+    ps = dateSlide.offsetLeft;
+    if(ps > -1500){
+        ps -= 100;
+        dateSlide.style.left = ps + "px";
+    }
+    
+    console.log(ps);
+}
+
