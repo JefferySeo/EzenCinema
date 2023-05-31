@@ -77,13 +77,27 @@ $(function(){
                 $('#k-review').removeClass("active");
             }
         });
+
+        //스틸컷 슬라이드
+        $('.pt-in').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            nextArrow:$('#btn-right'),
+            prevArrow:$('#btn-left'),
+            
+        });
+        
         //예고편 슬라이드
         $('.k-slide').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             nextArrow:$('.slidenext'),
             prevArrow:$('.slideprev'),
+            dots:true,
+            dotsClass:'slide_dots',
           });
+
         //영상 켜기
           $(".k-trailer_btn").click(function(){
             const Popup = document.getElementsByClassName("k-popup")[0];
@@ -91,6 +105,7 @@ $(function(){
             Popup.style.display = "block";
             fade.style.display = "block";
         });
+
         //영상 끄기
         $(".k-fade").click(function(){
             const PopupSlide = document.getElementsByClassName("k-popup")[0];
@@ -98,10 +113,14 @@ $(function(){
             PopupSlide.style.display = "none";
             fadeOut.style.display = "none";
         });
+
         //슬라이드 링크 변경
-        $(".k-slide>div>.k-trailer_btn").click(function(){
-            
-        });
+        $(".k-trailer_btn").click(function() {
+            const vodsrcs = $(this).prev("img").data("vodsrc");
+            $(".k-popup iframe").attr("src", vodsrcs);
+          });
+
+        //감독 출연진 슬라이드
         $('.k-post-wrapper').slick({
             slidesToShow: 5,
             slidesToScroll: 2,
@@ -111,7 +130,8 @@ $(function(){
             prevArrow:$('.prev'),
           });
 
-
+        
+          // 리뷰상세
 
         $(document).ready(function() {
             //textarea 글자입력 설정
