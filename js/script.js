@@ -38,6 +38,15 @@ $(function(){
 
 
 // 영화상세
+
+function linkshare(){
+    const linkshares = document.getElementById("linkshares");
+    linkshares.style.display = "block";
+    setTimeout(function(){
+        linkshares.style.display = "none";
+    }, 2000)
+}  
+
 $(function(){
         //좋아요 버튼
         // $(document).ready(function() {
@@ -55,6 +64,11 @@ $(function(){
         $('#likeimage>span').click(function(){
             $('#likeimage>span').toggleClass("on")
         });
+        //링크 버튼
+        // $('#linkshare>span').click(function(){
+        //     $('#linkshare>span').addClass("on")
+        // });
+        
         //기본 span안에 likeoff.png 이미지가 들어가있고
         //클릭을 하면 on이라는 Class 생기면서 on Class에
         //style.css를 likeon.png 으로 경로를 바꿔준다

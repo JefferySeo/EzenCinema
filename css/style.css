@@ -297,12 +297,12 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 .k-mv_title3{
     color: #fff;
 }
-.k-mv_datat{
+.k-mv_data{
     height: 70px;
     display: flex;
     padding: 20px 0 20px 0;
 }
-.k-mv_datat>div>img{
+.k-mv_data>div>img{
     cursor: pointer;
 }
 #likeimage>span{
@@ -317,6 +317,33 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 }
 #likeimage>span.on{
     background: url('../images/moviedetail/likeon.png');
+}
+#linkshare>span{
+    width: 89px;
+    height: 27px;
+    margin-right: 20px;
+    display: inline-block;
+    background-position: 0px 4px;
+    background-repeat: no-repeat;
+    background: url('../images/moviedetail/shareoff.png');
+    cursor: pointer;
+}
+/* #linkshare>span:active{
+    background: url('../images/moviedetail/shareon.png');
+} */
+#linkshare>span:hover{
+    transition: all 300ms;
+    background: url('../images/moviedetail/shareon.png');
+}
+#linkshares{
+    position: absolute;
+    top: 251px;
+    left: 80px;
+    width: 277px;
+    height: 40px;
+    display: none;
+    transition: all 500ms ease-in-out;
+    background-image: url('/images/moviedetail/linkshare.png');
 }
 .fa-solid, .fas {
     font-weight: 900;
@@ -550,8 +577,13 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
   }
   .page-count{
     float:left;
-    line-height: 14px;
+    line-height: 18px;
     color: #fff;
+  }
+#cnum{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
   }
 .k-trailer{
     position: relative;
@@ -606,9 +638,18 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1500;
     display: none;
+}
+.k-close{
+    position: absolute;
+    top: 60px;
+    right: 110px;
+    cursor: pointer;
+}
+.k-close>img{
+    width: 25px;
 }
 .slide_dots{
     display: none;

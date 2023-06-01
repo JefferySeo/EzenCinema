@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="k-fade"></div>
+<div class="k-fade">
+    <div class="k-close"><img src="images/moviedetail/popupclose.png" alt="popupclose"/></div>
+</div>
 <div class="k-popup">
     <iframe
         width="1000" height="562" 
@@ -44,12 +46,13 @@
                     <h4 class="k-mv_title1">#톨비시네마</h4>
                     <h1 class="k-mv_title2">가디언즈 오브 갤럭시: Volume3</h1>
                     <h4 class="k-mv_title3">Guardians of Galaxy Volume3</h4>
-                    <div class="k-mv_datat">
-                            <div class="k_mv_datat_like" id="likeimage">
+                    <div class="k-mv_data">
+                            <div id="likeimage">
                                 <span></span>
-                              </div>
-                            <div>
-                                <img src="images/moviedetail/shareoff.png" alt="좋아요">
+                            </div>
+                            <div id="linkshare" onclick="linkshare()">
+                            <div id="linkshares"></div>
+                                <span></span>
                             </div>
                         </div>
                         <ul class="k-mv_datan">
@@ -375,7 +378,6 @@
 </div> -->
 <!-- scrollUp -->
     <script src="js/jquery-1.12.4.min.js"></script>
-    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
     </body>
