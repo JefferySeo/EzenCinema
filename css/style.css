@@ -25,7 +25,9 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     border-radius: 30px;
     float: right;
 } */
-
+h3{
+    font-size: 24px;
+}
 /******************BANG STORE START*************************/
 .k-store{
     height: 2500px;
@@ -620,18 +622,26 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     width: 800px;
     height: 400px;
     margin: 0 auto;
-
 }
 .k-slider div>img{
+    position: relative;
     width: 800px;
     height: 100%;
+}
+div>.trailerbg{
+    position: absolute;
+    width: 800px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 .k-trailer_btn{
     position: absolute;
     background: none;
     border: none;
-    top: 42%;
-    left: 48%;
+    top: 37%;
+    left: 43%;
     cursor: pointer;
 }
 .k-fade{
@@ -655,7 +665,7 @@ layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
     display: none;
 }
 ul.slide_dots{
-    padding-left: 365px;
+    padding-left: 375px;
 }
 .slide_dots>li{
      display: inline;
