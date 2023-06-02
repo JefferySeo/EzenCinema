@@ -207,13 +207,13 @@ span.eg{
 
 .h-right-nav{
     position: absolute;
-    width: 80px;
-    height: 280px;
+    width: 120px;
+    height: 400px;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     background-color: #fff;
     top: 0;
-    right: 90px;
+    right: -140px;
 }
 .h-nav-booking{
     position: absolute;
@@ -224,21 +224,21 @@ span.eg{
 }
 .h-nav-buy{
     position: absolute;
-    top: 90px;
+    top: 119px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
 }
 .h-nav-timetable{
     position: absolute;
-    top: 155px;
+    top: 218px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
 }
 .h-nav-mypoint{
     position: absolute;
-    top: 220px;
+    top: 317px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -251,29 +251,29 @@ span.eg{
     cursor: default;
 }
 .h-nav-booking a .h-img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: url(../images/h-button/예매하기.png) no-repeat;
     background-size: cover;
     margin: auto;
 }
 .h-nav-buy a .h-img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: url(../images/h-button/구매하기.png) no-repeat;
     background-size: cover;
     margin: auto;
 }
 .h-nav-timetable a .h-img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: url(../images/h-button/상영시간표.png) no-repeat;
     background-size: cover;
     margin: auto;
 }
 .h-nav-mypoint a .h-img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: url(../images/h-button/멤버십포인트.png) no-repeat;
     background-size: cover;
     margin: auto;
@@ -282,7 +282,7 @@ span.eg{
 .h-nav-buy a p,
 .h-nav-timetable a p,
 .h-nav-mypoint a p{
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
@@ -292,12 +292,9 @@ span.eg{
 .h-nav-mypoint a:hover{
     color: #3D56AE;
 }
-.h-mypage-info{
-    margin: 0 auto;
-}
 .h-member_info{
-    width: 80%;
-    height: 230px;
+    width: 100%;
+    height: 344px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     margin: 100px auto 55px;
     padding: 0;
@@ -306,29 +303,29 @@ span.eg{
     border-radius: 10px;
 }
 .h-welcom{
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #000;
     border-radius: 20px;
     position: absolute;
-    top: 50px;
-    left: 60px;
+    top: 72px;
+    left: 72px;
 }
 .h-member_name{
-    font-size: 20px;
+    font-size: 32px;
     font-weight: bold;
     position: absolute;
-    top: 40px;
-    left: 210px;
+    top: 80px;
+    left: 310px;
 }
 .h-member_name span{
-    font-size: 16px;
+    font-size: 24px;
 }
 .h-member_edit{
     position: absolute;
-    top: 52px;
-    left: 310px;
-    font-size: 10px;
+    top: 100px;
+    left: 460px;
+    font-size: 16px;
     font-weight: bold;
 }
 .h-member_edit a{
@@ -338,51 +335,51 @@ span.eg{
     content: "";
     display: inline-block;
     width: 1px;
-    height: 8px;
-    top: 4px;
-    left: 45%;
+    height: 12px;
+    top: 7px;
+    left: 47%;
     position: absolute;
     background-color: #5C7EF7;
 
 }
 .h-mypage-home{
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 30px;
+    right: 50px;
 }
 .h-mypage-home .h-home{
-    width: 12px;
-    height: 10px;
+    width: 18.4px;
+    height: 16.66px;
     display: inline-block;
     background: url(../images/h-button/Vector.png) no-repeat;
     background-size: cover;
     vertical-align: middle;
 }
 .h-mypage-home .h-home-right{
-    width: 6px;
-    height: 10px;
+    width: 6.66px;
+    height: 13.32px;
     display: inline-block;
     background: url(../images/h-button/Vector2.png) no-repeat;
     background-size: cover;
-    margin: 0 2px;
+    margin: 0 10px;
     vertical-align: middle;
 }
 .h-mypage-home p{
     display: inline;
-    font-size: 10px;
+    font-size: 14px;
 }
 .h-member_rate{
     position: absolute;
     font-size: 20px;
-    top: 80px;
-    left: 210px;
+    top: 140px;
+    left: 310px;
 }
 .h-member_rate p{
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 3px;
 }
 .h-member_rate span{
-    font-size: 13px;
+    font-size: 18px;
     font-weight: bold;
     margin-right: 12px;
     color: #ccc;
@@ -392,15 +389,16 @@ span.eg{
 }
 .h-myoption{
     position: absolute;
-    left: 205px;
-    bottom: 30px;
+    left: 305px;
+    bottom: 50px;
     justify-content: space-between;
     font-weight: bold;
 }
 .h-myoption p{
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
     color: #3D56AE;
+    margin-bottom: 10px;
 }
 .h-myoption .row .h-mypoint,
 .h-myoption .row .h-my-favorit{
@@ -419,14 +417,14 @@ span.eg{
     border-radius: 50%;
 }
 .h-myoption ul li a{
-    font-size: 10px;
+    font-size: 14px;
     padding: 0 10px;
     color: #333;
 }
 .h-my_review{
     position: relative;
-    height: 300px;
-    width: 80%;
+    height: 365px;
+    width: 100%;
     margin: 0 auto;
 }
 .h-review-gnb{
@@ -448,127 +446,131 @@ span.eg{
     background: #D3DCFD;
 }
 .h-review-gnb li>a{
-    width: 135px;
-    height: 33px;
+    width: 212px;
+    height: 47px;
     display: inline-block;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: bold;
     background: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 10px;
     text-align: center;
-    line-height: 33px;
+    line-height: 27.46px;
+    padding: 10px;
 }
 .h-myreview{
     position: absolute;
     width: 100%;
-    top: 33px;
-    padding: 15px 0;
+    top: 47px;
     background: #fff;
+    display: none;
 }
 .h-myreview-poster img{
-    width: 100px;
-    height: 140px;
-    margin-left: 15px;
+    width: 144px;
+    height: 202px;
+    margin: 20px 0 20px 30px;
 }
 .h-myreview-content{
     margin-left: 10px;
     width: 50%;
 }
 .h-myreview-content h3{
-    font-size: 12px;
-    margin: 10px 0 20px;
-    width: 100%;
+    font-size: 18px;
+    margin: 30px 0 10px;
 }
 .h-review-rate{
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 700;
 }
 .h-review-rate span{
     color: #3D56AE;
+    font-weight: 500;
 }
 .h-review-comment{
-    font-size: 10px;
-    /* font-weight: bold; */
-    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0 20px;
 }
 .h-like{
     display: inline-block;
-    width: 13px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
     background: url(../images/h-button/like.png) no-repeat;
     background-size: cover;
     vertical-align: middle;
 }
 .h-like-date{
     margin-left: 10px;
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: 500;
 }
 .h-review-edit{
     position: absolute;
-    right: 45px;
-    bottom: 62px;
+    right: 120px;
+    bottom: 80px;
 }
 .h-review-edit a.h-review-update,
 .h-review-edit a.h-review-delete{
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     color: #333;
-    padding: 5px;
+    margin: 10px;
 }
 .h-review-edit a.h-review-update::after{
     content: "";
     display: inline-block;
     position: absolute;
     width: 1px;
-    height: 10px;
+    height: 18px;
     background-color: #93AAFF;
-    top: 8px;
-    left: 29px;
+    top: 2px;
+    left: 46px;
 }
 .h-mybooking{
     position: absolute;
     width: 100%;
-    top: 33px;
-    display: none;
-    padding: 15px 0;
+    top: 47px;
     background: #fff;
 }
 .h-mybooking-post img{
-    width: 100px;
-    height: 140px;
-    margin-left: 15px;
+    width: 144px;
+    height: 202px;
+    margin: 20px 0 20px 30px;
 }
 .h-mybooking-info{
     margin-left: 10px;
 }
 .h-mybooking-info h3{
-    font-size: 14px;
-    margin: 10px 0 10px;
+    font-size: 18px;
+    margin: 30px 0 10px;
 }
 .h-mybooking-info p{
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
     padding: 1px 0;
 }
 .h-mybooking-info p span{
-    font-size: 10px;
+    font-size: 16px;
     font-weight: normal;
     padding-left: 10px;
 }
 .h-movie-hope{
     position: absolute;
     width: 100%;
-    top: 33px;
+    top: 47px;
     display: none;
     background: #fff;
-    padding-top: 10px;
+    padding-top: 20px;
+}
+.h-hope-poster{
+    width: 21%;
+    margin: 0 2%;
 }
 .h-hope-poster img{
-    width: 100px;
-    height: 140px;
-    padding-top: 10px;
-    margin: 0 20px;
+    width: 144px;
+    height: 202px;
+    display: block;
+    margin: 0px auto;
 }
 .h-hope-poster h3,
 .h-hope-poster p{
@@ -576,11 +578,12 @@ span.eg{
     margin: 2px 0;
 }
 .h-hope-poster h3{
-    font-size: 12px;
+    font-size: 18px;
+    margin-top: 20px;
 }
 .h-hope-poster p{
-    font-size: 10px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 .h-morebtn{
     position: absolute;
@@ -589,8 +592,8 @@ span.eg{
 }
 .h-more{
     display: block;
-    width: 54px;
-    height: 20px;
+    width: 76px;
+    height: 28px;
     background: url(../images/h-button/more.png) no-repeat;
     background-size: cover;
     margin: 0 auto;
