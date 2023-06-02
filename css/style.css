@@ -37,6 +37,8 @@ header.fixed{
     right:0;
     background-color: rgba(255,255,255,0.8);
     backdrop-filter: blur(10px);
+    border-top: 1px solid #929292;
+    border-bottom: 1.8px solid #000;
 }
 
 header>.container{
@@ -118,13 +120,22 @@ ul.lnb>li>a{
     z-index: 1001;
 }
 header.fixed .header-util .header-search-box{
-    top:60px;
+    /* top:60px;
     border:none;
     border-radius: 0;
     padding:8px 15px 8px;
     background-color: rgba(255,255,255,0.4);
+    backdrop-filter: blur(10px); */
+    top: 24px;
+    width: 240px;
+    height: 30px;
+    border: none;
+    border-radius: 0;
+    padding: 8px 15px 8px;
+    background-color: rgba(255,255,255,0.8);
     backdrop-filter: blur(10px);
 }
+
 .header-util .header-search-box #header-search{
     border:none;
     background-color: transparent;

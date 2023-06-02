@@ -4,7 +4,12 @@ $(function(){
         $(this).find(".lnb").stop().fadeToggle(300);
         $("header.fixed>.subdp").stop().fadeToggle(300);
     });
-
+    $(".gnb>li").mouseover(function(){
+        $("header.fixed").css({"border":"none"});
+    });
+    $(".gnb>li").mouseleave(function(){
+        $("header.fixed").css({"border-bottom":"1.8px solid #000"});
+    });
     $(document).ready(function(){
         // header-search 나와라
         $("#search-on").click(function(event){
