@@ -15,6 +15,16 @@ $(function(){
     })
     
 });
+    
+
+    const list = document.getElementsByClassName('.ao-list');
+    const contecthv = document.getElementsByClassName('ao-contecthv');
+    const contect = document.getElementsByClassName('ao-contect');
+    list.addEvent
+
+    
+
+
 /*-------------------------------scrollUp---------------------------------*/
 // function scrollUp(){
 //     window.scrollTo({top:0, behavior: 'smooth'});

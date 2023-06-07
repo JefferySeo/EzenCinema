@@ -42,6 +42,7 @@ h3{
     width: 100%;
     height: 600px;
 }
+/* 현재 인기 순위 */
 .advanceorder{
     width: 100%;
     height: 600px;
@@ -68,6 +69,7 @@ h3{
     top: -20px;
     left: -10px;
     transform: rotate(5deg);
+    z-index: 50;
 }
 .ao-list{
     position: relative;
@@ -88,6 +90,7 @@ h3{
     background: linear-gradient(to bottom, transparent, #000000a1);
     z-index: 30;
     top: 0;
+    display: block;
 }
 .ct-title{
     position: absolute;
@@ -127,6 +130,99 @@ h3{
 .ao-al{
     padding-left: 15px;
     margin-right: 3px;
+}
+/* 현재 인기 순위 hover */
+.ao-contecthv{
+    position: absolute;
+    width: 260px;
+    height: 375px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 30;
+    top: 0;
+    display: none;
+}
+.ct-titlehv{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.ct-titlehv>h4{
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+.ct-listhv{
+    position: absolute;
+    display: flex;
+    width: 210px;
+    height: 25px;
+    top: 90px;
+    left: 20px;
+}
+.ct-listhv>span{
+    font-size: 16px;
+    color: #ddd;
+}
+.ao-rrhv{
+    position: absolute;
+    top: 23px;
+    left: 00px;
+}
+.ao-rrhv1{
+    font-size: 16px;
+    color: #ddd;
+    margin-right: 30px;
+}
+.ao-rrhv2{
+    font-size: 20px;
+    color: #fff;
+}
+.ao-grade{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+.ao-grade1{
+    font-size: 16px;
+    color: #ddd;
+    margin-right: 30px;
+}
+.ao-grade2{
+    font-size: 20px;
+    color: #fff;
+}
+#Viewdetailshv{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    border-radius: 40px;
+    border: none;
+    width: 85px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+}
+#Viewdetailshv:hover{
+    background: rgb(197, 196, 196);
+    transition: all 300ms;
+}
+#Ticketinghv{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    border-radius: 40px;
+    border: none;
+    width: 125px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #5C7EF7;
+}
+#Ticketinghv:hover{
+    background: #3e549f;
+    transition: all 300ms;
 }
 /******************BANG MAINT*************************/
 
