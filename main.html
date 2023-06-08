@@ -12,9 +12,60 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="mainslide">
-    <img src="images/mainslide/mainslide.png" alt="mainslide1">
+<!-- 팝업 닫기 -->
+<div class="k-fade">
+    <div class="k-close"><img src="images/moviedetail/popupclose.png" alt="popupclose"/></div>
 </div>
+<!-- 팝업 닫기 -->
+<!-- 팝업 영상 -->
+<div class="k-popup">
+    <iframe
+        width="1000" height="562" 
+        src="" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+</div>
+<!-- 팝업 영상 -->
+<!-- 메인 슬라이드 -->
+<div class="k-mainslider">
+    <div class="mainslide">
+        <div class="mainslide_box">
+            <img src="images/mainslide/m-slide01.png" alt="mainslide1">
+            <a href="#">상세보기</a>
+        </div>
+        <div class="mainslide_box">
+            <img src="images/mainslide/m-slide02.png" alt="mainslide1">
+            <a href="#">상세보기</a>
+        </div>
+        <div class="mainslide_box">
+            <img src="images/mainslide/m-slide03.png" alt="mainslide1">
+            <a href="#">상세보기</a>
+        </div>
+        <div class="mainslide_box">
+            <img src="images/mainslide/m-slide04.png" alt="mainslide1">
+            <a href="#">상세보기</a>
+        </div>
+    </div>
+    <div class="sdcontrol">
+        <div class="mainsdbars">
+            <span class="mbar on"></span>
+            <span class="mbar"></span>
+            <span class="mbar"></span>
+            <span class="mbar"></span>
+            <span class="mbar"></span>
+        </div>
+        <div class="mainutil">
+            <button type="button" class="btn-pause" onclick="pauseSlide()"><i class="fa-solid fa-pause"></i></button>
+            <button type="button" class="btn-play" onclick="playSlide()"><i class="fa-solid fa-play"></i></button>
+        </div>
+    </div>
+</div>
+
+<!-- 메인 슬라이드 -->
+<!-- 메인 예매율 순위 -->
 <div class="advanceorder">
     <div class="ao-container">
         <h3>현재 인기 순위</h3>
@@ -24,7 +75,7 @@
                     <img src="images/advanceorder/1st.png" alt="1위">
                 </div>
                 <img src="images/poster/Suzume.jpg" alt="스즈메">
-                <div class="ao-contect">
+                <div class="ao-contact">
                     <div class="ct-title" >
                         <h4>스즈메의 문단속</h4>
                     </div>
@@ -35,6 +86,24 @@
                         <span class="ao-al">♡</span>
                         <span class="ao-all">1K</span>
                     </div>
+                </div>
+                <div class="ao-contacthv">
+                    <div class="ct-titlehv" >
+                        <h4>스즈메의 문단속</h4>
+                    </div>
+                    <div class="ct-listhv">
+                        <span class="ao-release">2023.05.31개봉</span>
+                        <div class="ao-rrhv">
+                            <span class="ao-rrhv1">예매율</span>
+                            <span class="ao-rrhv2">44.8%</span>
+                        </div>
+                        <div class="ao-grade">
+                            <span class="ao-grade1">관람객 평점</span>
+                            <span class="ao-grade2">9.8</span>
+                        </div>
+                    </div>
+                    <button type="button" id="Viewdetailshv">상세보기</button>
+                    <button type="button" id="Ticketinghv">예매하기</button>
                 </div>
             </div>
             <div class="ao-list">
@@ -42,7 +111,7 @@
                     <img src="images/advanceorder/2st.png" alt="2위">
                 </div>
                 <img src="images/poster/The First Slam Dunk.jpg" alt="슬램덩크">
-                <div class="ao-contect">
+                <div class="ao-contact">
                     <div class="ct-title" >
                         <h4>스즈메의 문단속</h4>
                     </div>
@@ -53,6 +122,24 @@
                         <span class="ao-al">♡</span>
                         <span class="ao-all">1K</span>
                     </div>
+                </div>
+                <div class="ao-contacthv">
+                    <div class="ct-titlehv" >
+                        <h4>스즈메의 문단속</h4>
+                    </div>
+                    <div class="ct-listhv">
+                        <span class="ao-release">2023.05.31개봉</span>
+                        <div class="ao-rrhv">
+                            <span class="ao-rrhv1">예매율</span>
+                            <span class="ao-rrhv2">44.8%</span>
+                        </div>
+                        <div class="ao-grade">
+                            <span class="ao-grade1">관람객 평점</span>
+                            <span class="ao-grade2">9.8</span>
+                        </div>
+                    </div>
+                    <button type="button" id="Viewdetailshv">상세보기</button>
+                    <button type="button" id="Ticketinghv">예매하기</button>
                 </div>
             </div>
             <div class="ao-list">
@@ -60,7 +147,7 @@
                     <img src="images/advanceorder/3st.png" alt="3위">
                 </div>
                 <img src="images/poster/Guardians of the Galaxy Volume 3.jpg" alt="가오갤3">
-                <div class="ao-contect">
+                <div class="ao-contact">
                     <div class="ct-title" >
                         <h4>스즈메의 문단속</h4>
                     </div>
@@ -71,6 +158,24 @@
                         <span class="ao-al">♡</span>
                         <span class="ao-all">1K</span>
                     </div>
+                </div>
+                <div class="ao-contacthv">
+                    <div class="ct-titlehv" >
+                        <h4>스즈메의 문단속</h4>
+                    </div>
+                    <div class="ct-listhv">
+                        <span class="ao-release">2023.05.31개봉</span>
+                        <div class="ao-rrhv">
+                            <span class="ao-rrhv1">예매율</span>
+                            <span class="ao-rrhv2">44.8%</span>
+                        </div>
+                        <div class="ao-grade">
+                            <span class="ao-grade1">관람객 평점</span>
+                            <span class="ao-grade2">9.8</span>
+                        </div>
+                    </div>
+                    <button type="button" id="Viewdetailshv">상세보기</button>
+                    <button type="button" id="Ticketinghv">예매하기</button>
                 </div>
             </div>
             <div class="ao-list">
@@ -78,7 +183,7 @@
                     <img src="images/advanceorder/4st.png" alt="4위">
                 </div>
                 <img src="images/poster/John Wick4.jpg" alt="존윅4">
-                <div class="ao-contect">
+                <div class="ao-contact">
                     <div class="ct-title" >
                         <h4>스즈메의 문단속</h4>
                     </div>
@@ -90,7 +195,7 @@
                         <span class="ao-all">1K</span>
                     </div>
                 </div>
-                <div class="ao-contecthv">
+                <div class="ao-contacthv">
                     <div class="ct-titlehv" >
                         <h4>스즈메의 문단속</h4>
                     </div>
@@ -112,6 +217,90 @@
         </div>
     </div>
 </div>
+<!-- 메인 예매율 순위 -->
+<!-- 메인 트레일러 -->
+<div class="nowtrailer">
+    <div class="nt-title">
+        <h3>현재 상영중인 트레일러</h3>
+    </div>
+        <!--page slider -->
+        <div class="nt-trailer">
+          <div class="nt-slide">
+            <div class="nt-post">
+                <img src="images/trailer/Suzume/main1.jpg" data-vodsrc="https://www.youtube.com/embed/BBxtfGZodfo" alt="1">
+                <div class="nt-postbg">
+                    <span class="nt-posttitle">스즈메의 문단속</span>
+                    <span class="nt-postdetail">스즈메의 문단속 1차 예고편</span>
+                </div>
+            </div>
+            <div class="nt-post">
+                <img src="images/trailer/Suzume/main1.jpg" data-vodsrc="https://www.youtube.com/embed/BBxtfGZodfo" alt="1">
+                <div class="nt-postbg">
+                    <span class="nt-posttitle">스즈메의 문단속</span>
+                    <span class="nt-postdetail">스즈메의 문단속 1차 예고편</span>
+                </div>
+            </div>
+            <div class="nt-post">
+                <img src="images/trailer/Suzume/main1.jpg" data-vodsrc="https://www.youtube.com/embed/BBxtfGZodfo" alt="1">
+                <div class="nt-postbg">
+                    <span class="nt-posttitle">스즈메의 문단속</span>
+                    <span class="nt-postdetail">스즈메의 문단속 1차 예고편</span>
+                </div>
+            </div>
+            <div class="nt-post">
+                <img src="images/trailer/Suzume/main1.jpg" data-vodsrc="https://www.youtube.com/embed/BBxtfGZodfo" alt="1">
+                <div class="nt-postbg">
+                    <span class="nt-posttitle">스즈메의 문단속</span>
+                    <span class="nt-postdetail">스즈메의 문단속 1차 예고편</span>
+                </div>
+            </div>
+            <div class="nt-post">
+                <img src="images/trailer/Suzume/main1.jpg" data-vodsrc="https://www.youtube.com/embed/BBxtfGZodfo" alt="1">
+                <div class="nt-postbg">
+                    <span class="nt-posttitle">스즈메의 문단속</span>
+                    <span class="nt-postdetail">스즈메의 문단속 1차 예고편</span>
+                </div>
+            </div>
+            <div class="nt-post">
+                <img src="images/trailer/Suzume/main1.jpg" data-vodsrc="https://www.youtube.com/embed/BBxtfGZodfo" alt="1">
+                <div class="nt-postbg">
+                    <span class="nt-posttitle">스즈메의 문단속</span>
+                    <span class="nt-postdetail">스즈메의 문단속 1차 예고편</span>
+                </div>
+            </div>
+            <div class="nt-post">
+                <img src="images/trailer/Suzume/main1.jpg" data-vodsrc="https://www.youtube.com/embed/BBxtfGZodfo" alt="1">
+                <div class="nt-postbg">
+                    <span class="nt-posttitle">스즈메의 문단속</span>
+                    <span class="nt-postdetail">스즈메의 문단속 1차 예고편</span>
+                </div>
+            </div>
+            <div class="nt-post">
+                <img src="images/trailer/Suzume/main1.jpg" data-vodsrc="https://www.youtube.com/embed/BBxtfGZodfo" alt="1">
+                <div class="nt-postbg">
+                    <span class="nt-posttitle">스즈메의 문단속</span>
+                    <span class="nt-postdetail">스즈메의 문단속 1차 예고편</span>
+                </div>
+            </div>
+            <div class="nt-post">
+                <img src="images/trailer/Suzume/main1.jpg" data-vodsrc="https://www.youtube.com/embed/BBxtfGZodfo" alt="1">
+                <div class="nt-postbg">
+                    <span class="nt-posttitle">스즈메의 문단속</span>
+                    <span class="nt-postdetail">스즈메의 문단속 1차 예고편</span>
+                </div>
+            </div>
+            <div class="nt-post">
+                <img src="images/trailer/Suzume/main1.jpg" data-vodsrc="https://www.youtube.com/embed/BBxtfGZodfo" alt="1">
+                <div class="nt-postbg">
+                    <span class="nt-posttitle">스즈메의 문단속</span>
+                    <span class="nt-postdetail">스즈메의 문단속 1차 예고편</span>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--post slider-->
+</div>
+<!-- 메인 트레일러 -->
 <script src="js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/script.js"></script>

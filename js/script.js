@@ -1,27 +1,73 @@
-$(function(){
-    // header 내비게이션 작동
-    $('.header-gnb>li:not(:nth-child(5))>a').mouseover(function(){
-        $('.header-hide').removeClass('on');
-        $('.header-gnb>li>a').removeClass('on')
-        $('.header-gnb>li>.header-lnb').removeClass('on');
-        $('.header-hide').addClass('on');
-        $(this).addClass('on')
-        $(this).next('.header-lnb').addClass('on');
-    })
-    $('.header-hide').mouseleave(function(){
-        $('.header-hide').removeClass('on');
-        $('.header-gnb>li>a').removeClass('on')
-        $('.header-gnb>li>.header-lnb').removeClass('on');
-    })
-    
-});
-    
+    $(function(){
+        //메인페이지 슬라이드
+        $('.mainslide').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            arrows:false,
+            adaptiveHeight: true,
+            speed: 500
+          });
 
-    const list = document.getElementsByClassName('.ao-list');
-    const contecthv = document.getElementsByClassName('ao-contecthv');
-    const contect = document.getElementsByClassName('ao-contect');
-    list.addEvent
+        //현재 예매 hover
+        $('.ao-list').each(function(){
+            var $this = $(this);
+            var $contact = $this.find('.ao-contact');
+            var $contacthv = $this.find('.ao-contacthv');
+            
+            $this.hover(
+                function(){
+                    $contact.css("display", "none");
+                    $contacthv.css("display", "block");
+                },
+                function(){
+                    $contact.css("display", "block");
+                    $contacthv.css("display", "none");
+                }
+            );
+        });
+        //현재 상영중인 트레일러
+        $('.nt-slide').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            arrows: false
+        });
+        
+        //영상 켜기
+        $(".nt-postbg").click(function(){
+            const Popup = document.getElementsByClassName("k-popup")[0];
+            const fade = document.getElementsByClassName("k-fade")[0];
+            Popup.style.display = "block";
+            fade.style.display = "block";
+        });
 
+        //영상 끄기
+        $(".k-fade").click(function(){
+            const PopupSlide = document.getElementsByClassName("k-popup")[0];
+            const fadeOut = document.getElementsByClassName("k-fade")[0];
+            PopupSlide.style.display = "none";
+            fadeOut.style.display = "none";
+        });
+        //슬라이드 링크 변경
+        $(".nt-postbg").click(function() {
+            const vodsrcs = $(this).prev('img').data("vodsrc");
+            $(".k-popup>iframe").attr("src", vodsrcs);
+        });
+        
+    });
+
+
+
+
+
+
+
+
+    
+    
     
 
 
@@ -150,7 +196,7 @@ $(function(){
         //슬라이드 링크 변경
         $(".k-trailer_btn").click(function() {
             const vodsrcs = $(this).prev("img").data("vodsrc");
-            $(".k-popup iframe").attr("src", vodsrcs);
+            $(".k-popup>iframe").attr("src", vodsrcs);
           });
 
         //감독 출연진 슬라이드
