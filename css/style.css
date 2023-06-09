@@ -7,3 +7,109 @@ font-family: 'Pretendard';
 
 layout.css에 저장되어있으니 그냥 선언해서 사용하면 됨
 */
+
+.visual {
+    width: 100%;
+    height: 530px;
+}
+
+.visual img {}
+
+.store_contents {
+    margin: 50px 0 150px;
+}
+
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.store_contents h3 {
+    font-size: 34px;
+}
+
+.store_contents .tab {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.store_contents .tab li {
+    width: 167px;
+    height: 38px;
+    background: #fff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
+    color: #333;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.11);
+}
+
+.store_contents .tab li.on {
+    background: #5C7EF7;
+    color: #fff;
+}
+
+.product {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product li {
+    width: 353px;
+    height: 429px;
+    background: #F2f2f2;
+    border-radius: 26px;
+    margin-bottom: 20px;
+}
+
+.product li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.product .txt {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 10px 20px;
+    text-align: left;
+    color: #333;
+}
+
+.product .txt h4 {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.product .txt h4::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url(../images/product/bag.png) no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product .txt p {
+    font-size: 18px;
+    margin: 8px 0 12px;
+}
+
+.product .txt h3 {
+    font-size: 24px;
+    color: #3D56AE;
+    font-weight: 500;
+}
