@@ -50,16 +50,11 @@ body {font-family: 'SUITE', sans-serif;}
 h1{
     text-align: center;
     font-size: 50px;
-    margin-top: 90px;
+    padding-top: 90px;
     font-weight: 900;
     color: #333;
 }
-ul li{
-    border-radius: 100%;
-    width: 282px;
-    height: 282px;
-    position: relative;
-}
+/* cover */
 .cover{
     background: rgba(0,0,0,0.6);
     width: 282px;
@@ -81,18 +76,36 @@ ul li{
 ul li a:hover .cover{
     display: block;
 }
+ul li{
+    border-radius: 100%;
+    width: 282px;
+    height: 282px;
+    position: relative;
+}
+.btn_close{
+    text-indent: -99999px;
+    cursor: pointer;
+    width: 24px;height: 24px;
+    background: url("../images/profile/btn_close.png")no-repeat center center;
+    border: none;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+
 .top{
     display: flex;
     gap: 103px;
     position: absolute;
     left: 0;
-    top: 147px;
+    top: 300px;
 }
 .bottom{
     display: flex;
     gap: 103px;
     position: absolute;
     right: 0;
-    top: 430px;
+    top: 582px;
 }
 
