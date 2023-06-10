@@ -13,6 +13,7 @@ body {font-family: 'SUITE', sans-serif;}
     height: 100%;
     position: absolute;
     z-index: 10000;
+    display: none;
 }
 .card{
     background: #fff;
