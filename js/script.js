@@ -2,27 +2,28 @@
         //메인페이지 슬라이드
         $('.mainslide').slick({
             infinite: true,
-            autoplay: true,
+            // autoplay: true,
             autoplaySpeed: 3000,
             slidesToShow: 1,
-            arrows:false,
             adaptiveHeight: true,
-            speed: 500
+            speed: 500,
+            nextArrow:$('.ma-slidenext'),
+            prevArrow:$('.ma-slideprev')
           });
 
         //현재 예매 hover
         $('.ao-list').each(function(){
             var $this = $(this);
-            var $contact = $this.find('.ao-contact');
+            // var $contact = $this.find('.ao-contact');
             var $contacthv = $this.find('.ao-contacthv');
             
             $this.hover(
                 function(){
-                    $contact.css("display", "none");
+                    // $contact.css("display", "none");
                     $contacthv.css("display", "block");
                 },
                 function(){
-                    $contact.css("display", "block");
+                    // $contact.css("display", "block");
                     $contacthv.css("display", "none");
                 }
             );
