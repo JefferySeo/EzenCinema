@@ -1,4 +1,5 @@
 $(function(){
+    // 팝업
     $(function () {
         $('ul li a').click(function () {
         $('.popup').fadeIn(300);

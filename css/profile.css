@@ -23,15 +23,42 @@ body {font-family: 'SUITE', sans-serif;}
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    /* padding: 80px; */
+    padding: 80px;
     box-sizing: border-box;
+}
+.pic{
+    float: left;
+}
+.txt{
+    float: right;
+    margin: 30px 61px 0 0 ;
+}
+.txt ul.left{
+    float: left;
+    margin-right: 40px;
+}
+.txt ul.left li{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.txt ul.right{
+    float: left;
+}
+.txt ul.right li{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #606060;
 }
 .balloon{
     background: #D3DCFD;
     width: 610px;
     height: 90px;
     border-radius: 0 70px 70px 70px;
-    margin-top: 30px;
+    margin-top: 330px;
 }
 .balloon p{
     text-align: center;
@@ -73,10 +100,10 @@ h1{
     color: #fff;
     font-size: 30px;
 }
-ul li a:hover .cover{
+ul.img li a:hover .cover{
     display: block;
 }
-ul li{
+ul.img li{
     border-radius: 100%;
     width: 282px;
     height: 282px;
