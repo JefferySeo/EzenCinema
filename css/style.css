@@ -312,11 +312,37 @@ h3{
     font-size: 32px;
 }
 .nt-trailer{
+    position: relative;
     width:100%;
-    height: 250px;
+    height: 300px;
     margin:0px auto;
     overflow: hidden;
     padding-top: 10px;
+}
+.dotsbox{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    bottom: 0;
+    right: 10%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.dotsbox>.nt-slideprev{
+    width: 10px;
+    height: 16px;
+    margin-top: 6px;
+    margin-left: 13px;
+    cursor: pointer;
+}
+.dotsbox>.nt-slidenext{
+    width: 10px;
+    height: 16px;
+    margin-top: 7px;
+    margin-right: 13px;
+    cursor: pointer;
 }
 .nt-slide>.slick-list{
     margin-top: 55px;
@@ -331,6 +357,7 @@ h3{
     border-radius: 10px;
     border: 1px solid #b9b6b1;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 .nt-post>img{
     position: absolute;
@@ -340,7 +367,7 @@ h3{
 }
 .nt-postbg{
     position: absolute;
-    width:282px;
+    width:100%;
     height:82px;
     bottom: 0;
     left: 0;
@@ -348,7 +375,6 @@ h3{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     z-index: 80;
-    cursor: pointer;
 }
 .nt-postbg>span{
     display: block;

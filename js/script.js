@@ -2,7 +2,7 @@
         //메인페이지 슬라이드
         $('.mainslide').slick({
             infinite: true,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 3000,
             slidesToShow: 1,
             adaptiveHeight: true,
@@ -34,11 +34,12 @@
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 4000,
-            arrows: false
+            nextArrow:$('.nt-slidenext'),
+            prevArrow:$('.nt-slideprev')
         });
         
         //영상 켜기
-        $(".nt-postbg").click(function(){
+        $(".nt-post").click(function(){
             const Popup = document.getElementsByClassName("k-popup")[0];
             const fade = document.getElementsByClassName("k-fade")[0];
             Popup.style.display = "block";
@@ -53,8 +54,8 @@
             fadeOut.style.display = "none";
         });
         //슬라이드 링크 변경
-        $(".nt-postbg").click(function() {
-            const vodsrcs = $(this).prev('img').data("vodsrc");
+        $(".nt-post").click(function() {
+            const vodsrcs = $('.nt-post>img').data("vodsrc");
             $(".k-popup>iframe").attr("src", vodsrcs);
         });
         
