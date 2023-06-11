@@ -2,15 +2,29 @@
         //메인페이지 슬라이드
         $('.mainslide').slick({
             infinite: true,
-            // autoplay: true,
-            autoplaySpeed: 3000,
+            autoplay: true,
+            autoplaySpeed: 2500,
             slidesToShow: 1,
             adaptiveHeight: true,
             speed: 500,
             nextArrow:$('.ma-slidenext'),
-            prevArrow:$('.ma-slideprev')
+            prevArrow:$('.ma-slideprev'),
+            dots:true,
+            dotsClass:'main_dots'
           });
+          $('.play').hide(); // 일시 정지 버튼 숨김
 
+          $('.play').click(function() {
+              $('.mainslide').slick('slickPlay');
+              $(this).hide(); // 플레이 버튼 숨김
+              $('.pause').show(); // 일시 정지 버튼 표시
+          });
+          
+          $('.pause').click(function() {
+              $('.mainslide').slick('slickPause');
+              $(this).hide(); // 일시 정지 버튼 숨김
+              $('.play').show(); // 플레이 버튼 표시
+          });
         //현재 예매 hover
         $('.ao-list').each(function(){
             var $this = $(this);

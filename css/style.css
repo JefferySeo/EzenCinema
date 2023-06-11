@@ -75,6 +75,41 @@ h3{
     font-size: 18px;
     padding-top: 5px;
 }
+.main_dots{
+    position: absolute;
+    bottom: 5%;
+    left: 41%;
+    display: flex;
+}
+.main_dots>li{
+    margin-right: 10px;
+}
+.main_dots>li>button{
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 0;
+
+}
+.main_dots>li>button:hover{
+    background: #93AAFF;
+}
+.main_dots>li.slick-active button{
+    background: #93AAFF;
+}
+.controls{
+    position: absolute;
+    bottom: 3.3%;
+    left: 57%;
+    z-index: 100;
+}
+.controls>button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 .sdcontrol{
     position: absolute;
     width: 50px;
